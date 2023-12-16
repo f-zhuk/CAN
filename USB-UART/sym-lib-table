@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Isolator1")(type "Legacy")(uri "D:/_KICAD/_LIB/Isolator1.lib")(options "")(descr ""))
+  (lib (name "USB-UART-rescue")(type "KiCad")(uri "${KIPRJMOD}/USB-UART-rescue.kicad_sym")(options "")(descr ""))
+)
