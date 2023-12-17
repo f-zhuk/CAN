@@ -1,0 +1,1513 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"58 CANopen/CO_DICT.c
+[; ;CANopen/CO_DICT.c: 58: DICT_PARAM uDict;
+[c E308 7 0 5 3 1 2 11 9 10 16 1 126 2 125 4 127 123 8 127 119 16 127 111 32 127 95 64 127 63 .. ]
+[n E308 DICT_CTL ACCESS_BITS NA CONST RW RO WO RW_EE RO_EE WO_EE FUNC RD_BIT N_RD WR_BIT N_WR ROM_BIT ROM N_ROM EE_BIT EE N_EE FDEF_BIT FDEF N_FDEF MAP_BIT MAP N_MAP FSUB_BIT FSUB N_FSUB  ]
+[v F348 `(v ~T0 @X0 0 tf ]
+"133 CANopen/CO_DICT.h
+[; ;CANopen/CO_DICT.h: 133:  {
+[u S53 `*F348 1 `*uc 1 `*Cuc 1 `ui 1 ]
+[n S53 DICT_PTRS pFunc pRAM pROM pEEDATA ]
+"112
+[; ;CANopen/CO_DICT.h: 112: {
+[s S52 `*uc 1 `ui 1 `ui 1 `ui 1 `uc 1 `E308 1 `ui 1 `S53 1 ]
+[n S52 _DICTIONARY_EXTENDED_OBJECT pReqBuf reqLen reqOffst index subindex ctl len p ]
+"58 CANopen/CO_DICT.c
+[; ;CANopen/CO_DICT.c: 58: DICT_PARAM uDict;
+[c E360 0 1 2 .. ]
+[n E360 _DICT_OBJECT_REQUEST DICT_OBJ_INFO DICT_OBJ_READ DICT_OBJ_WRITE  ]
+"153 CANopen/CO_DICT.h
+[; ;CANopen/CO_DICT.h: 153: {
+[s S55 `*S52 1 `E360 1 `uc 1 ]
+[n S55 _DICTIONARY_DATA obj cmd ret ]
+"193 CANopen/CO_TYPES.h
+[; ;CANopen/CO_TYPES.h: 193: {
+[s S23 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S23 _BITS b0 b1 b2 b3 b4 b5 b6 b7 ]
+"205
+[; ;CANopen/CO_TYPES.h: 205: {
+[u S24 `uc 1 `S23 1 ]
+[n S24 _UINT8 byte bits ]
+"217
+[; ;CANopen/CO_TYPES.h: 217: {
+[s S26 `S24 1 `S24 1 ]
+[n S26 _INT16 B0 B1 ]
+"285
+[; ;CANopen/CO_TYPES.h: 285: {
+[u S33 `ui 1 `S26 1 ]
+[n S33 _UINT16 word bytes ]
+"146 CANopen/CO_DICT.h
+[; ;CANopen/CO_DICT.h: 146: {
+[s S54 `S33 1 `S24 1 ]
+[n S54 _MULTIPLEXOR index sindex ]
+"57
+[; ;CANopen/CO_DICT.h: 57: {
+[s S51 `ui 1 `uc 1 `uc 1 `ui 1 `*Cuc 1 ]
+[n S51 _DICTIONARY_OBJECT_TEMPLATE index subindex ctl len pROM ]
+"47 CANopen/CO_DEV.h
+[; ;CANopen/CO_DEV.h: 47: extern const unsigned long rCO_DevType;
+[; ;CANopen/CO_DEV.h: 47: extern const unsigned long rCO_DevType;
+[v _rCO_DevType `Cul ~T0 @X0 0 e ]
+"58
+[; ;CANopen/CO_DEV.h: 58: extern unsigned char uCO_DevErrReg;
+[; ;CANopen/CO_DEV.h: 58: extern unsigned char uCO_DevErrReg;
+[v _uCO_DevErrReg `uc ~T0 @X0 0 e ]
+"59
+[; ;CANopen/CO_DEV.h: 59: extern unsigned long uCO_DevManufacturerStatReg;
+[; ;CANopen/CO_DEV.h: 59: extern unsigned long uCO_DevManufacturerStatReg;
+[v _uCO_DevManufacturerStatReg `ul ~T0 @X0 0 e ]
+"129 CANopen/CO_SYNC.h
+[; ;CANopen/CO_SYNC.h: 129: void _CO_COMM_SYNC_COBIDAccessEvent(void);
+[v __CO_COMM_SYNC_COBIDAccessEvent `(v ~T0 @X0 0 ef ]
+"48 CANopen/CO_DEV.h
+[; ;CANopen/CO_DEV.h: 48: extern const unsigned char rCO_DevName[];
+[; ;CANopen/CO_DEV.h: 48: extern const unsigned char rCO_DevName[];
+[v _rCO_DevName `Cuc ~T0 @X0 -> 0 `x e ]
+"49
+[; ;CANopen/CO_DEV.h: 49: extern const unsigned char rCO_DevHardwareVer[];
+[; ;CANopen/CO_DEV.h: 49: extern const unsigned char rCO_DevHardwareVer[];
+[v _rCO_DevHardwareVer `Cuc ~T0 @X0 -> 0 `x e ]
+"50
+[; ;CANopen/CO_DEV.h: 50: extern const unsigned char rCO_DevSoftwareVer[];
+[; ;CANopen/CO_DEV.h: 50: extern const unsigned char rCO_DevSoftwareVer[];
+[v _rCO_DevSoftwareVer `Cuc ~T0 @X0 -> 0 `x e ]
+"91 CANopen/CO_NMTE.h
+[; ;CANopen/CO_NMTE.h: 91: void _CO_COMM_NMTE_GuardTimeAccessEvent(void);
+[v __CO_COMM_NMTE_GuardTimeAccessEvent `(v ~T0 @X0 0 ef ]
+"109
+[; ;CANopen/CO_NMTE.h: 109: void _CO_COMM_NMTE_LifeFactorAccessEvent(void);
+[v __CO_COMM_NMTE_LifeFactorAccessEvent `(v ~T0 @X0 0 ef ]
+"73
+[; ;CANopen/CO_NMTE.h: 73: void _CO_COMM_NMTE_HeartBeatAccessEvent(void);
+[v __CO_COMM_NMTE_HeartBeatAccessEvent `(v ~T0 @X0 0 ef ]
+"52 CANopen/CO_DEV.h
+[; ;CANopen/CO_DEV.h: 52: extern const unsigned char rCO_DevIdentityIndx;
+[; ;CANopen/CO_DEV.h: 52: extern const unsigned char rCO_DevIdentityIndx;
+[v _rCO_DevIdentityIndx `Cuc ~T0 @X0 0 e ]
+"53
+[; ;CANopen/CO_DEV.h: 53: extern const unsigned long rCO_DevVendorID;
+[; ;CANopen/CO_DEV.h: 53: extern const unsigned long rCO_DevVendorID;
+[v _rCO_DevVendorID `Cul ~T0 @X0 0 e ]
+"54
+[; ;CANopen/CO_DEV.h: 54: extern const unsigned long rCO_DevProductCode;
+[; ;CANopen/CO_DEV.h: 54: extern const unsigned long rCO_DevProductCode;
+[v _rCO_DevProductCode `Cul ~T0 @X0 0 e ]
+"55
+[; ;CANopen/CO_DEV.h: 55: extern const unsigned long rCO_DevRevNo;
+[; ;CANopen/CO_DEV.h: 55: extern const unsigned long rCO_DevRevNo;
+[v _rCO_DevRevNo `Cul ~T0 @X0 0 e ]
+"56
+[; ;CANopen/CO_DEV.h: 56: extern const unsigned long rCO_DevSerialNo;
+[; ;CANopen/CO_DEV.h: 56: extern const unsigned long rCO_DevSerialNo;
+[v _rCO_DevSerialNo `Cul ~T0 @X0 0 e ]
+"51 CANopen/CO_SDO1.h
+[; ;CANopen/CO_SDO1.h: 51: extern const unsigned char _uSDO1COMMIndx;
+[v __uSDO1COMMIndx `Cuc ~T0 @X0 0 e ]
+"71
+[; ;CANopen/CO_SDO1.h: 71: void _CO_COMM_SDO1_CS_COBIDAccessEvent(void);
+[v __CO_COMM_SDO1_CS_COBIDAccessEvent `(v ~T0 @X0 0 ef ]
+"90
+[; ;CANopen/CO_SDO1.h: 90: void _CO_COMM_SDO1_SC_COBIDAccessEvent(void);
+[v __CO_COMM_SDO1_SC_COBIDAccessEvent `(v ~T0 @X0 0 ef ]
+"66 CANopen/DemoObj.h
+[; ;CANopen/DemoObj.h: 66: extern const unsigned char rMaxIndex1;
+[; ;CANopen/DemoObj.h: 66: extern const unsigned char rMaxIndex1;
+[v _rMaxIndex1 `Cuc ~T0 @X0 0 e ]
+"73
+[; ;CANopen/DemoObj.h: 73: void CO_COMM_RPDO1_COBIDAccessEvent(void);
+[; ;CANopen/DemoObj.h: 73: void CO_COMM_RPDO1_COBIDAccessEvent(void);
+[v _CO_COMM_RPDO1_COBIDAccessEvent `(v ~T0 @X0 0 ef ]
+"67
+[; ;CANopen/DemoObj.h: 67: extern const unsigned char rMaxIndex2;
+[; ;CANopen/DemoObj.h: 67: extern const unsigned char rMaxIndex2;
+[v _rMaxIndex2 `Cuc ~T0 @X0 0 e ]
+"49
+[; ;CANopen/DemoObj.h: 49: extern const unsigned long uRPDO1Map;
+[; ;CANopen/DemoObj.h: 49: extern const unsigned long uRPDO1Map;
+[v _uRPDO1Map `Cul ~T0 @X0 0 e ]
+"50
+[; ;CANopen/DemoObj.h: 50: extern const unsigned long uPDO1Dummy;
+[; ;CANopen/DemoObj.h: 50: extern const unsigned long uPDO1Dummy;
+[v _uPDO1Dummy `Cul ~T0 @X0 0 e ]
+"65
+[; ;CANopen/DemoObj.h: 65: extern const unsigned char uDemoTPDO1Len;
+[; ;CANopen/DemoObj.h: 65: extern const unsigned char uDemoTPDO1Len;
+[v _uDemoTPDO1Len `Cuc ~T0 @X0 0 e ]
+"72
+[; ;CANopen/DemoObj.h: 72: void CO_COMM_TPDO1_COBIDAccessEvent(void);
+[; ;CANopen/DemoObj.h: 72: void CO_COMM_TPDO1_COBIDAccessEvent(void);
+[v _CO_COMM_TPDO1_COBIDAccessEvent `(v ~T0 @X0 0 ef ]
+"74
+[; ;CANopen/DemoObj.h: 74: void CO_COMM_TPDO1_TypeAccessEvent(void);
+[; ;CANopen/DemoObj.h: 74: void CO_COMM_TPDO1_TypeAccessEvent(void);
+[v _CO_COMM_TPDO1_TypeAccessEvent `(v ~T0 @X0 0 ef ]
+"48
+[; ;CANopen/DemoObj.h: 48: extern const unsigned long uTPDO1Map;
+[; ;CANopen/DemoObj.h: 48: extern const unsigned long uTPDO1Map;
+[v _uTPDO1Map `Cul ~T0 @X0 0 e ]
+"62
+[; ;CANopen/DemoObj.h: 62: extern unsigned char uLocalXmtBuffer[8];
+[; ;CANopen/DemoObj.h: 62: extern unsigned char uLocalXmtBuffer[8];
+[v _uLocalXmtBuffer `uc ~T0 @X0 -> 0 `x e ]
+"53
+[; ;CANopen/DemoObj.h: 53: extern unsigned char uIOinPolarity;
+[; ;CANopen/DemoObj.h: 53: extern unsigned char uIOinPolarity;
+[v _uIOinPolarity `uc ~T0 @X0 0 e ]
+"52
+[; ;CANopen/DemoObj.h: 52: extern unsigned char uIOinFilter;
+[; ;CANopen/DemoObj.h: 52: extern unsigned char uIOinFilter;
+[v _uIOinFilter `uc ~T0 @X0 0 e ]
+"57
+[; ;CANopen/DemoObj.h: 57: extern unsigned char uIOinIntEnable;
+[; ;CANopen/DemoObj.h: 57: extern unsigned char uIOinIntEnable;
+[v _uIOinIntEnable `uc ~T0 @X0 0 e ]
+"54
+[; ;CANopen/DemoObj.h: 54: extern unsigned char uIOinIntChange;
+[; ;CANopen/DemoObj.h: 54: extern unsigned char uIOinIntChange;
+[v _uIOinIntChange `uc ~T0 @X0 0 e ]
+"55
+[; ;CANopen/DemoObj.h: 55: extern unsigned char uIOinIntRise;
+[; ;CANopen/DemoObj.h: 55: extern unsigned char uIOinIntRise;
+[v _uIOinIntRise `uc ~T0 @X0 0 e ]
+"56
+[; ;CANopen/DemoObj.h: 56: extern unsigned char uIOinIntFall;
+[; ;CANopen/DemoObj.h: 56: extern unsigned char uIOinIntFall;
+[v _uIOinIntFall `uc ~T0 @X0 0 e ]
+"63
+[; ;CANopen/DemoObj.h: 63: extern unsigned char uLocalRcvBuffer[8];
+[; ;CANopen/DemoObj.h: 63: extern unsigned char uLocalRcvBuffer[8];
+[v _uLocalRcvBuffer `uc ~T0 @X0 -> 0 `x e ]
+"166 CANopen/CO_DICT.c
+[; ;CANopen/CO_DICT.c: 166:    uDict.ret = E_SUCCESS;
+[c E235 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 .. ]
+[n E235 _SDO_REQ_STATUS E_SUCCESS E_TOGGLE E_SDO_TIME E_CS_CMD E_MEMORY_OUT E_UNSUPP_ACCESS E_CANNOT_READ E_CANNOT_WRITE E_OBJ_NOT_FOUND E_OBJ_CANNOT_MAP E_OBJ_MAP_LEN E_GEN_PARAM_COMP E_GEN_INTERNAL_COMP E_HARDWARE E_LEN_SERVICE E_LEN_SERVICE_HIGH E_LEN_SERVICE_LOW E_SUBINDEX_NOT_FOUND E_PARAM_RANGE E_PARAM_HIGH E_PARAM_LOW E_MAX_LT_MIN E_GENERAL E_TRANSFER E_LOCAL_CONTROL E_DEV_STATE  ]
+"98 CANopen/CO_MEMIO.h
+[; ;CANopen/CO_MEMIO.h: 98: void CO_MEMIO_CopyRomToRam(const unsigned char *pIn, unsigned char *pOut, unsigned int len);
+[v _CO_MEMIO_CopyRomToRam `(v ~T0 @X0 0 ef3`*Cuc`*uc`ui ]
+"75
+[; ;CANopen/CO_MEMIO.h: 75: void CO_MEMIO_CopySram(unsigned char *pIn, unsigned char *pOut, unsigned int len);
+[v _CO_MEMIO_CopySram `(v ~T0 @X0 0 ef3`*uc`*uc`ui ]
+"406 CANopen/CO_TYPES.h
+[; ;CANopen/CO_TYPES.h: 406: {
+[s S48 `uc -> 4 `i ]
+[n S48 _DATA_BLOCK_4 bytes ]
+"58 CANopen/CO_DICT.c
+[; ;CANopen/CO_DICT.c: 58: DICT_PARAM uDict;
+[v _uDict `S55 ~T0 @X0 1 e ]
+"61
+[; ;CANopen/CO_DICT.c: 61: const unsigned char * _pTmpDBase;
+[v __pTmpDBase `*Cuc ~T0 @X0 1 e ]
+"62
+[; ;CANopen/CO_DICT.c: 62: unsigned char _tDBaseLen;
+[v __tDBaseLen `uc ~T0 @X0 1 e ]
+"64
+[; ;CANopen/CO_DICT.c: 64: unsigned char _uDictTemp[4];
+[v __uDictTemp `uc ~T0 @X0 -> 4 `i e ]
+"65
+[; ;CANopen/CO_DICT.c: 65: MULTIPLEXOR _tMplex;
+[v __tMplex `S54 ~T0 @X0 1 e ]
+"67
+[; ;CANopen/CO_DICT.c: 67: const unsigned char __dummy[4] = {0,0,0,0};
+[v ___dummy `Cuc ~T0 @X0 -> 4 `i e ]
+[i ___dummy
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+]
+"71
+[; ;CANopen/CO_DICT.c: 71: const DICT_OBJECT_TEMPLATE _db_objects[] = {
+[v __db_objects `CS51 ~T0 @X0 -> 7 `i e ]
+[i __db_objects
+:U ..
+:U ..
+-> -> 1 `i `ui
+-> -> 0 `i `uc
+-> | | -> . `E308 5 `i -> . `E308 14 `i -> . `E308 23 `i `uc
+-> -> 1 `i `ui
+&U *U + &U ___dummy * -> -> -> 0 `i `ui `ux -> -> # *U &U ___dummy `ui `ux
+..
+:U ..
+-> -> 2 `i `ui
+-> -> 0 `i `uc
+-> | | -> . `E308 5 `i -> . `E308 14 `i -> . `E308 23 `i `uc
+-> -> 1 `i `ui
+&U *U + &U ___dummy * -> -> -> 0 `i `ui `ux -> -> # *U &U ___dummy `ui `ux
+..
+:U ..
+-> -> 3 `i `ui
+-> -> 0 `i `uc
+-> | | -> . `E308 5 `i -> . `E308 14 `i -> . `E308 23 `i `uc
+-> -> 2 `i `ui
+&U *U + &U ___dummy * -> -> -> 0 `i `ui `ux -> -> # *U &U ___dummy `ui `ux
+..
+:U ..
+-> -> 4 `i `ui
+-> -> 0 `i `uc
+-> | | -> . `E308 5 `i -> . `E308 14 `i -> . `E308 23 `i `uc
+-> -> 4 `i `ui
+&U *U + &U ___dummy * -> -> -> 0 `i `ui `ux -> -> # *U &U ___dummy `ui `ux
+..
+:U ..
+-> -> 5 `i `ui
+-> -> 0 `i `uc
+-> | | -> . `E308 5 `i -> . `E308 14 `i -> . `E308 23 `i `uc
+-> -> 1 `i `ui
+&U *U + &U ___dummy * -> -> -> 0 `i `ui `ux -> -> # *U &U ___dummy `ui `ux
+..
+:U ..
+-> -> 6 `i `ui
+-> -> 0 `i `uc
+-> | | -> . `E308 5 `i -> . `E308 14 `i -> . `E308 23 `i `uc
+-> -> 2 `i `ui
+&U *U + &U ___dummy * -> -> -> 0 `i `ui `ux -> -> # *U &U ___dummy `ui `ux
+..
+:U ..
+-> -> 7 `i `ui
+-> -> 0 `i `uc
+-> | | -> . `E308 5 `i -> . `E308 14 `i -> . `E308 23 `i `uc
+-> -> 4 `i `ui
+&U *U + &U ___dummy * -> -> -> 0 `i `ui `ux -> -> # *U &U ___dummy `ui `ux
+..
+..
+]
+"81
+[; ;CANopen/CO_DICT.c: 81: const DICT_OBJECT_TEMPLATE _db_device[] = {{0x1000,0x00,CONST,4,(const unsigned char *)&rCO_DevType}, {0x1001,0x00,RO,1,(const unsigned char *)&uCO_DevErrReg}, {0x1002,0x00,RO,4,(const unsigned char *)&uCO_DevManufacturerStatReg}, {0x1005,0x00,FUNC | RW,4,(const unsigned char *)&_CO_COMM_SYNC_COBIDAccessEvent}, {0x1008,0x00,CONST,24,(const unsigned char *)&rCO_DevName}, {0x1009,0x00,CONST,4,(const unsigned char *)&rCO_DevHardwareVer}, {0x100A,0x00,CONST,4,(const unsigned char *)&rCO_DevSoftwareVer}, {0x100C,0x00,FUNC | RW,2,(const unsigned char *)&_CO_COMM_NMTE_GuardTimeAccessEvent}, {0x100D,0x00,FUNC | RW,1,(const unsigned char *)&_CO_COMM_NMTE_LifeFactorAccessEvent}, {0x1017,0x00,FUNC | RW,2,(const unsigned char *)&_CO_COMM_NMTE_HeartBeatAccessEvent}, {0x1018,0x00,CONST,1,(const unsigned char *)&rCO_DevIdentityIndx}, {0x1018,0x01,CONST,4,(const unsigned char *)&rCO_DevVendorID}, {0x1018,0x02,CONST,4,(const unsigned char *)&rCO_DevProductCode}, {0x1018,0x03,CONST,4,(const unsigned char *)&rCO_DevRevNo}, {0x1018,0x04,CONST,4,(const unsigned char *)&rCO_DevSerialNo}};
+[v __db_device `CS51 ~T0 @X0 -> 15 `i e ]
+[i __db_device
+:U ..
+:U ..
+-> -> 4096 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _rCO_DevType `*Cuc
+..
+:U ..
+-> -> 4097 `i `ui
+-> -> 0 `i `uc
+-> . `E308 4 `uc
+-> -> 1 `i `ui
+-> &U _uCO_DevErrReg `*Cuc
+..
+:U ..
+-> -> 4098 `i `ui
+-> -> 0 `i `uc
+-> . `E308 4 `uc
+-> -> 4 `i `ui
+-> &U _uCO_DevManufacturerStatReg `*Cuc
+..
+:U ..
+-> -> 4101 `i `ui
+-> -> 0 `i `uc
+-> | -> . `E308 9 `i -> . `E308 3 `i `uc
+-> -> 4 `i `ui
+-> &U __CO_COMM_SYNC_COBIDAccessEvent `*Cuc
+..
+:U ..
+-> -> 4104 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 24 `i `ui
+-> &U _rCO_DevName `*Cuc
+..
+:U ..
+-> -> 4105 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _rCO_DevHardwareVer `*Cuc
+..
+:U ..
+-> -> 4106 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _rCO_DevSoftwareVer `*Cuc
+..
+:U ..
+-> -> 4108 `i `ui
+-> -> 0 `i `uc
+-> | -> . `E308 9 `i -> . `E308 3 `i `uc
+-> -> 2 `i `ui
+-> &U __CO_COMM_NMTE_GuardTimeAccessEvent `*Cuc
+..
+:U ..
+-> -> 4109 `i `ui
+-> -> 0 `i `uc
+-> | -> . `E308 9 `i -> . `E308 3 `i `uc
+-> -> 1 `i `ui
+-> &U __CO_COMM_NMTE_LifeFactorAccessEvent `*Cuc
+..
+:U ..
+-> -> 4119 `i `ui
+-> -> 0 `i `uc
+-> | -> . `E308 9 `i -> . `E308 3 `i `uc
+-> -> 2 `i `ui
+-> &U __CO_COMM_NMTE_HeartBeatAccessEvent `*Cuc
+..
+:U ..
+-> -> 4120 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _rCO_DevIdentityIndx
+..
+:U ..
+-> -> 4120 `i `ui
+-> -> 1 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _rCO_DevVendorID `*Cuc
+..
+:U ..
+-> -> 4120 `i `ui
+-> -> 2 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _rCO_DevProductCode `*Cuc
+..
+:U ..
+-> -> 4120 `i `ui
+-> -> 3 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _rCO_DevRevNo `*Cuc
+..
+:U ..
+-> -> 4120 `i `ui
+-> -> 4 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _rCO_DevSerialNo `*Cuc
+..
+..
+]
+"83
+[; ;CANopen/CO_DICT.c: 83: const DICT_OBJECT_TEMPLATE _db_sdo[] = {{0x1200,0x00,CONST,1,(const unsigned char *)&_uSDO1COMMIndx}, {0x1200,0x01,FUNC | RO,4,(const unsigned char *)&_CO_COMM_SDO1_CS_COBIDAccessEvent}, {0x1200,0x02,FUNC | RO,4,(const unsigned char *)&_CO_COMM_SDO1_SC_COBIDAccessEvent}};
+[v __db_sdo `CS51 ~T0 @X0 -> 3 `i e ]
+[i __db_sdo
+:U ..
+:U ..
+-> -> 4608 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U __uSDO1COMMIndx
+..
+:U ..
+-> -> 4608 `i `ui
+-> -> 1 `i `uc
+-> | -> . `E308 9 `i -> . `E308 4 `i `uc
+-> -> 4 `i `ui
+-> &U __CO_COMM_SDO1_CS_COBIDAccessEvent `*Cuc
+..
+:U ..
+-> -> 4608 `i `ui
+-> -> 2 `i `uc
+-> | -> . `E308 9 `i -> . `E308 4 `i `uc
+-> -> 4 `i `ui
+-> &U __CO_COMM_SDO1_SC_COBIDAccessEvent `*Cuc
+..
+..
+]
+"85
+[; ;CANopen/CO_DICT.c: 85: const DICT_OBJECT_TEMPLATE _db_pdo1_rx_comm[] = {{0x1400,0x00,CONST,1,(const unsigned char *)&rMaxIndex1}, {0x1400,0x01,RW | FUNC,4,(const unsigned char *)&CO_COMM_RPDO1_COBIDAccessEvent}};
+[v __db_pdo1_rx_comm `CS51 ~T0 @X0 -> 2 `i e ]
+[i __db_pdo1_rx_comm
+:U ..
+:U ..
+-> -> 5120 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _rMaxIndex1
+..
+:U ..
+-> -> 5120 `i `ui
+-> -> 1 `i `uc
+-> | -> . `E308 3 `i -> . `E308 9 `i `uc
+-> -> 4 `i `ui
+-> &U _CO_COMM_RPDO1_COBIDAccessEvent `*Cuc
+..
+..
+]
+"96
+[; ;CANopen/CO_DICT.c: 96: const DICT_OBJECT_TEMPLATE _db_pdo1_rx_map[] = {{0x1600,0x00,CONST,1,(const unsigned char *)&rMaxIndex2}, {0x1600,0x01,CONST,4,(const unsigned char *)&uRPDO1Map}, {0x1600,0x02,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1600,0x03,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1600,0x04,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1600,0x05,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1600,0x06,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1600,0x07,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1600,0x08,CONST,4,(const unsigned char *)&uPDO1Dummy}};
+[v __db_pdo1_rx_map `CS51 ~T0 @X0 -> 9 `i e ]
+[i __db_pdo1_rx_map
+:U ..
+:U ..
+-> -> 5632 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _rMaxIndex2
+..
+:U ..
+-> -> 5632 `i `ui
+-> -> 1 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uRPDO1Map `*Cuc
+..
+:U ..
+-> -> 5632 `i `ui
+-> -> 2 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 5632 `i `ui
+-> -> 3 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 5632 `i `ui
+-> -> 4 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 5632 `i `ui
+-> -> 5 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 5632 `i `ui
+-> -> 6 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 5632 `i `ui
+-> -> 7 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 5632 `i `ui
+-> -> 8 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+..
+]
+"107
+[; ;CANopen/CO_DICT.c: 107: const DICT_OBJECT_TEMPLATE _db_pdo1_tx_comm[] = {{0x1800,0x00,CONST,1,(const unsigned char *)&uDemoTPDO1Len}, {0x1800,0x01,RW | FUNC,4,(const unsigned char *)&CO_COMM_TPDO1_COBIDAccessEvent}, {0x1800,0x02,RW | FUNC,1,(const unsigned char *)&CO_COMM_TPDO1_TypeAccessEvent}};
+[v __db_pdo1_tx_comm `CS51 ~T0 @X0 -> 3 `i e ]
+[i __db_pdo1_tx_comm
+:U ..
+:U ..
+-> -> 6144 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _uDemoTPDO1Len
+..
+:U ..
+-> -> 6144 `i `ui
+-> -> 1 `i `uc
+-> | -> . `E308 3 `i -> . `E308 9 `i `uc
+-> -> 4 `i `ui
+-> &U _CO_COMM_TPDO1_COBIDAccessEvent `*Cuc
+..
+:U ..
+-> -> 6144 `i `ui
+-> -> 2 `i `uc
+-> | -> . `E308 3 `i -> . `E308 9 `i `uc
+-> -> 1 `i `ui
+-> &U _CO_COMM_TPDO1_TypeAccessEvent `*Cuc
+..
+..
+]
+"118
+[; ;CANopen/CO_DICT.c: 118: const DICT_OBJECT_TEMPLATE _db_pdo1_tx_map[] = {{0x1A00,0x00,CONST,1,(const unsigned char *)&rMaxIndex2}, {0x1A00,0x01,CONST,4,(const unsigned char *)&uTPDO1Map}, {0x1A00,0x02,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1A00,0x03,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1A00,0x04,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1A00,0x05,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1A00,0x06,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1A00,0x07,CONST,4,(const unsigned char *)&uPDO1Dummy}, {0x1A00,0x08,CONST,4,(const unsigned char *)&uPDO1Dummy}};
+[v __db_pdo1_tx_map `CS51 ~T0 @X0 -> 9 `i e ]
+[i __db_pdo1_tx_map
+:U ..
+:U ..
+-> -> 6656 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _rMaxIndex2
+..
+:U ..
+-> -> 6656 `i `ui
+-> -> 1 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uTPDO1Map `*Cuc
+..
+:U ..
+-> -> 6656 `i `ui
+-> -> 2 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 6656 `i `ui
+-> -> 3 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 6656 `i `ui
+-> -> 4 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 6656 `i `ui
+-> -> 5 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 6656 `i `ui
+-> -> 6 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 6656 `i `ui
+-> -> 7 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+:U ..
+-> -> 6656 `i `ui
+-> -> 8 `i `uc
+-> . `E308 2 `uc
+-> -> 4 `i `ui
+-> &U _uPDO1Dummy `*Cuc
+..
+..
+]
+"129
+[; ;CANopen/CO_DICT.c: 129: const DICT_OBJECT_TEMPLATE _db_manufacturer_g1[] = {{0x2000,0x00,0,1,(const unsigned char *)&__dummy}, {0x2000,0x00,0,1,(const unsigned char *)&__dummy}};
+[v __db_manufacturer_g1 `CS51 ~T0 @X0 -> 2 `i e ]
+[i __db_manufacturer_g1
+:U ..
+:U ..
+-> -> 8192 `i `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+:U ..
+-> -> 8192 `i `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+..
+]
+"130
+[; ;CANopen/CO_DICT.c: 130: const DICT_OBJECT_TEMPLATE _db_manufacturer_g2[] = {{0x3000,0x00,0,1,(const unsigned char *)&__dummy}, {0x3000,0x00,0,1,(const unsigned char *)&__dummy}};
+[v __db_manufacturer_g2 `CS51 ~T0 @X0 -> 2 `i e ]
+[i __db_manufacturer_g2
+:U ..
+:U ..
+-> -> 12288 `i `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+:U ..
+-> -> 12288 `i `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+..
+]
+"131
+[; ;CANopen/CO_DICT.c: 131: const DICT_OBJECT_TEMPLATE _db_manufacturer_g3[] = {{0x4000,0x00,0,1,(const unsigned char *)&__dummy}, {0x4000,0x00,0,1,(const unsigned char *)&__dummy}};
+[v __db_manufacturer_g3 `CS51 ~T0 @X0 -> 2 `i e ]
+[i __db_manufacturer_g3
+:U ..
+:U ..
+-> -> 16384 `i `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+:U ..
+-> -> 16384 `i `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+..
+]
+"132
+[; ;CANopen/CO_DICT.c: 132: const DICT_OBJECT_TEMPLATE _db_manufacturer_g4[] = {{0x5000,0x00,0,1,(const unsigned char *)&__dummy}, {0x5000,0x00,0,1,(const unsigned char *)&__dummy}};
+[v __db_manufacturer_g4 `CS51 ~T0 @X0 -> 2 `i e ]
+[i __db_manufacturer_g4
+:U ..
+:U ..
+-> -> 20480 `i `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+:U ..
+-> -> 20480 `i `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+..
+]
+"133
+[; ;CANopen/CO_DICT.c: 133: const DICT_OBJECT_TEMPLATE _db_standard_g1[] = {{0x6000,0x00,RO,1,(const unsigned char *)&uLocalXmtBuffer[0]}, {0x6002,0x00,CONST,1,(const unsigned char *)&rMaxIndex1}, {0x6002,0x01,RW,1,(const unsigned char *)&uIOinPolarity}, {0x6003,0x00,CONST,1,(const unsigned char *)&rMaxIndex1}, {0x6003,0x01,RW,1,(const unsigned char *)&uIOinFilter}, {0x6005,0x00,CONST,1,(const unsigned char *)&rMaxIndex1}, {0x6005,0x01,RW,1,(const unsigned char *)&uIOinIntEnable}, {0x6006,0x00,CONST,1,(const unsigned char *)&rMaxIndex1}, {0x6006,0x01,RW,1,(const unsigned char *)&uIOinIntChange}, {0x6007,0x00,CONST,1,(const unsigned char *)&rMaxIndex1}, {0x6007,0x01,RW,1,(const unsigned char *)&uIOinIntRise}, {0x6008,0x00,CONST,1,(const unsigned char *)&rMaxIndex1}, {0x6008,0x01,RW,1,(const unsigned char *)&uIOinIntFall}, {0x6200,0x00,RW,1,(const unsigned char *)&uLocalRcvBuffer[0]}};
+[v __db_standard_g1 `CS51 ~T0 @X0 -> 14 `i e ]
+[i __db_standard_g1
+:U ..
+:U ..
+-> -> 24576 `i `ui
+-> -> 0 `i `uc
+-> . `E308 4 `uc
+-> -> 1 `i `ui
+-> &U *U + &U _uLocalXmtBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _uLocalXmtBuffer `ui `ux `*Cuc
+..
+:U ..
+-> -> 24578 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _rMaxIndex1
+..
+:U ..
+-> -> 24578 `i `ui
+-> -> 1 `i `uc
+-> . `E308 3 `uc
+-> -> 1 `i `ui
+-> &U _uIOinPolarity `*Cuc
+..
+:U ..
+-> -> 24579 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _rMaxIndex1
+..
+:U ..
+-> -> 24579 `i `ui
+-> -> 1 `i `uc
+-> . `E308 3 `uc
+-> -> 1 `i `ui
+-> &U _uIOinFilter `*Cuc
+..
+:U ..
+-> -> 24581 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _rMaxIndex1
+..
+:U ..
+-> -> 24581 `i `ui
+-> -> 1 `i `uc
+-> . `E308 3 `uc
+-> -> 1 `i `ui
+-> &U _uIOinIntEnable `*Cuc
+..
+:U ..
+-> -> 24582 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _rMaxIndex1
+..
+:U ..
+-> -> 24582 `i `ui
+-> -> 1 `i `uc
+-> . `E308 3 `uc
+-> -> 1 `i `ui
+-> &U _uIOinIntChange `*Cuc
+..
+:U ..
+-> -> 24583 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _rMaxIndex1
+..
+:U ..
+-> -> 24583 `i `ui
+-> -> 1 `i `uc
+-> . `E308 3 `uc
+-> -> 1 `i `ui
+-> &U _uIOinIntRise `*Cuc
+..
+:U ..
+-> -> 24584 `i `ui
+-> -> 0 `i `uc
+-> . `E308 2 `uc
+-> -> 1 `i `ui
+&U _rMaxIndex1
+..
+:U ..
+-> -> 24584 `i `ui
+-> -> 1 `i `uc
+-> . `E308 3 `uc
+-> -> 1 `i `ui
+-> &U _uIOinIntFall `*Cuc
+..
+:U ..
+-> -> 25088 `i `ui
+-> -> 0 `i `uc
+-> . `E308 3 `uc
+-> -> 1 `i `ui
+-> &U *U + &U _uLocalRcvBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _uLocalRcvBuffer `ui `ux `*Cuc
+..
+..
+]
+"134
+[; ;CANopen/CO_DICT.c: 134: const DICT_OBJECT_TEMPLATE _db_standard_g2[] = {{0x7000,0x00,0,1,(const unsigned char *)&__dummy}, {0x7000,0x00,0,1,(const unsigned char *)&__dummy}};
+[v __db_standard_g2 `CS51 ~T0 @X0 -> 2 `i e ]
+[i __db_standard_g2
+:U ..
+:U ..
+-> -> 28672 `i `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+:U ..
+-> -> 28672 `i `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+..
+]
+"135
+[; ;CANopen/CO_DICT.c: 135: const DICT_OBJECT_TEMPLATE _db_standard_g3[] = {{0x8000,0x00,0,1,(const unsigned char *)&__dummy}, {0x8000,0x00,0,1,(const unsigned char *)&__dummy}};
+[v __db_standard_g3 `CS51 ~T0 @X0 -> 2 `i e ]
+[i __db_standard_g3
+:U ..
+:U ..
+-> 32768 `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+:U ..
+-> 32768 `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+..
+]
+"136
+[; ;CANopen/CO_DICT.c: 136: const DICT_OBJECT_TEMPLATE _db_standard_g4[] = {{0x9000,0x00,0,1,(const unsigned char *)&__dummy}, {0x9000,0x00,0,1,(const unsigned char *)&__dummy}};
+[v __db_standard_g4 `CS51 ~T0 @X0 -> 2 `i e ]
+[i __db_standard_g4
+:U ..
+:U ..
+-> 36864 `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+:U ..
+-> 36864 `ui
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `ui
+-> &U ___dummy `*Cuc
+..
+..
+]
+"158
+[; ;CANopen/CO_DICT.c: 158: void _CO_DictObjectRead(void)
+[v __CO_DictObjectRead `(v ~T0 @X0 1 ef ]
+"159
+[; ;CANopen/CO_DICT.c: 159: {
+{
+[e :U __CO_DictObjectRead ]
+[f ]
+"161
+[; ;CANopen/CO_DICT.c: 161:  if (uDict.obj->ctl)
+[e $ ! != -> . *U . _uDict 0 5 `ui -> -> 0 `i `ui 57  ]
+"162
+[; ;CANopen/CO_DICT.c: 162:  {
+{
+"164
+[; ;CANopen/CO_DICT.c: 164:   if (uDict.obj->ctl & FDEF_BIT)
+[e $ ! != & -> . *U . _uDict 0 5 `ui -> . `E308 20 `ui -> -> 0 `i `ui 58  ]
+"165
+[; ;CANopen/CO_DICT.c: 165:   {
+{
+"166
+[; ;CANopen/CO_DICT.c: 166:    uDict.ret = E_SUCCESS;
+[e = . _uDict 2 -> . `E235 0 `uc ]
+"167
+[; ;CANopen/CO_DICT.c: 167:    uDict.cmd = DICT_OBJ_READ;
+[e = . _uDict 1 . `E360 1 ]
+"168
+[; ;CANopen/CO_DICT.c: 168:    uDict.obj->p.pFunc();
+[e ( *U . . *U . _uDict 0 7 0 ..  ]
+"169
+[; ;CANopen/CO_DICT.c: 169:    return;
+[e $UE 56  ]
+"170
+[; ;CANopen/CO_DICT.c: 170:   }
+}
+[e $U 59  ]
+"171
+[; ;CANopen/CO_DICT.c: 171:   else
+[e :U 58 ]
+"174
+[; ;CANopen/CO_DICT.c: 174:   switch (uDict.obj->ctl & ACCESS_BITS)
+[e $U 61  ]
+"175
+[; ;CANopen/CO_DICT.c: 175:   {
+{
+"176
+[; ;CANopen/CO_DICT.c: 176:    case CONST:
+[e :U 62 ]
+"178
+[; ;CANopen/CO_DICT.c: 178:     CO_MEMIO_CopyRomToRam(uDict.obj->p.pROM + uDict.obj->reqOffst, uDict.obj->pReqBuf, uDict.obj->reqLen);
+[e ( _CO_MEMIO_CopyRomToRam (3 , , + . . *U . _uDict 0 7 2 * -> . *U . _uDict 0 2 `ux -> -> # *U . . *U . _uDict 0 7 2 `ui `ux . *U . _uDict 0 0 . *U . _uDict 0 1 ]
+"179
+[; ;CANopen/CO_DICT.c: 179:     break;
+[e $U 60  ]
+"181
+[; ;CANopen/CO_DICT.c: 181:    case RO:
+[e :U 63 ]
+"182
+[; ;CANopen/CO_DICT.c: 182:    case RW:
+[e :U 64 ]
+"184
+[; ;CANopen/CO_DICT.c: 184:     CO_MEMIO_CopySram(uDict.obj->p.pRAM + uDict.obj->reqOffst, uDict.obj->pReqBuf, uDict.obj->reqLen);
+[e ( _CO_MEMIO_CopySram (3 , , + . . *U . _uDict 0 7 1 * -> . *U . _uDict 0 2 `ux -> -> # *U . . *U . _uDict 0 7 1 `ui `ux . *U . _uDict 0 0 . *U . _uDict 0 1 ]
+"185
+[; ;CANopen/CO_DICT.c: 185:     break;
+[e $U 60  ]
+"191
+[; ;CANopen/CO_DICT.c: 191:    default:
+[e :U 65 ]
+"193
+[; ;CANopen/CO_DICT.c: 193:     uDict.ret = E_CANNOT_READ;
+[e = . _uDict 2 -> . `E235 6 `uc ]
+"194
+[; ;CANopen/CO_DICT.c: 194:     return;
+[e $UE 56  ]
+"195
+[; ;CANopen/CO_DICT.c: 195:   }
+}
+[e $U 60  ]
+[e :U 61 ]
+[e [\ & -> . *U . _uDict 0 5 `ui -> . `E308 0 `ui , $ -> . `E308 2 `ui 62
+ , $ -> . `E308 4 `ui 63
+ , $ -> . `E308 3 `ui 64
+ 65 ]
+[e :U 60 ]
+[e :U 59 ]
+"196
+[; ;CANopen/CO_DICT.c: 196:  }
+}
+[e :U 57 ]
+"198
+[; ;CANopen/CO_DICT.c: 198:  uDict.ret = E_SUCCESS;
+[e = . _uDict 2 -> . `E235 0 `uc ]
+"199
+[; ;CANopen/CO_DICT.c: 199:  return;
+[e $UE 56  ]
+"200
+[; ;CANopen/CO_DICT.c: 200: }
+[e :UE 56 ]
+}
+"220
+[; ;CANopen/CO_DICT.c: 220: void _CO_DictObjectWrite(void)
+[v __CO_DictObjectWrite `(v ~T0 @X0 1 ef ]
+"221
+[; ;CANopen/CO_DICT.c: 221: {
+{
+[e :U __CO_DictObjectWrite ]
+[f ]
+"223
+[; ;CANopen/CO_DICT.c: 223:  if (uDict.obj->ctl)
+[e $ ! != -> . *U . _uDict 0 5 `ui -> -> 0 `i `ui 67  ]
+"224
+[; ;CANopen/CO_DICT.c: 224:  {
+{
+"225
+[; ;CANopen/CO_DICT.c: 225:   if (uDict.obj->ctl & FDEF_BIT)
+[e $ ! != & -> . *U . _uDict 0 5 `ui -> . `E308 20 `ui -> -> 0 `i `ui 68  ]
+"226
+[; ;CANopen/CO_DICT.c: 226:   {
+{
+"227
+[; ;CANopen/CO_DICT.c: 227:    uDict.ret = E_SUCCESS;
+[e = . _uDict 2 -> . `E235 0 `uc ]
+"228
+[; ;CANopen/CO_DICT.c: 228:    uDict.cmd = DICT_OBJ_WRITE;
+[e = . _uDict 1 . `E360 2 ]
+"229
+[; ;CANopen/CO_DICT.c: 229:    uDict.obj->p.pFunc();
+[e ( *U . . *U . _uDict 0 7 0 ..  ]
+"230
+[; ;CANopen/CO_DICT.c: 230:    return;
+[e $UE 66  ]
+"231
+[; ;CANopen/CO_DICT.c: 231:   }
+}
+[e $U 69  ]
+"232
+[; ;CANopen/CO_DICT.c: 232:   else
+[e :U 68 ]
+"235
+[; ;CANopen/CO_DICT.c: 235:   switch (uDict.obj->ctl & ACCESS_BITS)
+[e $U 71  ]
+"236
+[; ;CANopen/CO_DICT.c: 236:   {
+{
+"237
+[; ;CANopen/CO_DICT.c: 237:    case RW:
+[e :U 72 ]
+"238
+[; ;CANopen/CO_DICT.c: 238:    case WO:
+[e :U 73 ]
+"240
+[; ;CANopen/CO_DICT.c: 240:     CO_MEMIO_CopySram(uDict.obj->pReqBuf, uDict.obj->p.pRAM, uDict.obj->reqLen);
+[e ( _CO_MEMIO_CopySram (3 , , . *U . _uDict 0 0 . . *U . _uDict 0 7 1 . *U . _uDict 0 1 ]
+"241
+[; ;CANopen/CO_DICT.c: 241:     break;
+[e $U 70  ]
+"247
+[; ;CANopen/CO_DICT.c: 247:    default:
+[e :U 74 ]
+"249
+[; ;CANopen/CO_DICT.c: 249:     uDict.ret = E_CANNOT_WRITE;
+[e = . _uDict 2 -> . `E235 7 `uc ]
+"250
+[; ;CANopen/CO_DICT.c: 250:     return;
+[e $UE 66  ]
+"251
+[; ;CANopen/CO_DICT.c: 251:   }
+}
+[e $U 70  ]
+[e :U 71 ]
+[e [\ & -> . *U . _uDict 0 5 `ui -> . `E308 0 `ui , $ -> . `E308 3 `ui 72
+ , $ -> . `E308 5 `ui 73
+ 74 ]
+[e :U 70 ]
+[e :U 69 ]
+"252
+[; ;CANopen/CO_DICT.c: 252:  }
+}
+[e :U 67 ]
+"254
+[; ;CANopen/CO_DICT.c: 254:  uDict.ret = E_SUCCESS;
+[e = . _uDict 2 -> . `E235 0 `uc ]
+"255
+[; ;CANopen/CO_DICT.c: 255:  return;
+[e $UE 66  ]
+"256
+[; ;CANopen/CO_DICT.c: 256: }
+[e :UE 66 ]
+}
+"281
+[; ;CANopen/CO_DICT.c: 281: void _CO_DictObjectDecode(void)
+[v __CO_DictObjectDecode `(v ~T0 @X0 1 ef ]
+"282
+[; ;CANopen/CO_DICT.c: 282: {
+{
+[e :U __CO_DictObjectDecode ]
+[f ]
+"284
+[; ;CANopen/CO_DICT.c: 284:  _tMplex = *(MULTIPLEXOR *)(&(uDict.obj->index));
+[e = __tMplex *U -> &U . *U . _uDict 0 3 `*S54 ]
+"286
+[; ;CANopen/CO_DICT.c: 286:  switch (_tMplex.index.bytes.B1.byte & 0xF0)
+[e $U 77  ]
+"287
+[; ;CANopen/CO_DICT.c: 287:  {
+{
+"288
+[; ;CANopen/CO_DICT.c: 288:   case 0x00:
+[e :U 78 ]
+"289
+[; ;CANopen/CO_DICT.c: 289:    _pTmpDBase = (const unsigned char *)_db_objects;
+[e = __pTmpDBase -> &U __db_objects `*Cuc ]
+"290
+[; ;CANopen/CO_DICT.c: 290:    _tDBaseLen = sizeof(_db_objects)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_objects `ui -> # `S51 `ui `uc ]
+"291
+[; ;CANopen/CO_DICT.c: 291:    break;
+[e $U 76  ]
+"293
+[; ;CANopen/CO_DICT.c: 293:   case 0x20:
+[e :U 79 ]
+"294
+[; ;CANopen/CO_DICT.c: 294:    _pTmpDBase = (const unsigned char *)_db_manufacturer_g1;
+[e = __pTmpDBase -> &U __db_manufacturer_g1 `*Cuc ]
+"295
+[; ;CANopen/CO_DICT.c: 295:    _tDBaseLen = sizeof(_db_manufacturer_g1)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_manufacturer_g1 `ui -> # `S51 `ui `uc ]
+"296
+[; ;CANopen/CO_DICT.c: 296:    break;
+[e $U 76  ]
+"297
+[; ;CANopen/CO_DICT.c: 297:   case 0x30:
+[e :U 80 ]
+"298
+[; ;CANopen/CO_DICT.c: 298:    _pTmpDBase = (const unsigned char *)_db_manufacturer_g2;
+[e = __pTmpDBase -> &U __db_manufacturer_g2 `*Cuc ]
+"299
+[; ;CANopen/CO_DICT.c: 299:    _tDBaseLen = sizeof(_db_manufacturer_g2)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_manufacturer_g2 `ui -> # `S51 `ui `uc ]
+"300
+[; ;CANopen/CO_DICT.c: 300:    break;
+[e $U 76  ]
+"301
+[; ;CANopen/CO_DICT.c: 301:   case 0x40:
+[e :U 81 ]
+"302
+[; ;CANopen/CO_DICT.c: 302:    _pTmpDBase = (const unsigned char *)_db_manufacturer_g3;
+[e = __pTmpDBase -> &U __db_manufacturer_g3 `*Cuc ]
+"303
+[; ;CANopen/CO_DICT.c: 303:    _tDBaseLen = sizeof(_db_manufacturer_g3)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_manufacturer_g3 `ui -> # `S51 `ui `uc ]
+"304
+[; ;CANopen/CO_DICT.c: 304:    break;
+[e $U 76  ]
+"305
+[; ;CANopen/CO_DICT.c: 305:   case 0x50:
+[e :U 82 ]
+"306
+[; ;CANopen/CO_DICT.c: 306:    _pTmpDBase = (const unsigned char *)_db_manufacturer_g4;
+[e = __pTmpDBase -> &U __db_manufacturer_g4 `*Cuc ]
+"307
+[; ;CANopen/CO_DICT.c: 307:    _tDBaseLen = sizeof(_db_manufacturer_g4)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_manufacturer_g4 `ui -> # `S51 `ui `uc ]
+"308
+[; ;CANopen/CO_DICT.c: 308:    break;
+[e $U 76  ]
+"310
+[; ;CANopen/CO_DICT.c: 310:   case 0x60:
+[e :U 83 ]
+"311
+[; ;CANopen/CO_DICT.c: 311:    _pTmpDBase = (const unsigned char *)_db_standard_g1;
+[e = __pTmpDBase -> &U __db_standard_g1 `*Cuc ]
+"312
+[; ;CANopen/CO_DICT.c: 312:    _tDBaseLen = sizeof(_db_standard_g1)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_standard_g1 `ui -> # `S51 `ui `uc ]
+"313
+[; ;CANopen/CO_DICT.c: 313:    break;
+[e $U 76  ]
+"314
+[; ;CANopen/CO_DICT.c: 314:   case 0x70:
+[e :U 84 ]
+"315
+[; ;CANopen/CO_DICT.c: 315:    _pTmpDBase = (const unsigned char *)_db_standard_g2;
+[e = __pTmpDBase -> &U __db_standard_g2 `*Cuc ]
+"316
+[; ;CANopen/CO_DICT.c: 316:    _tDBaseLen = sizeof(_db_standard_g2)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_standard_g2 `ui -> # `S51 `ui `uc ]
+"317
+[; ;CANopen/CO_DICT.c: 317:    break;
+[e $U 76  ]
+"318
+[; ;CANopen/CO_DICT.c: 318:   case 0x80:
+[e :U 85 ]
+"319
+[; ;CANopen/CO_DICT.c: 319:    _pTmpDBase = (const unsigned char *)_db_standard_g3;
+[e = __pTmpDBase -> &U __db_standard_g3 `*Cuc ]
+"320
+[; ;CANopen/CO_DICT.c: 320:    _tDBaseLen = sizeof(_db_standard_g3)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_standard_g3 `ui -> # `S51 `ui `uc ]
+"321
+[; ;CANopen/CO_DICT.c: 321:    break;
+[e $U 76  ]
+"322
+[; ;CANopen/CO_DICT.c: 322:   case 0x90:
+[e :U 86 ]
+"323
+[; ;CANopen/CO_DICT.c: 323:    _pTmpDBase = (const unsigned char *)_db_standard_g4;
+[e = __pTmpDBase -> &U __db_standard_g4 `*Cuc ]
+"324
+[; ;CANopen/CO_DICT.c: 324:    _tDBaseLen = sizeof(_db_standard_g4)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_standard_g4 `ui -> # `S51 `ui `uc ]
+"325
+[; ;CANopen/CO_DICT.c: 325:    break;
+[e $U 76  ]
+"327
+[; ;CANopen/CO_DICT.c: 327:   case 0x10:
+[e :U 87 ]
+"328
+[; ;CANopen/CO_DICT.c: 328:    switch (_tMplex.index.bytes.B1.byte & 0x0F)
+[e $U 89  ]
+"329
+[; ;CANopen/CO_DICT.c: 329:    {
+{
+"330
+[; ;CANopen/CO_DICT.c: 330:     case 0x00:
+[e :U 90 ]
+"331
+[; ;CANopen/CO_DICT.c: 331:      _pTmpDBase = (const unsigned char *)_db_device;
+[e = __pTmpDBase -> &U __db_device `*Cuc ]
+"332
+[; ;CANopen/CO_DICT.c: 332:      _tDBaseLen = sizeof(_db_device)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_device `ui -> # `S51 `ui `uc ]
+"333
+[; ;CANopen/CO_DICT.c: 333:      break;
+[e $U 88  ]
+"335
+[; ;CANopen/CO_DICT.c: 335:     case 0x02:
+[e :U 91 ]
+"336
+[; ;CANopen/CO_DICT.c: 336:      _pTmpDBase = (const unsigned char *)_db_sdo;
+[e = __pTmpDBase -> &U __db_sdo `*Cuc ]
+"337
+[; ;CANopen/CO_DICT.c: 337:      _tDBaseLen = sizeof(_db_sdo)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_sdo `ui -> # `S51 `ui `uc ]
+"338
+[; ;CANopen/CO_DICT.c: 338:      break;
+[e $U 88  ]
+"340
+[; ;CANopen/CO_DICT.c: 340:     case 0x04:
+[e :U 92 ]
+"341
+[; ;CANopen/CO_DICT.c: 341:      if (_tMplex.index.bytes.B0.byte == 0x00)
+[e $ ! == -> . . . . __tMplex 0 1 0 0 `i -> 0 `i 93  ]
+"342
+[; ;CANopen/CO_DICT.c: 342:      {
+{
+"343
+[; ;CANopen/CO_DICT.c: 343:       _pTmpDBase = (const unsigned char *)_db_pdo1_rx_comm;
+[e = __pTmpDBase -> &U __db_pdo1_rx_comm `*Cuc ]
+"344
+[; ;CANopen/CO_DICT.c: 344:       _tDBaseLen = sizeof(_db_pdo1_rx_comm)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_pdo1_rx_comm `ui -> # `S51 `ui `uc ]
+"345
+[; ;CANopen/CO_DICT.c: 345:      }
+}
+[e $U 94  ]
+"346
+[; ;CANopen/CO_DICT.c: 346:      else
+[e :U 93 ]
+"371
+[; ;CANopen/CO_DICT.c: 371:      {
+{
+"373
+[; ;CANopen/CO_DICT.c: 373:       uDict.ret = E_OBJ_NOT_FOUND;
+[e = . _uDict 2 -> . `E235 8 `uc ]
+"374
+[; ;CANopen/CO_DICT.c: 374:       return;
+[e $UE 75  ]
+"375
+[; ;CANopen/CO_DICT.c: 375:      }
+}
+[e :U 94 ]
+"376
+[; ;CANopen/CO_DICT.c: 376:      break;
+[e $U 88  ]
+"379
+[; ;CANopen/CO_DICT.c: 379:     case 0x06:
+[e :U 95 ]
+"380
+[; ;CANopen/CO_DICT.c: 380:      if (_tMplex.index.bytes.B0.byte == 0x00)
+[e $ ! == -> . . . . __tMplex 0 1 0 0 `i -> 0 `i 96  ]
+"381
+[; ;CANopen/CO_DICT.c: 381:      {
+{
+"382
+[; ;CANopen/CO_DICT.c: 382:       _pTmpDBase = (const unsigned char *)_db_pdo1_rx_map;
+[e = __pTmpDBase -> &U __db_pdo1_rx_map `*Cuc ]
+"383
+[; ;CANopen/CO_DICT.c: 383:       _tDBaseLen = sizeof(_db_pdo1_rx_map)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_pdo1_rx_map `ui -> # `S51 `ui `uc ]
+"384
+[; ;CANopen/CO_DICT.c: 384:      }
+}
+[e $U 97  ]
+"385
+[; ;CANopen/CO_DICT.c: 385:      else
+[e :U 96 ]
+"410
+[; ;CANopen/CO_DICT.c: 410:      {
+{
+"412
+[; ;CANopen/CO_DICT.c: 412:       uDict.ret = E_OBJ_NOT_FOUND;
+[e = . _uDict 2 -> . `E235 8 `uc ]
+"413
+[; ;CANopen/CO_DICT.c: 413:       return;
+[e $UE 75  ]
+"414
+[; ;CANopen/CO_DICT.c: 414:      }
+}
+[e :U 97 ]
+"415
+[; ;CANopen/CO_DICT.c: 415:      break;
+[e $U 88  ]
+"418
+[; ;CANopen/CO_DICT.c: 418:     case 0x08:
+[e :U 98 ]
+"419
+[; ;CANopen/CO_DICT.c: 419:      if (_tMplex.index.bytes.B0.byte == 0x00)
+[e $ ! == -> . . . . __tMplex 0 1 0 0 `i -> 0 `i 99  ]
+"420
+[; ;CANopen/CO_DICT.c: 420:      {
+{
+"421
+[; ;CANopen/CO_DICT.c: 421:       _pTmpDBase = (const unsigned char *)_db_pdo1_tx_comm;
+[e = __pTmpDBase -> &U __db_pdo1_tx_comm `*Cuc ]
+"422
+[; ;CANopen/CO_DICT.c: 422:       _tDBaseLen = sizeof(_db_pdo1_tx_comm)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_pdo1_tx_comm `ui -> # `S51 `ui `uc ]
+"423
+[; ;CANopen/CO_DICT.c: 423:      }
+}
+[e $U 100  ]
+"424
+[; ;CANopen/CO_DICT.c: 424:      else
+[e :U 99 ]
+"449
+[; ;CANopen/CO_DICT.c: 449:      {
+{
+"451
+[; ;CANopen/CO_DICT.c: 451:       uDict.ret = E_OBJ_NOT_FOUND;
+[e = . _uDict 2 -> . `E235 8 `uc ]
+"452
+[; ;CANopen/CO_DICT.c: 452:       return;
+[e $UE 75  ]
+"453
+[; ;CANopen/CO_DICT.c: 453:      }
+}
+[e :U 100 ]
+"454
+[; ;CANopen/CO_DICT.c: 454:      break;
+[e $U 88  ]
+"457
+[; ;CANopen/CO_DICT.c: 457:     case 0x0A:
+[e :U 101 ]
+"458
+[; ;CANopen/CO_DICT.c: 458:      if (_tMplex.index.bytes.B0.byte == 0x00)
+[e $ ! == -> . . . . __tMplex 0 1 0 0 `i -> 0 `i 102  ]
+"459
+[; ;CANopen/CO_DICT.c: 459:      {
+{
+"460
+[; ;CANopen/CO_DICT.c: 460:       _pTmpDBase = (const unsigned char *)_db_pdo1_tx_map;
+[e = __pTmpDBase -> &U __db_pdo1_tx_map `*Cuc ]
+"461
+[; ;CANopen/CO_DICT.c: 461:       _tDBaseLen = sizeof(_db_pdo1_tx_map)/sizeof(DICT_OBJECT_TEMPLATE);
+[e = __tDBaseLen -> / -> # __db_pdo1_tx_map `ui -> # `S51 `ui `uc ]
+"462
+[; ;CANopen/CO_DICT.c: 462:      }
+}
+[e $U 103  ]
+"463
+[; ;CANopen/CO_DICT.c: 463:      else
+[e :U 102 ]
+"488
+[; ;CANopen/CO_DICT.c: 488:      {
+{
+"490
+[; ;CANopen/CO_DICT.c: 490:       uDict.ret = E_OBJ_NOT_FOUND;
+[e = . _uDict 2 -> . `E235 8 `uc ]
+"491
+[; ;CANopen/CO_DICT.c: 491:       return;
+[e $UE 75  ]
+"492
+[; ;CANopen/CO_DICT.c: 492:      }
+}
+[e :U 103 ]
+"493
+[; ;CANopen/CO_DICT.c: 493:      break;
+[e $U 88  ]
+"504
+[; ;CANopen/CO_DICT.c: 504:     default:
+[e :U 104 ]
+"506
+[; ;CANopen/CO_DICT.c: 506:      uDict.ret = E_OBJ_NOT_FOUND;
+[e = . _uDict 2 -> . `E235 8 `uc ]
+"507
+[; ;CANopen/CO_DICT.c: 507:      return;
+[e $UE 75  ]
+"508
+[; ;CANopen/CO_DICT.c: 508:    }
+}
+[e $U 88  ]
+[e :U 89 ]
+[e [\ & -> . . . . __tMplex 0 1 1 0 `i -> 15 `i , $ -> 0 `i 90
+ , $ -> 2 `i 91
+ , $ -> 4 `i 92
+ , $ -> 6 `i 95
+ , $ -> 8 `i 98
+ , $ -> 10 `i 101
+ 104 ]
+[e :U 88 ]
+"509
+[; ;CANopen/CO_DICT.c: 509:    break;
+[e $U 76  ]
+"511
+[; ;CANopen/CO_DICT.c: 511:   default:
+[e :U 105 ]
+"513
+[; ;CANopen/CO_DICT.c: 513:    uDict.ret = E_OBJ_NOT_FOUND;
+[e = . _uDict 2 -> . `E235 8 `uc ]
+"514
+[; ;CANopen/CO_DICT.c: 514:    return;
+[e $UE 75  ]
+"515
+[; ;CANopen/CO_DICT.c: 515:  }
+}
+[e $U 76  ]
+[e :U 77 ]
+[e [\ & -> . . . . __tMplex 0 1 1 0 `i -> 240 `i , $ -> 0 `i 78
+ , $ -> 32 `i 79
+ , $ -> 48 `i 80
+ , $ -> 64 `i 81
+ , $ -> 80 `i 82
+ , $ -> 96 `i 83
+ , $ -> 112 `i 84
+ , $ -> 128 `i 85
+ , $ -> 144 `i 86
+ , $ -> 16 `i 87
+ 105 ]
+[e :U 76 ]
+"519
+[; ;CANopen/CO_DICT.c: 519:  uDict.ret = E_OBJ_NOT_FOUND;
+[e = . _uDict 2 -> . `E235 8 `uc ]
+"522
+[; ;CANopen/CO_DICT.c: 522:  *(_DATA4 *)(&(_uDictTemp[0])) = *(const _DATA4 *)_pTmpDBase;
+[e = *U -> &U *U + &U __uDictTemp * -> -> -> 0 `i `ui `ux -> -> # *U &U __uDictTemp `ui `ux `*S48 *U -> __pTmpDBase `*CS48 ]
+"525
+[; ;CANopen/CO_DICT.c: 525:  while(_tDBaseLen)
+[e $U 106  ]
+[e :U 107 ]
+"526
+[; ;CANopen/CO_DICT.c: 526:  {
+{
+"528
+[; ;CANopen/CO_DICT.c: 528:   if ((_uDictTemp[1] == _tMplex.index.bytes.B1.byte) &&
+[e $ ! && == -> *U + &U __uDictTemp * -> -> -> 1 `i `ui `ux -> -> # *U &U __uDictTemp `ui `ux `i -> . . . . __tMplex 0 1 1 0 `i == -> *U + &U __uDictTemp * -> -> -> 0 `i `ui `ux -> -> # *U &U __uDictTemp `ui `ux `i -> . . . . __tMplex 0 1 0 0 `i 109  ]
+"530
+[; ;CANopen/CO_DICT.c: 530:   {
+{
+"532
+[; ;CANopen/CO_DICT.c: 532:    uDict.ret = E_SUBINDEX_NOT_FOUND;
+[e = . _uDict 2 -> . `E235 17 `uc ]
+"535
+[; ;CANopen/CO_DICT.c: 535:    if ((_uDictTemp[2] == _tMplex.sindex.byte) ||
+[e $ ! || == -> *U + &U __uDictTemp * -> -> -> 2 `i `ui `ux -> -> # *U &U __uDictTemp `ui `ux `i -> . . __tMplex 1 0 `i != & -> *U + &U __uDictTemp * -> -> -> 3 `i `ui `ux -> -> # *U &U __uDictTemp `ui `ux `i -> . `E308 26 `i -> 0 `i 110  ]
+"537
+[; ;CANopen/CO_DICT.c: 537:    {
+{
+"539
+[; ;CANopen/CO_DICT.c: 539:        *((DICT_OBJECT_TEMPLATE *)(&(uDict.obj->index))) = *((const DICT_OBJECT_TEMPLATE *)(_pTmpDBase));
+[e = *U -> &U . *U . _uDict 0 3 `*S51 *U -> __pTmpDBase `*CS51 ]
+"542
+[; ;CANopen/CO_DICT.c: 542:        if (_uDictTemp[3] & FSUB_BIT) uDict.obj->subindex = _tMplex.sindex.byte;
+[e $ ! != & -> *U + &U __uDictTemp * -> -> -> 3 `i `ui `ux -> -> # *U &U __uDictTemp `ui `ux `i -> . `E308 26 `i -> 0 `i 111  ]
+[e = . *U . _uDict 0 4 . . __tMplex 1 0 ]
+[e :U 111 ]
+"546
+[; ;CANopen/CO_DICT.c: 546:     if (_uDictTemp[3] & FDEF_BIT)
+[e $ ! != & -> *U + &U __uDictTemp * -> -> -> 3 `i `ui `ux -> -> # *U &U __uDictTemp `ui `ux `i -> . `E308 20 `i -> 0 `i 112  ]
+"547
+[; ;CANopen/CO_DICT.c: 547:     {
+{
+"548
+[; ;CANopen/CO_DICT.c: 548:      uDict.ret = E_SUCCESS;
+[e = . _uDict 2 -> . `E235 0 `uc ]
+"549
+[; ;CANopen/CO_DICT.c: 549:      uDict.cmd = DICT_OBJ_INFO;
+[e = . _uDict 1 . `E360 0 ]
+"550
+[; ;CANopen/CO_DICT.c: 550:      uDict.obj->p.pFunc();
+[e ( *U . . *U . _uDict 0 7 0 ..  ]
+"551
+[; ;CANopen/CO_DICT.c: 551:      return;
+[e $UE 75  ]
+"552
+[; ;CANopen/CO_DICT.c: 552:     }
+}
+[e $U 113  ]
+"553
+[; ;CANopen/CO_DICT.c: 553:     else
+[e :U 112 ]
+"554
+[; ;CANopen/CO_DICT.c: 554:     {
+{
+"555
+[; ;CANopen/CO_DICT.c: 555:      uDict.ret = E_SUCCESS;
+[e = . _uDict 2 -> . `E235 0 `uc ]
+"556
+[; ;CANopen/CO_DICT.c: 556:      return;
+[e $UE 75  ]
+"557
+[; ;CANopen/CO_DICT.c: 557:     }
+}
+[e :U 113 ]
+"558
+[; ;CANopen/CO_DICT.c: 558:    }
+}
+[e :U 110 ]
+"559
+[; ;CANopen/CO_DICT.c: 559:   }
+}
+[e :U 109 ]
+"562
+[; ;CANopen/CO_DICT.c: 562:   _pTmpDBase += sizeof(DICT_OBJECT_TEMPLATE);
+[e =+ __pTmpDBase * -> -> # `S51 `ui `ux -> -> # *U __pTmpDBase `ui `ux ]
+"564
+[; ;CANopen/CO_DICT.c: 564:   _tDBaseLen--;
+[e -- __tDBaseLen -> -> 1 `i `uc ]
+"567
+[; ;CANopen/CO_DICT.c: 567:   *(_DATA4 *)(&(_uDictTemp[0])) = *(const _DATA4 *)_pTmpDBase;
+[e = *U -> &U *U + &U __uDictTemp * -> -> -> 0 `i `ui `ux -> -> # *U &U __uDictTemp `ui `ux `*S48 *U -> __pTmpDBase `*CS48 ]
+"568
+[; ;CANopen/CO_DICT.c: 568:  }
+}
+[e :U 106 ]
+"525
+[; ;CANopen/CO_DICT.c: 525:  while(_tDBaseLen)
+[e $ != -> __tDBaseLen `i -> 0 `i 107  ]
+[e :U 108 ]
+"569
+[; ;CANopen/CO_DICT.c: 569:  return;
+[e $UE 75  ]
+"570
+[; ;CANopen/CO_DICT.c: 570: }
+[e :UE 75 ]
+}

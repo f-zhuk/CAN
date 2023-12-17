@@ -1,0 +1,170 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"193 CANopen/CO_TYPES.h
+[; ;CANopen/CO_TYPES.h: 193: {
+[s S23 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S23 _BITS b0 b1 b2 b3 b4 b5 b6 b7 ]
+"205
+[; ;CANopen/CO_TYPES.h: 205: {
+[u S24 `uc 1 `S23 1 ]
+[n S24 _UINT8 byte bits ]
+"230
+[; ;CANopen/CO_TYPES.h: 230: {
+[s S28 `S24 1 `S24 1 `S24 1 `S24 1 ]
+[n S28 _INT32 B0 B1 B2 B3 ]
+"310
+[; ;CANopen/CO_TYPES.h: 310: {
+[u S37 `ul 1 `S28 1 ]
+[n S37 _UINT32 word bytes ]
+"145 CANopen/CO_TOOLS.c
+[; ;CANopen/CO_TOOLS.c: 145: UNSIGNED32 _uCOB_ID_in;
+[v __uCOB_ID_in `S37 ~T0 @X0 1 e ]
+"146
+[; ;CANopen/CO_TOOLS.c: 146: UNSIGNED32 _uCOB_ID_out;
+[v __uCOB_ID_out `S37 ~T0 @X0 1 e ]
+"180
+[; ;CANopen/CO_TOOLS.c: 180: void _CO_COB_CANopen2MCHP(void)
+[v __CO_COB_CANopen2MCHP `(v ~T0 @X0 1 ef ]
+"181
+[; ;CANopen/CO_TOOLS.c: 181: {
+{
+[e :U __CO_COB_CANopen2MCHP ]
+[f ]
+"183
+[; ;CANopen/CO_TOOLS.c: 183:  if (_uCOB_ID_in.bytes.B3.byte & 0x20)
+[e $ ! != & -> . . . __uCOB_ID_in 1 3 0 `i -> 32 `i -> 0 `i 58  ]
+"184
+[; ;CANopen/CO_TOOLS.c: 184:  {
+{
+"186
+[; ;CANopen/CO_TOOLS.c: 186:   *(unsigned int *)(&_uCOB_ID_out.bytes.B0.byte) = (*(unsigned int *)(&_uCOB_ID_in.bytes.B2.byte)) << 3;
+[e = *U -> &U . . . __uCOB_ID_out 1 0 0 `*ui << *U -> &U . . . __uCOB_ID_in 1 2 0 `*ui -> 3 `i ]
+"189
+[; ;CANopen/CO_TOOLS.c: 189:   _uCOB_ID_out.bytes.B3.byte = _uCOB_ID_out.bytes.B1.byte;
+[e = . . . __uCOB_ID_out 1 3 0 . . . __uCOB_ID_out 1 1 0 ]
+"192
+[; ;CANopen/CO_TOOLS.c: 192:   _uCOB_ID_out.bytes.B1.byte = ((_uCOB_ID_out.bytes.B0.byte & 0xE0) | (_uCOB_ID_in.bytes.B2.byte & 0x03)) | 0x08;
+[e = . . . __uCOB_ID_out 1 1 0 -> | | & -> . . . __uCOB_ID_out 1 0 0 `i -> 224 `i & -> . . . __uCOB_ID_in 1 2 0 `i -> 3 `i -> 8 `i `uc ]
+"195
+[; ;CANopen/CO_TOOLS.c: 195:   _uCOB_ID_out.bytes.B0.byte = _uCOB_ID_out.bytes.B3.byte;
+[e = . . . __uCOB_ID_out 1 0 0 . . . __uCOB_ID_out 1 3 0 ]
+"198
+[; ;CANopen/CO_TOOLS.c: 198:   _uCOB_ID_out.bytes.B3.byte = _uCOB_ID_in.bytes.B0.byte;
+[e = . . . __uCOB_ID_out 1 3 0 . . . __uCOB_ID_in 1 0 0 ]
+"199
+[; ;CANopen/CO_TOOLS.c: 199:   _uCOB_ID_out.bytes.B2.byte = _uCOB_ID_in.bytes.B1.byte;
+[e = . . . __uCOB_ID_out 1 2 0 . . . __uCOB_ID_in 1 1 0 ]
+"200
+[; ;CANopen/CO_TOOLS.c: 200:  }
+}
+[e $U 59  ]
+"202
+[; ;CANopen/CO_TOOLS.c: 202:  else
+[e :U 58 ]
+"203
+[; ;CANopen/CO_TOOLS.c: 203:  {
+{
+"205
+[; ;CANopen/CO_TOOLS.c: 205:   _uCOB_ID_out.word = ((unsigned int)(_uCOB_ID_in.word) << 5);
+[e = . __uCOB_ID_out 0 -> << -> . __uCOB_ID_in 0 `ui -> 5 `i `ul ]
+"206
+[; ;CANopen/CO_TOOLS.c: 206:   _uCOB_ID_out.bytes.B2.byte = _uCOB_ID_out.bytes.B0.byte;
+[e = . . . __uCOB_ID_out 1 2 0 . . . __uCOB_ID_out 1 0 0 ]
+"207
+[; ;CANopen/CO_TOOLS.c: 207:   _uCOB_ID_out.bytes.B0.byte = _uCOB_ID_out.bytes.B1.byte;
+[e = . . . __uCOB_ID_out 1 0 0 . . . __uCOB_ID_out 1 1 0 ]
+"208
+[; ;CANopen/CO_TOOLS.c: 208:   _uCOB_ID_out.bytes.B1.byte = _uCOB_ID_out.bytes.B2.byte & 0xE0;
+[e = . . . __uCOB_ID_out 1 1 0 -> & -> . . . __uCOB_ID_out 1 2 0 `i -> 224 `i `uc ]
+"209
+[; ;CANopen/CO_TOOLS.c: 209:   _uCOB_ID_out.bytes.B2.byte = 0;
+[e = . . . __uCOB_ID_out 1 2 0 -> -> 0 `i `uc ]
+"210
+[; ;CANopen/CO_TOOLS.c: 210:  }
+}
+[e :U 59 ]
+"213
+[; ;CANopen/CO_TOOLS.c: 213:  if (_uCOB_ID_in.bytes.B3.bits.b7) _uCOB_ID_out.bytes.B1.bits.b4 = 1;
+[e $ ! != -> . . . . __uCOB_ID_in 1 3 1 7 `i -> 0 `i 60  ]
+[e = . . . . __uCOB_ID_out 1 1 1 4 -> -> 1 `i `uc ]
+[e :U 60 ]
+"214
+[; ;CANopen/CO_TOOLS.c: 214:  if (_uCOB_ID_in.bytes.B3.bits.b6) _uCOB_ID_out.bytes.B1.bits.b2 = 1;
+[e $ ! != -> . . . . __uCOB_ID_in 1 3 1 6 `i -> 0 `i 61  ]
+[e = . . . . __uCOB_ID_out 1 1 1 2 -> -> 1 `i `uc ]
+[e :U 61 ]
+"215
+[; ;CANopen/CO_TOOLS.c: 215: }
+[e :UE 57 ]
+}
+"252
+[; ;CANopen/CO_TOOLS.c: 252: void _CO_COB_MCHP2CANopen(void)
+[v __CO_COB_MCHP2CANopen `(v ~T0 @X0 1 ef ]
+"253
+[; ;CANopen/CO_TOOLS.c: 253: {
+{
+[e :U __CO_COB_MCHP2CANopen ]
+[f ]
+"255
+[; ;CANopen/CO_TOOLS.c: 255:  if (_uCOB_ID_in.bytes.B1.byte & 0x08)
+[e $ ! != & -> . . . __uCOB_ID_in 1 1 0 `i -> 8 `i -> 0 `i 63  ]
+"256
+[; ;CANopen/CO_TOOLS.c: 256:  {
+{
+"258
+[; ;CANopen/CO_TOOLS.c: 258:   _uCOB_ID_out.bytes.B3.byte = _uCOB_ID_in.bytes.B0.byte;
+[e = . . . __uCOB_ID_out 1 3 0 . . . __uCOB_ID_in 1 0 0 ]
+"259
+[; ;CANopen/CO_TOOLS.c: 259:   _uCOB_ID_out.bytes.B2.byte = _uCOB_ID_in.bytes.B1.byte;
+[e = . . . __uCOB_ID_out 1 2 0 . . . __uCOB_ID_in 1 1 0 ]
+"261
+[; ;CANopen/CO_TOOLS.c: 261:   *(unsigned int *)(&_uCOB_ID_out.bytes.B2.byte) = ((*(unsigned int *)(&_uCOB_ID_out.bytes.B2.byte)) >> 3);
+[e = *U -> &U . . . __uCOB_ID_out 1 2 0 `*ui >> *U -> &U . . . __uCOB_ID_out 1 2 0 `*ui -> 3 `i ]
+"263
+[; ;CANopen/CO_TOOLS.c: 263:   _uCOB_ID_out.bytes.B3.byte = _uCOB_ID_out.bytes.B3.byte | 0x20;
+[e = . . . __uCOB_ID_out 1 3 0 -> | -> . . . __uCOB_ID_out 1 3 0 `i -> 32 `i `uc ]
+"266
+[; ;CANopen/CO_TOOLS.c: 266:   _uCOB_ID_out.bytes.B2.byte = (_uCOB_ID_out.bytes.B2.byte & 0xFC) | (_uCOB_ID_in.bytes.B1.byte & 0x03);
+[e = . . . __uCOB_ID_out 1 2 0 -> | & -> . . . __uCOB_ID_out 1 2 0 `i -> 252 `i & -> . . . __uCOB_ID_in 1 1 0 `i -> 3 `i `uc ]
+"269
+[; ;CANopen/CO_TOOLS.c: 269:   _uCOB_ID_out.bytes.B0.byte = _uCOB_ID_in.bytes.B3.byte;
+[e = . . . __uCOB_ID_out 1 0 0 . . . __uCOB_ID_in 1 3 0 ]
+"272
+[; ;CANopen/CO_TOOLS.c: 272:   _uCOB_ID_out.bytes.B1.byte = _uCOB_ID_in.bytes.B2.byte;
+[e = . . . __uCOB_ID_out 1 1 0 . . . __uCOB_ID_in 1 2 0 ]
+"273
+[; ;CANopen/CO_TOOLS.c: 273:  }
+}
+[e $U 64  ]
+"275
+[; ;CANopen/CO_TOOLS.c: 275:  else
+[e :U 63 ]
+"276
+[; ;CANopen/CO_TOOLS.c: 276:  {
+{
+"278
+[; ;CANopen/CO_TOOLS.c: 278:   _uCOB_ID_out.bytes.B1.byte = _uCOB_ID_in.bytes.B0.byte;
+[e = . . . __uCOB_ID_out 1 1 0 . . . __uCOB_ID_in 1 0 0 ]
+"279
+[; ;CANopen/CO_TOOLS.c: 279:   _uCOB_ID_out.bytes.B0.byte = _uCOB_ID_in.bytes.B1.byte;
+[e = . . . __uCOB_ID_out 1 0 0 . . . __uCOB_ID_in 1 1 0 ]
+"282
+[; ;CANopen/CO_TOOLS.c: 282:   (*(unsigned int *)(&_uCOB_ID_out.bytes.B0.byte)) = ((*(unsigned int *)(&_uCOB_ID_out.bytes.B0.byte)) >> 5);
+[e = *U -> &U . . . __uCOB_ID_out 1 0 0 `*ui >> *U -> &U . . . __uCOB_ID_out 1 0 0 `*ui -> 5 `i ]
+"283
+[; ;CANopen/CO_TOOLS.c: 283:  }
+}
+[e :U 64 ]
+"286
+[; ;CANopen/CO_TOOLS.c: 286:  if (_uCOB_ID_in.bytes.B1.bits.b2) _uCOB_ID_out.bytes.B3.bits.b6 = 1;
+[e $ ! != -> . . . . __uCOB_ID_in 1 1 1 2 `i -> 0 `i 65  ]
+[e = . . . . __uCOB_ID_out 1 3 1 6 -> -> 1 `i `uc ]
+[e :U 65 ]
+"287
+[; ;CANopen/CO_TOOLS.c: 287:  if (_uCOB_ID_in.bytes.B1.bits.b4) _uCOB_ID_out.bytes.B3.bits.b7 = 1;
+[e $ ! != -> . . . . __uCOB_ID_in 1 1 1 4 `i -> 0 `i 66  ]
+[e = . . . . __uCOB_ID_out 1 3 1 7 -> -> 1 `i `uc ]
+[e :U 66 ]
+"288
+[; ;CANopen/CO_TOOLS.c: 288: }
+[e :UE 62 ]
+}

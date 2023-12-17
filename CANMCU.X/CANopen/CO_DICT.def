@@ -1,0 +1,29 @@
+
+/*********************************************************************
+ * Be sure to include all headers here that relate to the symbols
+ * below.
+ ********************************************************************/
+
+#include	"CO_DEV.h"		// Standard device information
+#include	"CO_SYNC.h"		// SYNC Object support
+#include	"CO_NMTE.h"		// Error protocols: heartbeat, node-guard
+#include	"CO_SDO1.h"		// SDO1, the default SDO
+
+
+
+
+//			<index_l>,<index_h>,<sub index>,<type>,<count>,<ptr>
+
+
+
+			
+
+
+	
+				
+				
+				
+				
+				
+				
+				

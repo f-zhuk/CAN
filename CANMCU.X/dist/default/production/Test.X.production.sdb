@@ -1,0 +1,2260 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F26K83 ]
+[d frameptr 16353 ]
+"58 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_DICT.c
+[e E308 DICT_CTL `uc
+ACCESS_BITS 7
+NA 0
+CONST 5
+RW 3
+RO 1
+WO 2
+RW_EE 11
+RO_EE 9
+WO_EE 10
+FUNC 16
+RD_BIT 1
+N_RD 126
+WR_BIT 2
+N_WR 125
+ROM_BIT 4
+ROM 127
+N_ROM 123
+EE_BIT 8
+EE 127
+N_EE 119
+FDEF_BIT 16
+FDEF 127
+N_FDEF 111
+MAP_BIT 32
+MAP 127
+N_MAP 95
+FSUB_BIT 64
+FSUB 127
+N_FSUB 63
+]
+[e E360 _DICT_OBJECT_REQUEST `uc
+DICT_OBJ_INFO 0
+DICT_OBJ_READ 1
+DICT_OBJ_WRITE 2
+]
+"166
+[e E235 _SDO_REQ_STATUS `uc
+E_SUCCESS 0
+E_TOGGLE 1
+E_SDO_TIME 2
+E_CS_CMD 3
+E_MEMORY_OUT 4
+E_UNSUPP_ACCESS 5
+E_CANNOT_READ 6
+E_CANNOT_WRITE 7
+E_OBJ_NOT_FOUND 8
+E_OBJ_CANNOT_MAP 9
+E_OBJ_MAP_LEN 10
+E_GEN_PARAM_COMP 11
+E_GEN_INTERNAL_COMP 12
+E_HARDWARE 13
+E_LEN_SERVICE 14
+E_LEN_SERVICE_HIGH 15
+E_LEN_SERVICE_LOW 16
+E_SUBINDEX_NOT_FOUND 17
+E_PARAM_RANGE 18
+E_PARAM_HIGH 19
+E_PARAM_LOW 20
+E_MAX_LT_MIN 21
+E_GENERAL 22
+E_TRANSFER 23
+E_LOCAL_CONTROL 24
+E_DEV_STATE 25
+]
+"99 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_NMTE.c
+[e E22887 DICT_CTL `uc
+ACCESS_BITS 7
+NA 0
+CONST 5
+RW 3
+RO 1
+WO 2
+RW_EE 11
+RO_EE 9
+WO_EE 10
+FUNC 16
+RD_BIT 1
+N_RD 126
+WR_BIT 2
+N_WR 125
+ROM_BIT 4
+ROM 127
+N_ROM 123
+EE_BIT 8
+EE 127
+N_EE 119
+FDEF_BIT 16
+FDEF 127
+N_FDEF 111
+MAP_BIT 32
+MAP 127
+N_MAP 95
+FSUB_BIT 64
+FSUB 127
+N_FSUB 63
+]
+[e E22939 _DICT_OBJECT_REQUEST `uc
+DICT_OBJ_INFO 0
+DICT_OBJ_READ 1
+DICT_OBJ_WRITE 2
+]
+"111 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SDO1.c
+[e E235 _SDO_REQ_STATUS `uc
+E_SUCCESS 0
+E_TOGGLE 1
+E_SDO_TIME 2
+E_CS_CMD 3
+E_MEMORY_OUT 4
+E_UNSUPP_ACCESS 5
+E_CANNOT_READ 6
+E_CANNOT_WRITE 7
+E_OBJ_NOT_FOUND 8
+E_OBJ_CANNOT_MAP 9
+E_OBJ_MAP_LEN 10
+E_GEN_PARAM_COMP 11
+E_GEN_INTERNAL_COMP 12
+E_HARDWARE 13
+E_LEN_SERVICE 14
+E_LEN_SERVICE_HIGH 15
+E_LEN_SERVICE_LOW 16
+E_SUBINDEX_NOT_FOUND 17
+E_PARAM_RANGE 18
+E_PARAM_HIGH 19
+E_PARAM_LOW 20
+E_MAX_LT_MIN 21
+E_GENERAL 22
+E_TRANSFER 23
+E_LOCAL_CONTROL 24
+E_DEV_STATE 25
+]
+"113
+[e E22915 DICT_CTL `uc
+ACCESS_BITS 7
+NA 0
+CONST 5
+RW 3
+RO 1
+WO 2
+RW_EE 11
+RO_EE 9
+WO_EE 10
+FUNC 16
+RD_BIT 1
+N_RD 126
+WR_BIT 2
+N_WR 125
+ROM_BIT 4
+ROM 127
+N_ROM 123
+EE_BIT 8
+EE 127
+N_EE 119
+FDEF_BIT 16
+FDEF 127
+N_FDEF 111
+MAP_BIT 32
+MAP 127
+N_MAP 95
+FSUB_BIT 64
+FSUB 127
+N_FSUB 63
+]
+"149
+[e E22967 _DICT_OBJECT_REQUEST `uc
+DICT_OBJ_INFO 0
+DICT_OBJ_READ 1
+DICT_OBJ_WRITE 2
+]
+"172 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SYNC.c
+[e E22887 DICT_CTL `uc
+ACCESS_BITS 7
+NA 0
+CONST 5
+RW 3
+RO 1
+WO 2
+RW_EE 11
+RO_EE 9
+WO_EE 10
+FUNC 16
+RD_BIT 1
+N_RD 126
+WR_BIT 2
+N_WR 125
+ROM_BIT 4
+ROM 127
+N_ROM 123
+EE_BIT 8
+EE 127
+N_EE 119
+FDEF_BIT 16
+FDEF 127
+N_FDEF 111
+MAP_BIT 32
+MAP 127
+N_MAP 95
+FSUB_BIT 64
+FSUB 127
+N_FSUB 63
+]
+[e E22939 _DICT_OBJECT_REQUEST `uc
+DICT_OBJ_INFO 0
+DICT_OBJ_READ 1
+DICT_OBJ_WRITE 2
+]
+"195
+[e E22952 _SDO_REQ_STATUS `uc
+E_SUCCESS 0
+E_TOGGLE 1
+E_SDO_TIME 2
+E_CS_CMD 3
+E_MEMORY_OUT 4
+E_UNSUPP_ACCESS 5
+E_CANNOT_READ 6
+E_CANNOT_WRITE 7
+E_OBJ_NOT_FOUND 8
+E_OBJ_CANNOT_MAP 9
+E_OBJ_MAP_LEN 10
+E_GEN_PARAM_COMP 11
+E_GEN_INTERNAL_COMP 12
+E_HARDWARE 13
+E_LEN_SERVICE 14
+E_LEN_SERVICE_HIGH 15
+E_LEN_SERVICE_LOW 16
+E_SUBINDEX_NOT_FOUND 17
+E_PARAM_RANGE 18
+E_PARAM_HIGH 19
+E_PARAM_LOW 20
+E_MAX_LT_MIN 21
+E_GENERAL 22
+E_TRANSFER 23
+E_LOCAL_CONTROL 24
+E_DEV_STATE 25
+]
+"67 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/examples/i2c1_master_example.c
+[e E355 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"68
+[e E360 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+"159 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/i2c1_master.c
+[e E22964 . `uc
+I2C1_IDLE 0
+I2C1_SEND_ADR_READ 1
+I2C1_SEND_ADR_WRITE 2
+I2C1_TX 3
+I2C1_RX 4
+I2C1_TX_EMPTY 5
+I2C1_RX_EMPTY 6
+I2C1_SEND_RESTART_READ 7
+I2C1_SEND_RESTART_WRITE 8
+I2C1_SEND_RESTART 9
+I2C1_SEND_STOP 10
+I2C1_RX_ACK 11
+I2C1_TX_ACK 12
+I2C1_RX_NACK_STOP 13
+I2C1_RX_NACK_RESTART 14
+I2C1_RESET 15
+I2C1_ADDRESS_NACK 16
+I2C1_BUS_COLLISION 17
+I2C1_BUS_ERROR 18
+]
+"181
+[e E360 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+[e E355 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"219
+[e E22985 . `uc
+I2C1_DATA_COMPLETE 0
+I2C1_WRITE_COLLISION 1
+I2C1_ADDR_NACK 2
+I2C1_DATA_NACK 3
+I2C1_TIMEOUT 4
+I2C1_NULL 5
+]
+"303 C:\Users\Fedor\MPLABXProjects\Test.X\main.c
+[e E22887 DICT_CTL `uc
+ACCESS_BITS 7
+NA 0
+CONST 5
+RW 3
+RO 1
+WO 2
+RW_EE 11
+RO_EE 9
+WO_EE 10
+FUNC 16
+RD_BIT 1
+N_RD 126
+WR_BIT 2
+N_WR 125
+ROM_BIT 4
+ROM 127
+N_ROM 123
+EE_BIT 8
+EE 127
+N_EE 119
+FDEF_BIT 16
+FDEF 127
+N_FDEF 111
+MAP_BIT 32
+MAP 127
+N_MAP 95
+FSUB_BIT 64
+FSUB 127
+N_FSUB 63
+]
+[e E22939 _DICT_OBJECT_REQUEST `uc
+DICT_OBJ_INFO 0
+DICT_OBJ_READ 1
+DICT_OBJ_WRITE 2
+]
+"324
+[e E22977 _SDO_REQ_STATUS `uc
+E_SUCCESS 0
+E_TOGGLE 1
+E_SDO_TIME 2
+E_CS_CMD 3
+E_MEMORY_OUT 4
+E_UNSUPP_ACCESS 5
+E_CANNOT_READ 6
+E_CANNOT_WRITE 7
+E_OBJ_NOT_FOUND 8
+E_OBJ_CANNOT_MAP 9
+E_OBJ_MAP_LEN 10
+E_GEN_PARAM_COMP 11
+E_GEN_INTERNAL_COMP 12
+E_HARDWARE 13
+E_LEN_SERVICE 14
+E_LEN_SERVICE_HIGH 15
+E_LEN_SERVICE_LOW 16
+E_SUBINDEX_NOT_FOUND 17
+E_PARAM_RANGE 18
+E_PARAM_HIGH 19
+E_PARAM_LOW 20
+E_MAX_LT_MIN 21
+E_GENERAL 22
+E_TRANSFER 23
+E_LOCAL_CONTROL 24
+E_DEV_STATE 25
+]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"107 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_CANDRV.c
+[v __CANEventManager _CANEventManager `(v  1 e 1 0 ]
+"230
+[v __CANReset _CANReset `(v  1 e 1 0 ]
+"366
+[v __CANSetBitRate _CANSetBitRate `(v  1 e 1 0 ]
+"467
+[v __CANIsPutReady _CANIsPutReady `(v  1 e 1 0 ]
+"505
+[v __CANIsPutFin _CANIsPutFin `(v  1 e 1 0 ]
+"555
+[v __CANOpenMessage _CANOpenMessage `(v  1 e 1 0 ]
+"603
+[v __CANCloseMessage _CANCloseMessage `(v  1 e 1 0 ]
+"651
+[v __CANIsGetReady _CANIsGetReady `(v  1 e 1 0 ]
+"120 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_COMM.c
+[v __CO_COMMResetEventManager _CO_COMMResetEventManager `(v  1 e 1 0 ]
+"186
+[v __CO_COMMRXEventManager _CO_COMMRXEventManager `(v  1 e 1 0 ]
+"322
+[v __CO_COMMTXRdyEventManager _CO_COMMTXRdyEventManager `(v  1 e 1 0 ]
+"474
+[v __CO_COMMTXFinEventManager _CO_COMMTXFinEventManager `(v  1 e 1 0 ]
+"598
+[v __CO_COMMLSTimeEventManager _CO_COMMLSTimeEventManager `(v  1 e 1 0 ]
+"158 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_DICT.c
+[v __CO_DictObjectRead _CO_DictObjectRead `(v  1 e 1 0 ]
+"220
+[v __CO_DictObjectWrite _CO_DictObjectWrite `(v  1 e 1 0 ]
+"281
+[v __CO_DictObjectDecode _CO_DictObjectDecode `(v  1 e 1 0 ]
+"72 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_MAIN.c
+[v _CO_ProcessAllEvents CO_ProcessAllEvents `(v  1 e 1 0 ]
+"91 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_MEMIO.c
+[v _CO_MEMIO_CopySram CO_MEMIO_CopySram `(v  1 e 1 0 ]
+"153
+[v _CO_MEMIO_CopyRomToRam CO_MEMIO_CopyRomToRam `(v  1 e 1 0 ]
+"79 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_NMT.c
+[v __CO_COMM_NMT_Open _CO_COMM_NMT_Open `(v  1 e 1 0 ]
+"132
+[v __CO_COMM_NMT_RXEvent _CO_COMM_NMT_RXEvent `(v  1 e 1 0 ]
+"91 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_NMTE.c
+[v __CO_COMM_NMTE_HeartBeatAccessEvent _CO_COMM_NMTE_HeartBeatAccessEvent `(v  1 e 1 0 ]
+"146
+[v __CO_COMM_NMTE_GuardTimeAccessEvent _CO_COMM_NMTE_GuardTimeAccessEvent `(v  1 e 1 0 ]
+"200
+[v __CO_COMM_NMTE_LifeFactorAccessEvent _CO_COMM_NMTE_LifeFactorAccessEvent `(v  1 e 1 0 ]
+"253
+[v __CO_COMM_NMTE_Open _CO_COMM_NMTE_Open `(v  1 e 1 0 ]
+"333
+[v __CO_COMM_NMTE_RXEvent _CO_COMM_NMTE_RXEvent `(v  1 e 1 0 ]
+"371
+[v __CO_COMM_NMTE_TXEvent _CO_COMM_NMTE_TXEvent `(v  1 e 1 0 ]
+"424
+[v __CO_COMM_NMTE_LSTimerEvent _CO_COMM_NMTE_LSTimerEvent `(v  1 e 1 0 ]
+"89 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_PDO.c
+[v __CO_COMM_PDO1_Open _CO_COMM_PDO1_Open `(v  1 e 1 0 ]
+"96
+[v __CO_COMM_PDO1_Close _CO_COMM_PDO1_Close `(v  1 e 1 0 ]
+"103
+[v __CO_COMM_PDO1_RXEvent _CO_COMM_PDO1_RXEvent `(v  1 e 1 0 ]
+"109
+[v __CO_COMM_PDO1_TXEvent _CO_COMM_PDO1_TXEvent `(v  1 e 1 0 ]
+"140 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SDO1.c
+[v __CO_COMM_SDO1_CS_COBIDAccessEvent _CO_COMM_SDO1_CS_COBIDAccessEvent `(v  1 e 1 0 ]
+"174
+[v __CO_COMM_SDO1_SC_COBIDAccessEvent _CO_COMM_SDO1_SC_COBIDAccessEvent `(v  1 e 1 0 ]
+"211
+[v __CO_COMM_SDO1_Open _CO_COMM_SDO1_Open `(v  1 e 1 0 ]
+"281
+[v __CO_COMM_SDO1_LSTimerEvent _CO_COMM_SDO1_LSTimerEvent `(v  1 e 1 0 ]
+"320
+[v __CO_COMM_SDO1_TXEvent _CO_COMM_SDO1_TXEvent `(v  1 e 1 0 ]
+"468
+[v __CO_COMM_SDO1_RXEvent _CO_COMM_SDO1_RXEvent `(v  1 e 1 0 ]
+"85 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SYNC.c
+[v __CO_COMM_SYNC_Open _CO_COMM_SYNC_Open `(v  1 e 1 0 ]
+"110
+[v __CO_COMM_SYNC_Close _CO_COMM_SYNC_Close `(v  1 e 1 0 ]
+"134
+[v __CO_COMM_SYNC_RXEvent _CO_COMM_SYNC_RXEvent `(v  1 e 1 0 ]
+"160
+[v __CO_COMM_SYNC_COBIDAccessEvent _CO_COMM_SYNC_COBIDAccessEvent `(v  1 e 1 0 ]
+"180 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_TOOLS.c
+[v __CO_COB_CANopen2MCHP _CO_COB_CANopen2MCHP `(v  1 e 1 0 ]
+"252
+[v __CO_COB_MCHP2CANopen _CO_COB_MCHP2CANopen `(v  1 e 1 0 ]
+"47 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/exttst.c
+[v _CO_NMTStateChangeEvent CO_NMTStateChangeEvent `(v  1 e 1 0 ]
+"51
+[v _CO_NMTResetEvent CO_NMTResetEvent `(v  1 e 1 0 ]
+"56
+[v _CO_NMTAppResetRequest CO_NMTAppResetRequest `(v  1 e 1 0 ]
+"65
+[v _CO_NMTENodeGuardErrEvent CO_NMTENodeGuardErrEvent `(v  1 e 1 0 ]
+"100 C:\Users\Fedor\MPLABXProjects\Test.X\main.c
+[v _DemoInit DemoInit `(v  1 e 1 0 ]
+"162
+[v _CO_COMMSyncEvent CO_COMMSyncEvent `(v  1 e 1 0 ]
+"290
+[v _CO_COMM_RPDO1_COBIDAccessEvent CO_COMM_RPDO1_COBIDAccessEvent `(v  1 e 1 0 ]
+"361
+[v _CO_COMM_TPDO1_COBIDAccessEvent CO_COMM_TPDO1_COBIDAccessEvent `(v  1 e 1 0 ]
+"429
+[v _CO_COMM_TPDO1_TypeAccessEvent CO_COMM_TPDO1_TypeAccessEvent `(v  1 e 1 0 ]
+"478
+[v _CO_PDO1LSTimerEvent CO_PDO1LSTimerEvent `(v  1 e 1 0 ]
+"500
+[v _CO_PDO1TXFinEvent CO_PDO1TXFinEvent `(v  1 e 1 0 ]
+"508
+[v _TMR0_Blink TMR0_Blink `(v  1 e 1 0 ]
+"555
+[v _main main `(v  1 e 1 0 ]
+"63 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/ecan.c
+[v _WakeUpDefaultInterruptHandler WakeUpDefaultInterruptHandler `(v  1 s 1 WakeUpDefaultInterruptHandler ]
+"368
+[v _convertReg2ExtendedCANid convertReg2ExtendedCANid `(ul  1 s 4 convertReg2ExtendedCANid ]
+"389
+[v _convertReg2StandardCANid convertReg2StandardCANid `(ul  1 s 4 convertReg2StandardCANid ]
+"402
+[v _convertCANid2Reg convertCANid2Reg `(v  1 s 1 convertCANid2Reg ]
+"439
+[v _ECAN_SetWakeUpInterruptHandler ECAN_SetWakeUpInterruptHandler `(v  1 e 1 0 ]
+"444
+[v _ECAN_WAKI_ISR ECAN_WAKI_ISR `(v  1 e 1 0 ]
+"142 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
+"149
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
+"156
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
+"163
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
+"170
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
+"183 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+"204
+[v _I2C1_Open I2C1_Open `(E355  1 e 1 0 ]
+"237
+[v _I2C1_Close I2C1_Close `(E355  1 e 1 0 ]
+"252
+[v _I2C1_MasterOperation I2C1_MasterOperation `(E355  1 e 1 0 ]
+"276
+[v _I2C1_MasterRead I2C1_MasterRead `(E355  1 e 1 0 ]
+"281
+[v _I2C1_MasterWrite I2C1_MasterWrite `(E355  1 e 1 0 ]
+"293
+[v _I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+"303
+[v _I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+"313
+[v _I2C1_SetAddressNackCallback I2C1_SetAddressNackCallback `(v  1 e 1 0 ]
+"328
+[v _I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 I2C1_SetCallback ]
+"342
+[v _I2C1_Poller I2C1_Poller `(v  1 s 1 I2C1_Poller ]
+"351
+[v _I2C1_MasterFsm I2C1_MasterFsm `T(v  1 s 1 I2C1_MasterFsm ]
+"362
+[v _I2C1_ClearInterruptFlags I2C1_ClearInterruptFlags `T(v  1 s 1 I2C1_ClearInterruptFlags ]
+"378
+[v _I2C1_DO_IDLE I2C1_DO_IDLE `(E22964  1 s 1 I2C1_DO_IDLE ]
+"385
+[v _I2C1_DO_SEND_ADR_READ I2C1_DO_SEND_ADR_READ `(E22964  1 s 1 I2C1_DO_SEND_ADR_READ ]
+"396
+[v _I2C1_DO_SEND_ADR_WRITE I2C1_DO_SEND_ADR_WRITE `(E22964  1 s 1 I2C1_DO_SEND_ADR_WRITE ]
+"403
+[v _I2C1_DO_TX I2C1_DO_TX `(E22964  1 s 1 I2C1_DO_TX ]
+"436
+[v _I2C1_DO_RX I2C1_DO_RX `(E22964  1 s 1 I2C1_DO_RX ]
+"460
+[v _I2C1_DO_TX_EMPTY I2C1_DO_TX_EMPTY `(E22964  1 s 1 I2C1_DO_TX_EMPTY ]
+"479
+[v _I2C1_DO_RX_EMPTY I2C1_DO_RX_EMPTY `(E22964  1 s 1 I2C1_DO_RX_EMPTY ]
+"504
+[v _I2C1_DO_SEND_RESTART_READ I2C1_DO_SEND_RESTART_READ `(E22964  1 s 1 I2C1_DO_SEND_RESTART_READ ]
+"510
+[v _I2C1_DO_SEND_RESTART_WRITE I2C1_DO_SEND_RESTART_WRITE `(E22964  1 s 1 I2C1_DO_SEND_RESTART_WRITE ]
+"516
+[v _I2C1_DO_SEND_RESTART I2C1_DO_SEND_RESTART `(E22964  1 s 1 I2C1_DO_SEND_RESTART ]
+"521
+[v _I2C1_DO_SEND_STOP I2C1_DO_SEND_STOP `(E22964  1 s 1 I2C1_DO_SEND_STOP ]
+"532
+[v _I2C1_DO_RX_ACK I2C1_DO_RX_ACK `(E22964  1 s 1 I2C1_DO_RX_ACK ]
+"538
+[v _I2C1_DO_TX_ACK I2C1_DO_TX_ACK `(E22964  1 s 1 I2C1_DO_TX_ACK ]
+"544
+[v _I2C1_DO_RX_NACK_STOP I2C1_DO_RX_NACK_STOP `(E22964  1 s 1 I2C1_DO_RX_NACK_STOP ]
+"551
+[v _I2C1_DO_RX_NACK_RESTART I2C1_DO_RX_NACK_RESTART `(E22964  1 s 1 I2C1_DO_RX_NACK_RESTART ]
+"557
+[v _I2C1_DO_RESET I2C1_DO_RESET `(E22964  1 s 1 I2C1_DO_RESET ]
+"564
+[v _I2C1_DO_ADDRESS_NACK I2C1_DO_ADDRESS_NACK `(E22964  1 s 1 I2C1_DO_ADDRESS_NACK ]
+"579
+[v _I2C1_DO_BUS_COLLISION I2C1_DO_BUS_COLLISION `(E22964  1 s 1 I2C1_DO_BUS_COLLISION ]
+"595
+[v _I2C1_DO_BUS_ERROR I2C1_DO_BUS_ERROR `(E22964  1 s 1 I2C1_DO_BUS_ERROR ]
+"609
+[v _I2C1_CallbackReturnStop I2C1_CallbackReturnStop `(E360  1 e 1 0 ]
+"614
+[v _I2C1_CallbackReturnReset I2C1_CallbackReturnReset `(E360  1 e 1 0 ]
+"632
+[v _I2C1_MasterOpen I2C1_MasterOpen `T(a  1 s 1 I2C1_MasterOpen ]
+"651
+[v _I2C1_MasterClose I2C1_MasterClose `T(v  1 s 1 I2C1_MasterClose ]
+"661
+[v _I2C1_MasterGetRxData I2C1_MasterGetRxData `T(uc  1 s 1 I2C1_MasterGetRxData ]
+"666
+[v _I2C1_MasterSendTxData I2C1_MasterSendTxData `T(v  1 s 1 I2C1_MasterSendTxData ]
+"671
+[v _I2C1_MasterGetCounter I2C1_MasterGetCounter `T(uc  1 s 1 I2C1_MasterGetCounter ]
+"676
+[v _I2C1_MasterSetCounter I2C1_MasterSetCounter `T(v  1 s 1 I2C1_MasterSetCounter ]
+"681
+[v _I2C1_MasterResetBus I2C1_MasterResetBus `T(v  1 s 1 I2C1_MasterResetBus ]
+"691
+[v _I2C1_MasterEnableRestart I2C1_MasterEnableRestart `T(v  1 s 1 I2C1_MasterEnableRestart ]
+"697
+[v _I2C1_MasterDisableRestart I2C1_MasterDisableRestart `T(v  1 s 1 I2C1_MasterDisableRestart ]
+"703
+[v _I2C1_MasterStop I2C1_MasterStop `T(v  1 s 1 I2C1_MasterStop ]
+"709
+[v _I2C1_MasterIsNack I2C1_MasterIsNack `T(a  1 s 1 I2C1_MasterIsNack ]
+"714
+[v _I2C1_MasterSendAck I2C1_MasterSendAck `T(v  1 s 1 I2C1_MasterSendAck ]
+"719
+[v _I2C1_MasterSendNack I2C1_MasterSendNack `T(v  1 s 1 I2C1_MasterSendNack ]
+"724
+[v _I2C1_MasterClearBusCollision I2C1_MasterClearBusCollision `T(v  1 s 1 I2C1_MasterClearBusCollision ]
+"731
+[v _I2C1_MasterIsRxBufFull I2C1_MasterIsRxBufFull `T(a  1 s 1 I2C1_MasterIsRxBufFull ]
+"736
+[v _I2C1_MasterIsTxBufEmpty I2C1_MasterIsTxBufEmpty `T(a  1 s 1 I2C1_MasterIsTxBufEmpty ]
+"741
+[v _I2C1_MasterIsStopFlagSet I2C1_MasterIsStopFlagSet `T(a  1 s 1 I2C1_MasterIsStopFlagSet ]
+"746
+[v _I2C1_MasterIsCountFlagSet I2C1_MasterIsCountFlagSet `T(a  1 s 1 I2C1_MasterIsCountFlagSet ]
+"751
+[v _I2C1_MasterIsNackFlagSet I2C1_MasterIsNackFlagSet `T(a  1 s 1 I2C1_MasterIsNackFlagSet ]
+"756
+[v _I2C1_MasterClearStopFlag I2C1_MasterClearStopFlag `T(v  1 s 1 I2C1_MasterClearStopFlag ]
+"761
+[v _I2C1_MasterClearCountFlag I2C1_MasterClearCountFlag `T(v  1 s 1 I2C1_MasterClearCountFlag ]
+"766
+[v _I2C1_MasterClearNackFlag I2C1_MasterClearNackFlag `T(v  1 s 1 I2C1_MasterClearNackFlag ]
+"771
+[v _I2C1_MasterEnableIrq I2C1_MasterEnableIrq `T(v  1 s 1 I2C1_MasterEnableIrq ]
+"788
+[v _I2C1_MasterDisableIrq I2C1_MasterDisableIrq `T(v  1 s 1 I2C1_MasterDisableIrq ]
+"804
+[v _I2C1_MasterClearIrq I2C1_MasterClearIrq `T(v  1 s 1 I2C1_MasterClearIrq ]
+"809
+[v _I2C1_MasterWaitForEvent I2C1_MasterWaitForEvent `T(v  1 s 1 I2C1_MasterWaitForEvent ]
+"52 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"62
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"80
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"61 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"87
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+"121
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"134
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"138
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"66 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+"131
+[v _UART1_is_tx_ready UART1_is_tx_ready `(a  1 e 1 0 ]
+"170
+[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+"183
+[v _UART1_DefaultFramingErrorHandler UART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"185
+[v _UART1_DefaultOverrunErrorHandler UART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"187
+[v _UART1_DefaultErrorHandler UART1_DefaultErrorHandler `(v  1 e 1 0 ]
+"190
+[v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+"194
+[v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"198
+[v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
+"271 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f26k83.h
+[v _CIOCON CIOCON `VEuc  1 e 1 @14080 ]
+"438
+[v _BRGCON1 BRGCON1 `VEuc  1 e 1 @14083 ]
+"514
+[v _BRGCON2 BRGCON2 `VEuc  1 e 1 @14084 ]
+"590
+[v _BRGCON3 BRGCON3 `VEuc  1 e 1 @14085 ]
+"643
+[v _RXFCON0 RXFCON0 `VEuc  1 e 1 @14086 ]
+[s S92 . 1 `uc 1 RXF0EN 1 0 :1:0 
+`uc 1 RXF1EN 1 0 :1:1 
+`uc 1 RXF2EN 1 0 :1:2 
+`uc 1 RXF3EN 1 0 :1:3 
+`uc 1 RXF4EN 1 0 :1:4 
+`uc 1 RXF5EN 1 0 :1:5 
+`uc 1 RXF6EN 1 0 :1:6 
+`uc 1 RXF7EN 1 0 :1:7 
+]
+"660
+[u S101 . 1 `S92 1 . 1 0 ]
+[v _RXFCON0bits RXFCON0bits `VES101  1 e 1 @14086 ]
+"705
+[v _RXFCON1 RXFCON1 `VEuc  1 e 1 @14087 ]
+"767
+[v _RXF6SIDH RXF6SIDH `VEuc  1 e 1 @14088 ]
+"1115
+[v _RXF7SIDH RXF7SIDH `VEuc  1 e 1 @14092 ]
+"3531
+[v _TMR0L TMR0L `VEuc  1 e 1 @16310 ]
+"3669
+[v _TMR0H TMR0H `VEuc  1 e 1 @16311 ]
+"3923
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @16312 ]
+[s S4411 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"3951
+[s S4417 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+[s S4423 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+[u S4429 . 1 `S4411 1 . 1 0 `S4417 1 . 1 0 `S4423 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES4429  1 e 1 @16312 ]
+"4021
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @16313 ]
+"4163
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+"4247
+[v _SDFLC SDFLC `VEuc  1 e 1 @14128 ]
+"4275
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+"4299
+[v _RXFBCON0 RXFBCON0 `VEuc  1 e 1 @14129 ]
+[s S3261 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"4302
+[s S3270 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S3279 . 1 `S3261 1 . 1 0 `S3270 1 . 1 0 ]
+[v _LATBbits LATBbits `VES3279  1 e 1 @16315 ]
+"4375
+[v _RXFBCON1 RXFBCON1 `VEuc  1 e 1 @14130 ]
+"4387
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+"4451
+[v _RXFBCON2 RXFBCON2 `VEuc  1 e 1 @14131 ]
+"4499
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+"4527
+[v _RXFBCON3 RXFBCON3 `VEuc  1 e 1 @14132 ]
+"4561
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"4603
+[v _RXFBCON4 RXFBCON4 `VEuc  1 e 1 @14133 ]
+"4623
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+"4679
+[v _RXFBCON5 RXFBCON5 `VEuc  1 e 1 @14134 ]
+"4755
+[v _RXFBCON6 RXFBCON6 `VEuc  1 e 1 @14135 ]
+"4831
+[v _RXFBCON7 RXFBCON7 `VEuc  1 e 1 @14136 ]
+"4907
+[v _MSEL0 MSEL0 `VEuc  1 e 1 @14137 ]
+[s S3444 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"4985
+[s S3452 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S3455 . 1 `S3444 1 . 1 0 `S3452 1 . 1 0 ]
+[v _INTCON0bits INTCON0bits `VES3455  1 e 1 @16338 ]
+"4995
+[v _MSEL1 MSEL1 `VEuc  1 e 1 @14138 ]
+"5083
+[v _MSEL2 MSEL2 `VEuc  1 e 1 @14139 ]
+"5171
+[v _MSEL3 MSEL3 `VEuc  1 e 1 @14140 ]
+"5259
+[v _BSEL0 BSEL0 `VEuc  1 e 1 @14141 ]
+"5310
+[v _BIE0 BIE0 `VEuc  1 e 1 @14142 ]
+"5372
+[v _TXBIE TXBIE `VEuc  1 e 1 @14143 ]
+"5405
+[v _B0CON B0CON `VEuc  1 e 1 @14144 ]
+[s S431 . 1 `uc 1 FILHIT0_TXPRI0 1 0 :1:0 
+`uc 1 FILHIT1_TXPRI1 1 0 :1:1 
+`uc 1 FILHIT2_RTREN 1 0 :1:2 
+`uc 1 FILHIT3_TXREQ 1 0 :1:3 
+`uc 1 FILHIT4_TXERR 1 0 :1:4 
+`uc 1 RXRTRRO_TXLARB 1 0 :1:5 
+`uc 1 RXM1_TXABT 1 0 :1:6 
+`uc 1 RXFUL_TXBIF 1 0 :1:7 
+]
+"5448
+[s S440 . 1 `uc 1 FILHIT0 1 0 :1:0 
+`uc 1 FILHIT1 1 0 :1:1 
+`uc 1 FILHIT2 1 0 :1:2 
+`uc 1 FILHIT3 1 0 :1:3 
+`uc 1 FILHIT4 1 0 :1:4 
+`uc 1 RXRTRRO 1 0 :1:5 
+`uc 1 RXM1 1 0 :1:6 
+`uc 1 RXFUL 1 0 :1:7 
+]
+[s S449 . 1 `uc 1 TXPRI0 1 0 :1:0 
+`uc 1 TXPRI1 1 0 :1:1 
+`uc 1 RTREN 1 0 :1:2 
+`uc 1 TXREQ 1 0 :1:3 
+`uc 1 TXERR 1 0 :1:4 
+`uc 1 TXLARB 1 0 :1:5 
+`uc 1 TXABT 1 0 :1:6 
+`uc 1 TXBIF 1 0 :1:7 
+]
+[s S458 . 1 `uc 1 FILHIT 1 0 :5:0 
+]
+[s S460 . 1 `uc 1 TXPRI 1 0 :2:0 
+]
+[u S462 . 1 `S431 1 . 1 0 `S440 1 . 1 0 `S449 1 . 1 0 `S458 1 . 1 0 `S460 1 . 1 0 ]
+[v _B0CONbits B0CONbits `VES462  1 e 1 @14144 ]
+"6818
+[v _B1CON B1CON `VEuc  1 e 1 @14160 ]
+"6861
+[v _B1CONbits B1CONbits `VES462  1 e 1 @14160 ]
+"8250
+[v _B2CON B2CON `VEuc  1 e 1 @14176 ]
+"9682
+[v _B3CON B3CON `VEuc  1 e 1 @14192 ]
+"11097
+[v _B4CON B4CON `VEuc  1 e 1 @14208 ]
+"12529
+[v _B5CON B5CON `VEuc  1 e 1 @14224 ]
+"13961
+[v _RXF0SIDH RXF0SIDH `VEuc  1 e 1 @14240 ]
+"14081
+[v _RXF0SIDL RXF0SIDL `VEuc  1 e 1 @14241 ]
+"14144
+[v _PLLR PLLR `VEb  1 e 0 @118496 ]
+"14169
+[v _RXF0EIDH RXF0EIDH `VEuc  1 e 1 @14242 ]
+"14239
+[v _RXF0EIDL RXF0EIDL `VEuc  1 e 1 @14243 ]
+"14309
+[v _RXF1SIDH RXF1SIDH `VEuc  1 e 1 @14244 ]
+"14429
+[v _RXF1SIDL RXF1SIDL `VEuc  1 e 1 @14245 ]
+"14517
+[v _RXF1EIDH RXF1EIDH `VEuc  1 e 1 @14246 ]
+"14587
+[v _RXF1EIDL RXF1EIDL `VEuc  1 e 1 @14247 ]
+"14657
+[v _RXF2SIDH RXF2SIDH `VEuc  1 e 1 @14248 ]
+"14777
+[v _RXF2SIDL RXF2SIDL `VEuc  1 e 1 @14249 ]
+"14865
+[v _RXF2EIDH RXF2EIDH `VEuc  1 e 1 @14250 ]
+"14935
+[v _RXF2EIDL RXF2EIDL `VEuc  1 e 1 @14251 ]
+"15005
+[v _RXF3SIDH RXF3SIDH `VEuc  1 e 1 @14252 ]
+"15125
+[v _RXF3SIDL RXF3SIDL `VEuc  1 e 1 @14253 ]
+"15213
+[v _RXF3EIDH RXF3EIDH `VEuc  1 e 1 @14254 ]
+"15283
+[v _RXF3EIDL RXF3EIDL `VEuc  1 e 1 @14255 ]
+"15353
+[v _RXF4SIDH RXF4SIDH `VEuc  1 e 1 @14256 ]
+"15473
+[v _RXF4SIDL RXF4SIDL `VEuc  1 e 1 @14257 ]
+"15561
+[v _RXF4EIDH RXF4EIDH `VEuc  1 e 1 @14258 ]
+"15631
+[v _RXF4EIDL RXF4EIDL `VEuc  1 e 1 @14259 ]
+"15701
+[v _RXF5SIDH RXF5SIDH `VEuc  1 e 1 @14260 ]
+"15821
+[v _RXF5SIDL RXF5SIDL `VEuc  1 e 1 @14261 ]
+"15909
+[v _RXF5EIDH RXF5EIDH `VEuc  1 e 1 @14262 ]
+"15979
+[v _RXF5EIDL RXF5EIDL `VEuc  1 e 1 @14263 ]
+"16049
+[v _RXM0SIDH RXM0SIDH `VEuc  1 e 1 @14264 ]
+"16169
+[v _RXM0SIDL RXM0SIDL `VEuc  1 e 1 @14265 ]
+"16257
+[v _RXM0EIDH RXM0EIDH `VEuc  1 e 1 @14266 ]
+"16327
+[v _RXM0EIDL RXM0EIDL `VEuc  1 e 1 @14267 ]
+"16397
+[v _RXM1SIDH RXM1SIDH `VEuc  1 e 1 @14268 ]
+"16517
+[v _RXM1SIDL RXM1SIDL `VEuc  1 e 1 @14269 ]
+"16605
+[v _RXM1EIDH RXM1EIDH `VEuc  1 e 1 @14270 ]
+"16675
+[v _RXM1EIDL RXM1EIDL `VEuc  1 e 1 @14271 ]
+[s S219 . 1 `uc 1 TXPRI 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 TXREQ 1 0 :1:3 
+`uc 1 TXERR 1 0 :1:4 
+`uc 1 TXLARB 1 0 :1:5 
+`uc 1 TXABT 1 0 :1:6 
+`uc 1 TXBIF 1 0 :1:7 
+]
+"16765
+[s S227 . 1 `uc 1 TXPRI0 1 0 :1:0 
+`uc 1 TXPRI1 1 0 :1:1 
+]
+[u S230 . 1 `S219 1 . 1 0 `S227 1 . 1 0 ]
+[v _TXB2CONbits TXB2CONbits `VES230  1 e 1 @14272 ]
+"16810
+[v _TXB2SIDH TXB2SIDH `VEuc  1 e 1 @14273 ]
+"16930
+[v _TXB2SIDL TXB2SIDL `VEuc  1 e 1 @14274 ]
+"17018
+[v _TXB2EIDH TXB2EIDH `VEuc  1 e 1 @14275 ]
+"17088
+[v _TXB2EIDL TXB2EIDL `VEuc  1 e 1 @14276 ]
+"17158
+[v _TXB2DLC TXB2DLC `VEuc  1 e 1 @14277 ]
+"17211
+[v _TXB2D0 TXB2D0 `VEuc  1 e 1 @14278 ]
+"17281
+[v _TXB2D1 TXB2D1 `VEuc  1 e 1 @14279 ]
+"17351
+[v _TXB2D2 TXB2D2 `VEuc  1 e 1 @14280 ]
+"17421
+[v _TXB2D3 TXB2D3 `VEuc  1 e 1 @14281 ]
+"17491
+[v _TXB2D4 TXB2D4 `VEuc  1 e 1 @14282 ]
+"17561
+[v _TXB2D5 TXB2D5 `VEuc  1 e 1 @14283 ]
+"17631
+[v _TXB2D6 TXB2D6 `VEuc  1 e 1 @14284 ]
+"17701
+[v _TXB2D7 TXB2D7 `VEuc  1 e 1 @14285 ]
+"18047
+[v _TXB1CONbits TXB1CONbits `VES230  1 e 1 @14288 ]
+"18092
+[v _TXB1SIDH TXB1SIDH `VEuc  1 e 1 @14289 ]
+"18212
+[v _TXB1SIDL TXB1SIDL `VEuc  1 e 1 @14290 ]
+"18300
+[v _TXB1EIDH TXB1EIDH `VEuc  1 e 1 @14291 ]
+"18370
+[v _TXB1EIDL TXB1EIDL `VEuc  1 e 1 @14292 ]
+"18440
+[v _TXB1DLC TXB1DLC `VEuc  1 e 1 @14293 ]
+"18493
+[v _TXB1D0 TXB1D0 `VEuc  1 e 1 @14294 ]
+"18563
+[v _TXB1D1 TXB1D1 `VEuc  1 e 1 @14295 ]
+"18633
+[v _TXB1D2 TXB1D2 `VEuc  1 e 1 @14296 ]
+"18703
+[v _TXB1D3 TXB1D3 `VEuc  1 e 1 @14297 ]
+"18773
+[v _TXB1D4 TXB1D4 `VEuc  1 e 1 @14298 ]
+"18843
+[v _TXB1D5 TXB1D5 `VEuc  1 e 1 @14299 ]
+"18913
+[v _TXB1D6 TXB1D6 `VEuc  1 e 1 @14300 ]
+"18983
+[v _TXB1D7 TXB1D7 `VEuc  1 e 1 @14301 ]
+"19312
+[v _TXB0CONbits TXB0CONbits `VES230  1 e 1 @14304 ]
+"19357
+[v _TXB0SIDH TXB0SIDH `VEuc  1 e 1 @14305 ]
+"19477
+[v _TXB0SIDL TXB0SIDL `VEuc  1 e 1 @14306 ]
+"19565
+[v _TXB0EIDH TXB0EIDH `VEuc  1 e 1 @14307 ]
+"19635
+[v _TXB0EIDL TXB0EIDL `VEuc  1 e 1 @14308 ]
+"19705
+[v _TXB0DLC TXB0DLC `VEuc  1 e 1 @14309 ]
+"19758
+[v _TXB0D0 TXB0D0 `VEuc  1 e 1 @14310 ]
+"19828
+[v _TXB0D1 TXB0D1 `VEuc  1 e 1 @14311 ]
+"19898
+[v _TXB0D2 TXB0D2 `VEuc  1 e 1 @14312 ]
+"19968
+[v _TXB0D3 TXB0D3 `VEuc  1 e 1 @14313 ]
+"20038
+[v _TXB0D4 TXB0D4 `VEuc  1 e 1 @14314 ]
+"20108
+[v _TXB0D5 TXB0D5 `VEuc  1 e 1 @14315 ]
+"20178
+[v _TXB0D6 TXB0D6 `VEuc  1 e 1 @14316 ]
+"20248
+[v _TXB0D7 TXB0D7 `VEuc  1 e 1 @14317 ]
+"20574
+[v _RXB1CON RXB1CON `VEuc  1 e 1 @14320 ]
+[s S388 . 1 `uc 1 FILHIT0 1 0 :1:0 
+`uc 1 FILHIT1 1 0 :1:1 
+`uc 1 FILHIT2 1 0 :1:2 
+`uc 1 RXRTRRO_FILHIT3 1 0 :1:3 
+`uc 1 FILHIT4 1 0 :1:4 
+`uc 1 RXM0_RTRRO 1 0 :1:5 
+`uc 1 RXM1 1 0 :1:6 
+`uc 1 RXFUL 1 0 :1:7 
+]
+"20603
+[s S397 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 RXRTRRO 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 RXM0 1 0 :1:5 
+]
+[s S402 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 FILHIT3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 RTRRO 1 0 :1:5 
+]
+[u S407 . 1 `S388 1 . 1 0 `S397 1 . 1 0 `S402 1 . 1 0 ]
+[v _RXB1CONbits RXB1CONbits `VES407  1 e 1 @14320 ]
+"20668
+[v _RXB1SIDH RXB1SIDH `VEuc  1 e 1 @14321 ]
+"20788
+[v _RXB1SIDL RXB1SIDL `VEuc  1 e 1 @14322 ]
+"20881
+[v _RXB1EIDH RXB1EIDH `VEuc  1 e 1 @14323 ]
+"20951
+[v _RXB1EIDL RXB1EIDL `VEuc  1 e 1 @14324 ]
+"21021
+[v _RXB1DLC RXB1DLC `VEuc  1 e 1 @14325 ]
+"21091
+[v _RXB1D0 RXB1D0 `VEuc  1 e 1 @14326 ]
+"21161
+[v _RXB1D1 RXB1D1 `VEuc  1 e 1 @14327 ]
+"21231
+[v _RXB1D2 RXB1D2 `VEuc  1 e 1 @14328 ]
+"21301
+[v _RXB1D3 RXB1D3 `VEuc  1 e 1 @14329 ]
+"21371
+[v _RXB1D4 RXB1D4 `VEuc  1 e 1 @14330 ]
+"21441
+[v _RXB1D5 RXB1D5 `VEuc  1 e 1 @14331 ]
+"21511
+[v _RXB1D6 RXB1D6 `VEuc  1 e 1 @14332 ]
+"21581
+[v _RXB1D7 RXB1D7 `VEuc  1 e 1 @14333 ]
+[s S4976 . 1 `uc 1 DMA1SCNTIE 1 0 :1:0 
+`uc 1 DMA1DCNTIE 1 0 :1:1 
+`uc 1 DMA1ORIE 1 0 :1:2 
+`uc 1 DMA1AIE 1 0 :1:3 
+`uc 1 SPI1RXIE 1 0 :1:4 
+`uc 1 SPI1TXIE 1 0 :1:5 
+`uc 1 SPI1IE 1 0 :1:6 
+`uc 1 I2C1RXIE 1 0 :1:7 
+]
+"25325
+[s S4985 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIE 1 0 :1:6 
+]
+[u S4988 . 1 `S4976 1 . 1 0 `S4985 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES4988  1 e 1 @14738 ]
+[s S3532 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+`uc 1 I2C1IE 1 0 :1:1 
+`uc 1 I2C1EIE 1 0 :1:2 
+`uc 1 U1RXIE 1 0 :1:3 
+`uc 1 U1TXIE 1 0 :1:4 
+`uc 1 U1EIE 1 0 :1:5 
+`uc 1 U1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"25405
+[s S3541 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S3547 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S3552 . 1 `S3532 1 . 1 0 `S3541 1 . 1 0 `S3547 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES3552  1 e 1 @14739 ]
+[s S3470 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+`uc 1 ERRIE 1 0 :1:5 
+`uc 1 WAKIE 1 0 :1:6 
+`uc 1 IRXIE 1 0 :1:7 
+]
+"25573
+[s S3479 . 1 `uc 1 FIFOFIE 1 0 :1:0 
+`uc 1 RXBnIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBnIE 1 0 :1:4 
+]
+[s S3484 . 1 `uc 1 FIFOWMIE 1 0 :1:0 
+]
+[u S3486 . 1 `S3470 1 . 1 0 `S3479 1 . 1 0 `S3484 1 . 1 0 ]
+[v _PIE5bits PIE5bits `VES3486  1 e 1 @14741 ]
+[s S5062 . 1 `uc 1 DMA1SCNTIF 1 0 :1:0 
+`uc 1 DMA1DCNTIF 1 0 :1:1 
+`uc 1 DMA1ORIF 1 0 :1:2 
+`uc 1 DMA1AIF 1 0 :1:3 
+`uc 1 SPI1RXIF 1 0 :1:4 
+`uc 1 SPI1TXIF 1 0 :1:5 
+`uc 1 SPI1IF 1 0 :1:6 
+`uc 1 I2C1RXIF 1 0 :1:7 
+]
+"26056
+[s S5071 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIF 1 0 :1:6 
+]
+[u S5074 . 1 `S5062 1 . 1 0 `S5071 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES5074  1 e 1 @14754 ]
+[s S3577 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+`uc 1 I2C1IF 1 0 :1:1 
+`uc 1 I2C1EIF 1 0 :1:2 
+`uc 1 U1RXIF 1 0 :1:3 
+`uc 1 U1TXIF 1 0 :1:4 
+`uc 1 U1EIF 1 0 :1:5 
+`uc 1 U1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"26129
+[s S3586 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S3591 . 1 `S3577 1 . 1 0 `S3586 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES3591  1 e 1 @14755 ]
+[s S297 . 1 `uc 1 RXB0IF 1 0 :1:0 
+`uc 1 RXB1IF 1 0 :1:1 
+`uc 1 TXB0IF 1 0 :1:2 
+`uc 1 TXB1IF 1 0 :1:3 
+`uc 1 TXB2IF 1 0 :1:4 
+`uc 1 ERRIF 1 0 :1:5 
+`uc 1 WAKIF 1 0 :1:6 
+`uc 1 IRXIF 1 0 :1:7 
+]
+"26272
+[s S306 . 1 `uc 1 FIFOFIF 1 0 :1:0 
+`uc 1 RXBnIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBnIF 1 0 :1:4 
+]
+[s S311 . 1 `uc 1 FIFOWMIF 1 0 :1:0 
+]
+[u S313 . 1 `S297 1 . 1 0 `S306 1 . 1 0 `S311 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES313  1 e 1 @14757 ]
+"26579
+[v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
+"26656
+[v _PMD1 PMD1 `VEuc  1 e 1 @14785 ]
+"26726
+[v _PMD2 PMD2 `VEuc  1 e 1 @14786 ]
+"26771
+[v _PMD3 PMD3 `VEuc  1 e 1 @14787 ]
+"26833
+[v _PMD4 PMD4 `VEuc  1 e 1 @14788 ]
+"26866
+[v _PMD5 PMD5 `VEuc  1 e 1 @14789 ]
+"26911
+[v _PMD6 PMD6 `VEuc  1 e 1 @14790 ]
+"26967
+[v _PMD7 PMD7 `VEuc  1 e 1 @14791 ]
+"27113
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+"27253
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @14811 ]
+"27405
+[v _OSCEN OSCEN `VEuc  1 e 1 @14813 ]
+"27456
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @14814 ]
+"27560
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"28822
+[v _RB0PPS RB0PPS `VEuc  1 e 1 @14856 ]
+"28922
+[v _RB2PPS RB2PPS `VEuc  1 e 1 @14858 ]
+"29522
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @14870 ]
+"29572
+[v _RC7PPS RC7PPS `VEuc  1 e 1 @14871 ]
+"29622
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+"29684
+[v _WPUA WPUA `VEuc  1 e 1 @14913 ]
+"29746
+[v _ODCONA ODCONA `VEuc  1 e 1 @14914 ]
+"29808
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @14915 ]
+"29870
+[v _INLVLA INLVLA `VEuc  1 e 1 @14916 ]
+"30118
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+"30180
+[v _WPUB WPUB `VEuc  1 e 1 @14929 ]
+"30242
+[v _ODCONB ODCONB `VEuc  1 e 1 @14930 ]
+"30304
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @14931 ]
+"30366
+[v _INLVLB INLVLB `VEuc  1 e 1 @14932 ]
+"30830
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"30892
+[v _WPUC WPUC `VEuc  1 e 1 @14945 ]
+"30954
+[v _ODCONC ODCONC `VEuc  1 e 1 @14946 ]
+"31016
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @14947 ]
+"31078
+[v _INLVLC INLVLC `VEuc  1 e 1 @14948 ]
+"31542
+[v _WPUE WPUE `VEuc  1 e 1 @14977 ]
+"31563
+[v _INLVLE INLVLE `VEuc  1 e 1 @14980 ]
+"32367
+[v _I2C1SCLPPS I2C1SCLPPS `VEuc  1 e 1 @15075 ]
+"32387
+[v _I2C1SDAPPS I2C1SDAPPS `VEuc  1 e 1 @15076 ]
+"32447
+[v _U1RXPPS U1RXPPS `VEuc  1 e 1 @15079 ]
+"32527
+[v _CANRXPPS CANRXPPS `VEuc  1 e 1 @15085 ]
+"44987
+[v _I2C1RXB I2C1RXB `VEuc  1 e 1 @15722 ]
+"45007
+[v _I2C1TXB I2C1TXB `VEuc  1 e 1 @15723 ]
+"45027
+[v _I2C1CNT I2C1CNT `VEuc  1 e 1 @15724 ]
+"45219
+[v _I2C1CON0 I2C1CON0 `VEuc  1 e 1 @15731 ]
+[s S4801 . 1 `uc 1 MODE 1 0 :3:0 
+`uc 1 MDR 1 0 :1:3 
+`uc 1 CSTR 1 0 :1:4 
+`uc 1 S 1 0 :1:5 
+`uc 1 RSEN 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"45241
+[s S4808 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 I2CEN 1 0 :1:7 
+]
+"45241
+[u S4814 . 1 `S4801 1 . 1 0 `S4808 1 . 1 0 ]
+"45241
+"45241
+[v _I2C1CON0bits I2C1CON0bits `VES4814  1 e 1 @15731 ]
+"45296
+[v _I2C1CON1 I2C1CON1 `VEuc  1 e 1 @15732 ]
+[s S4854 . 1 `uc 1 CSD 1 0 :1:0 
+`uc 1 TXU 1 0 :1:1 
+`uc 1 RXO 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ACKT 1 0 :1:4 
+`uc 1 ACKSTAT 1 0 :1:5 
+`uc 1 ACKDT 1 0 :1:6 
+`uc 1 ACKCNT 1 0 :1:7 
+]
+"45313
+[u S4863 . 1 `S4854 1 . 1 0 ]
+"45313
+"45313
+[v _I2C1CON1bits I2C1CON1bits `VES4863  1 e 1 @15732 ]
+"45353
+[v _I2C1CON2 I2C1CON2 `VEuc  1 e 1 @15733 ]
+"45429
+[v _I2C1ERR I2C1ERR `VEuc  1 e 1 @15734 ]
+[s S4875 . 1 `uc 1 NACKIE 1 0 :1:0 
+`uc 1 BCLIE 1 0 :1:1 
+`uc 1 BTOIE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 NACKIF 1 0 :1:4 
+`uc 1 BCLIF 1 0 :1:5 
+`uc 1 BTOIF 1 0 :1:6 
+]
+"45454
+[s S4883 . 1 `uc 1 NACK1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 BTO1IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 NACK1IF 1 0 :1:4 
+`uc 1 BCL1IF 1 0 :1:5 
+`uc 1 BTO1IF 1 0 :1:6 
+]
+"45454
+[u S4891 . 1 `S4875 1 . 1 0 `S4883 1 . 1 0 ]
+"45454
+"45454
+[v _I2C1ERRbits I2C1ERRbits `VES4891  1 e 1 @15734 ]
+[s S4831 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 CLRBF 1 0 :1:2 
+`uc 1 RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 TXWE 1 0 :1:7 
+]
+"45626
+[u S4840 . 1 `S4831 1 . 1 0 ]
+"45626
+"45626
+[v _I2C1STAT1bits I2C1STAT1bits `VES4840  1 e 1 @15736 ]
+"45656
+[v _I2C1PIR I2C1PIR `VEuc  1 e 1 @15737 ]
+[s S4911 . 1 `uc 1 SCIF 1 0 :1:0 
+`uc 1 RSCIF 1 0 :1:1 
+`uc 1 PCIF 1 0 :1:2 
+`uc 1 ADRIF 1 0 :1:3 
+`uc 1 WRIF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKTIF 1 0 :1:6 
+`uc 1 CNTIF 1 0 :1:7 
+]
+"45683
+[s S4920 . 1 `uc 1 SC1IF 1 0 :1:0 
+`uc 1 RSC1IF 1 0 :1:1 
+`uc 1 PC1IF 1 0 :1:2 
+`uc 1 ADR1IF 1 0 :1:3 
+`uc 1 WR1IF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKT1IF 1 0 :1:6 
+`uc 1 CNT1IF 1 0 :1:7 
+]
+"45683
+[u S4929 . 1 `S4911 1 . 1 0 `S4920 1 . 1 0 ]
+"45683
+"45683
+[v _I2C1PIRbits I2C1PIRbits `VES4929  1 e 1 @15737 ]
+"45758
+[v _I2C1PIE I2C1PIE `VEuc  1 e 1 @15738 ]
+[s S5004 . 1 `uc 1 SCIE 1 0 :1:0 
+`uc 1 RSCIE 1 0 :1:1 
+`uc 1 PCIE 1 0 :1:2 
+`uc 1 ADRIE 1 0 :1:3 
+`uc 1 WRIE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKTIE 1 0 :1:6 
+`uc 1 CNTIE 1 0 :1:7 
+]
+"45785
+[s S5013 . 1 `uc 1 SC1IE 1 0 :1:0 
+`uc 1 RSC1IE 1 0 :1:1 
+`uc 1 PC1IE 1 0 :1:2 
+`uc 1 ADR1IE 1 0 :1:3 
+`uc 1 WR1IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ACKT1IE 1 0 :1:6 
+`uc 1 CNT1IE 1 0 :1:7 
+]
+"45785
+[u S5022 . 1 `S5004 1 . 1 0 `S5013 1 . 1 0 ]
+"45785
+"45785
+[v _I2C1PIEbits I2C1PIEbits `VES5022  1 e 1 @15738 ]
+"45860
+[v _I2C1CLK I2C1CLK `VEuc  1 e 1 @15739 ]
+"47072
+[v _U1RXB U1RXB `VEuc  1 e 1 @15848 ]
+"47130
+[v _U1TXB U1TXB `VEuc  1 e 1 @15850 ]
+"47195
+[v _U1P1L U1P1L `VEuc  1 e 1 @15852 ]
+"47215
+[v _U1P1H U1P1H `VEuc  1 e 1 @15853 ]
+"47242
+[v _U1P2L U1P2L `VEuc  1 e 1 @15854 ]
+"47262
+[v _U1P2H U1P2H `VEuc  1 e 1 @15855 ]
+"47289
+[v _U1P3L U1P3L `VEuc  1 e 1 @15856 ]
+"47309
+[v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
+"47329
+[v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
+[s S3757 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+]
+"47360
+[s S3761 . 1 `uc 1 U1MODE 1 0 :4:0 
+`uc 1 U1RXEN 1 0 :1:4 
+`uc 1 U1TXEN 1 0 :1:5 
+`uc 1 U1ABDEN 1 0 :1:6 
+`uc 1 U1BRGS 1 0 :1:7 
+]
+"47360
+[s S3767 . 1 `uc 1 U1MODE0 1 0 :1:0 
+`uc 1 U1MODE1 1 0 :1:1 
+`uc 1 U1MODE2 1 0 :1:2 
+]
+"47360
+[s S3771 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 RXEN 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 ABDEN 1 0 :1:6 
+`uc 1 BRGS 1 0 :1:7 
+]
+"47360
+[u S3777 . 1 `S3757 1 . 1 0 `S3761 1 . 1 0 `S3767 1 . 1 0 `S3771 1 . 1 0 ]
+"47360
+"47360
+[v _U1CON0bits U1CON0bits `VES3777  1 e 1 @15858 ]
+"47445
+[v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
+"47525
+[v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
+"47674
+[v _U1BRGL U1BRGL `VEuc  1 e 1 @15861 ]
+"47694
+[v _U1BRGH U1BRGH `VEuc  1 e 1 @15862 ]
+"47714
+[v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
+"47844
+[v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
+"47900
+[v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
+[s S3803 . 1 `uc 1 TXCIF 1 0 :1:0 
+`uc 1 RXFOIF 1 0 :1:1 
+`uc 1 RXBKIF 1 0 :1:2 
+`uc 1 FERIF 1 0 :1:3 
+`uc 1 CERIF 1 0 :1:4 
+`uc 1 ABDOVF 1 0 :1:5 
+`uc 1 PERIF 1 0 :1:6 
+`uc 1 TXMTIF 1 0 :1:7 
+]
+"47927
+[s S3812 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+`uc 1 U1RXFOIF 1 0 :1:1 
+`uc 1 U1RXBKIF 1 0 :1:2 
+`uc 1 U1FERIF 1 0 :1:3 
+`uc 1 U1CERIF 1 0 :1:4 
+`uc 1 U1ABDOVF 1 0 :1:5 
+`uc 1 U1PERIF 1 0 :1:6 
+`uc 1 U1TXMTIF 1 0 :1:7 
+]
+"47927
+[u S3821 . 1 `S3803 1 . 1 0 `S3812 1 . 1 0 ]
+"47927
+"47927
+[v _U1ERRIRbits U1ERRIRbits `VES3821  1 e 1 @15865 ]
+"48012
+[v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
+"63059
+[v _RXB0CON RXB0CON `VEuc  1 e 1 @16256 ]
+[s S334 . 1 `uc 1 FILHIT0 1 0 :1:0 
+`uc 1 JTOFF_FILHIT1 1 0 :1:1 
+`uc 1 RB0DBEN_FILHIT2 1 0 :1:2 
+`uc 1 RXRTRRO_FILHIT3 1 0 :1:3 
+`uc 1 FILHIT4 1 0 :1:4 
+`uc 1 RXM0_RTRRO 1 0 :1:5 
+`uc 1 RXM1 1 0 :1:6 
+`uc 1 RXFUL 1 0 :1:7 
+]
+"63094
+[s S343 . 1 `uc 1 FILHIT 1 0 :5:0 
+`uc 1 RTRRO 1 0 :1:5 
+]
+"63094
+[s S346 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 FILHIT1 1 0 :1:1 
+`uc 1 FILHIT2 1 0 :1:2 
+`uc 1 FILHIT3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 RXM0 1 0 :1:5 
+]
+"63094
+[s S353 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 JTOFF 1 0 :1:1 
+`uc 1 RB0DBEN 1 0 :1:2 
+`uc 1 RXRTRRO 1 0 :1:3 
+]
+"63094
+[u S358 . 1 `S334 1 . 1 0 `S343 1 . 1 0 `S346 1 . 1 0 `S353 1 . 1 0 ]
+"63094
+"63094
+[v _RXB0CONbits RXB0CONbits `VES358  1 e 1 @16256 ]
+"63184
+[v _RXB0SIDH RXB0SIDH `VEuc  1 e 1 @16257 ]
+"63304
+[v _RXB0SIDL RXB0SIDL `VEuc  1 e 1 @16258 ]
+"63397
+[v _RXB0EIDH RXB0EIDH `VEuc  1 e 1 @16259 ]
+"63467
+[v _RXB0EIDL RXB0EIDL `VEuc  1 e 1 @16260 ]
+"63537
+[v _RXB0DLC RXB0DLC `VEuc  1 e 1 @16261 ]
+[s S1705 . 1 `uc 1 DLC 1 0 :4:0 
+`uc 1 RB 1 0 :2:4 
+`uc 1 RXRTR 1 0 :1:6 
+]
+"63566
+[s S1709 . 1 `uc 1 DLC0 1 0 :1:0 
+`uc 1 DLC1 1 0 :1:1 
+`uc 1 DLC2 1 0 :1:2 
+`uc 1 DLC3 1 0 :1:3 
+`uc 1 RB0 1 0 :1:4 
+`uc 1 RB1 1 0 :1:5 
+]
+"63566
+[s S1716 . 1 `uc 1 RXB0DLC0 1 0 :1:0 
+`uc 1 RXB0DLC1 1 0 :1:1 
+`uc 1 RXB0DLC2 1 0 :1:2 
+`uc 1 RXB0DLC3 1 0 :1:3 
+`uc 1 RXB0RB0 1 0 :1:4 
+`uc 1 RXB0RB1 1 0 :1:5 
+`uc 1 RXB0RTR 1 0 :1:6 
+]
+"63566
+[u S1724 . 1 `S1705 1 . 1 0 `S1709 1 . 1 0 `S1716 1 . 1 0 ]
+"63566
+"63566
+[v _RXB0DLCbits RXB0DLCbits `VES1724  1 e 1 @16261 ]
+"63651
+[v _RXB0D0 RXB0D0 `VEuc  1 e 1 @16262 ]
+"63721
+[v _RXB0D1 RXB0D1 `VEuc  1 e 1 @16263 ]
+"63791
+[v _RXB0D2 RXB0D2 `VEuc  1 e 1 @16264 ]
+"63861
+[v _RXB0D3 RXB0D3 `VEuc  1 e 1 @16265 ]
+"63931
+[v _RXB0D4 RXB0D4 `VEuc  1 e 1 @16266 ]
+"64001
+[v _RXB0D5 RXB0D5 `VEuc  1 e 1 @16267 ]
+"64071
+[v _RXB0D6 RXB0D6 `VEuc  1 e 1 @16268 ]
+"64141
+[v _RXB0D7 RXB0D7 `VEuc  1 e 1 @16269 ]
+"64211
+[v _CANSTAT CANSTAT `VEuc  1 e 1 @16270 ]
+[s S32 . 1 `uc 1 EICODE0 1 0 :1:0 
+`uc 1 EICODE1_ICODE0 1 0 :1:1 
+`uc 1 EICODE2_ICODE1 1 0 :1:2 
+`uc 1 EICODE3_ICODE2 1 0 :1:3 
+`uc 1 EICODE4 1 0 :1:4 
+`uc 1 OPMODE 1 0 :3:5 
+]
+"64249
+[s S39 . 1 `uc 1 EICODE 1 0 :5:0 
+]
+"64249
+[s S41 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 EICODE1 1 0 :1:1 
+`uc 1 EICODE2 1 0 :1:2 
+`uc 1 EICODE3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 OPMODE0 1 0 :1:5 
+`uc 1 OPMODE1 1 0 :1:6 
+`uc 1 OPMODE2 1 0 :1:7 
+]
+"64249
+[s S50 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ICODE 1 0 :3:1 
+]
+"64249
+[s S53 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ICODE0 1 0 :1:1 
+`uc 1 ICODE1 1 0 :1:2 
+`uc 1 ICODE2 1 0 :1:3 
+]
+"64249
+[u S58 . 1 `S32 1 . 1 0 `S39 1 . 1 0 `S41 1 . 1 0 `S50 1 . 1 0 `S53 1 . 1 0 ]
+"64249
+"64249
+[v _CANSTATbits CANSTATbits `VES58  1 e 1 @16270 ]
+"64339
+[v _CANCON CANCON `VEuc  1 e 1 @16271 ]
+[s S121 . 1 `uc 1 FP0 1 0 :1:0 
+`uc 1 WIN0_FP1 1 0 :1:1 
+`uc 1 WIN1_FP2 1 0 :1:2 
+`uc 1 WIN2_FP3 1 0 :1:3 
+`uc 1 ABAT 1 0 :1:4 
+`uc 1 REQOP 1 0 :3:5 
+]
+"64377
+[s S128 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WIN 1 0 :3:1 
+]
+"64377
+[s S131 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WIN0 1 0 :1:1 
+`uc 1 WIN1 1 0 :1:2 
+`uc 1 WIN2 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 REQOP0 1 0 :1:5 
+`uc 1 REQOP1 1 0 :1:6 
+`uc 1 REQOP2 1 0 :1:7 
+]
+"64377
+[s S140 . 1 `uc 1 FP 1 0 :4:0 
+]
+"64377
+[s S142 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 FP1 1 0 :1:1 
+`uc 1 FP2 1 0 :1:2 
+`uc 1 FP3 1 0 :1:3 
+]
+"64377
+[u S147 . 1 `S121 1 . 1 0 `S128 1 . 1 0 `S131 1 . 1 0 `S140 1 . 1 0 `S142 1 . 1 0 ]
+"64377
+"64377
+[v _CANCONbits CANCONbits `VES147  1 e 1 @16271 ]
+[s S4190 . 1 `uc 1 EWARN 1 0 :1:0 
+`uc 1 RXWARN 1 0 :1:1 
+`uc 1 TXWARN 1 0 :1:2 
+`uc 1 RXBP 1 0 :1:3 
+`uc 1 TXBP 1 0 :1:4 
+`uc 1 TXBO 1 0 :1:5 
+`uc 1 RXB1OVFL 1 0 :1:6 
+`uc 1 RXB0OVFL 1 0 :1:7 
+]
+"64497
+[s S4199 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_FIFOEMPTY 1 0 :1:7 
+]
+"64497
+[s S4202 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 nFIFOEMPTY 1 0 :1:7 
+]
+"64497
+[s S4205 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RXBNOVFL 1 0 :1:6 
+`uc 1 FIFOEMPTY 1 0 :1:7 
+]
+"64497
+[u S4209 . 1 `S4190 1 . 1 0 `S4199 1 . 1 0 `S4202 1 . 1 0 `S4205 1 . 1 0 ]
+"64497
+"64497
+[v _COMSTATbits COMSTATbits `VES4209  1 e 1 @16272 ]
+"64562
+[v _ECANCON ECANCON `VEuc  1 e 1 @16273 ]
+"68 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_CANDRV.c
+[v __uCAN_Handle _uCAN_Handle `uc  1 e 1 0 ]
+"69
+[v __uCAN_Param1 _uCAN_Param1 `uc  1 e 1 0 ]
+"73
+[v __uCAN_ret _uCAN_ret `uc  1 e 1 0 ]
+"76
+[v __uCAN_Bitrate _uCAN_Bitrate `uc  1 e 1 0 ]
+"77
+[v __uCANRxHndls _uCANRxHndls `[8]uc  1 e 8 0 ]
+[s S24 __BYTES 4 `uc 1 SIDH 1 0 `uc 1 SIDL 1 1 `uc 1 EIDH 1 2 `uc 1 EIDL 1 3 ]
+"78
+[u S29 __FILTER 4 `ul 1 dword 4 0 `S24 1 bytes 4 0 ]
+[v __uCANRxIDRes _uCANRxIDRes `[8]S29  1 e 32 0 ]
+"79
+[v __uCANTxHndls _uCANTxHndls `[3]uc  1 e 3 0 ]
+"81
+[v __uCANReq _uCANReq `uc  1 e 1 0 ]
+"83
+[v __uCANOldMode _uCANOldMode `uc  1 e 1 0 ]
+[s S676 _BITS 1 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+]
+"78 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_COMM.c
+[u S685 _UINT8 1 `uc 1 byte 1 0 `S676 1 bits 1 0 ]
+[v __uCO_nodeID _uCO_nodeID `S685  1 e 1 0 ]
+"81
+[v __uCO_state _uCO_state `S685  1 e 1 0 ]
+"84
+[v __uCO_baud _uCO_baud `S685  1 e 1 0 ]
+"87
+[v __net_en _net_en `S685  1 e 1 0 ]
+"88
+[v __sdo_en _sdo_en `S685  1 e 1 0 ]
+"89
+[v __rpdo_en _rpdo_en `S685  1 e 1 0 ]
+"90
+[v __tpdo_en _tpdo_en `S685  1 e 1 0 ]
+"93
+[v __tx_net_que _tx_net_que `S685  1 e 1 0 ]
+"94
+[v __tx_sdo_que _tx_sdo_que `S685  1 e 1 0 ]
+"95
+[v __tx_pdo_que _tx_pdo_que `S685  1 e 1 0 ]
+"98
+[v __rx_net_flg _rx_net_flg `S685  1 e 1 0 ]
+"99
+[v __rx_sdo_flg _rx_sdo_flg `S685  1 e 1 0 ]
+"100
+[v __rx_pdo_flg _rx_pdo_flg `S685  1 e 1 0 ]
+[u S1116 DICT_PTRS 3 `*.37(v 1 pFunc 2 0 `*.2uc 1 pRAM 3 0 `*.2Cuc 1 pROM 3 0 `ui 1 pEEDATA 2 0 ]
+"58 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_DICT.c
+[s S1121 _DICTIONARY_EXTENDED_OBJECT 15 `*.39uc 1 pReqBuf 2 0 `ui 1 reqLen 2 2 `ui 1 reqOffst 2 4 `ui 1 index 2 6 `uc 1 subindex 1 8 `E308 1 ctl 1 9 `ui 1 len 2 10 `S1116 1 p 3 12 ]
+[s S1134 _DICTIONARY_DATA 4 `*.39S1121 1 obj 2 0 `E360 1 cmd 1 2 `uc 1 ret 1 3 ]
+[v _uDict uDict `S1134  1 e 4 0 ]
+"61
+[v __pTmpDBase _pTmpDBase `*.32Cuc  1 e 2 0 ]
+"62
+[v __tDBaseLen _tDBaseLen `uc  1 e 1 0 ]
+"64
+[v __uDictTemp _uDictTemp `[4]uc  1 e 4 0 ]
+"65
+[s S1150 _INT16 2 `S685 1 B0 1 0 `S685 1 B1 1 1 ]
+[u S1153 _UINT16 2 `ui 1 word 2 0 `S1150 1 bytes 2 0 ]
+[s S1156 _MULTIPLEXOR 3 `S1153 1 index 2 0 `S685 1 sindex 1 2 ]
+[v __tMplex _tMplex `S1156  1 e 3 0 ]
+[s S1159 _DICTIONARY_OBJECT_TEMPLATE 8 `ui 1 index 2 0 `uc 1 subindex 1 2 `uc 1 ctl 1 3 `ui 1 len 2 4 `*.34Cuc 1 pROM 2 6 ]
+"71
+[v __db_objects _db_objects `C[7]S1159  1 e 56 0 ]
+"81
+[v __db_device _db_device `C[15]S1159  1 e 120 0 ]
+"83
+[v __db_sdo _db_sdo `C[3]S1159  1 e 24 0 ]
+"85
+[v __db_pdo1_rx_comm _db_pdo1_rx_comm `C[2]S1159  1 e 16 0 ]
+"96
+[v __db_pdo1_rx_map _db_pdo1_rx_map `C[9]S1159  1 e 72 0 ]
+"107
+[v __db_pdo1_tx_comm _db_pdo1_tx_comm `C[3]S1159  1 e 24 0 ]
+"118
+[v __db_pdo1_tx_map _db_pdo1_tx_map `C[9]S1159  1 e 72 0 ]
+"129
+[v __db_manufacturer_g1 _db_manufacturer_g1 `C[2]S1159  1 e 16 0 ]
+"130
+[v __db_manufacturer_g2 _db_manufacturer_g2 `C[2]S1159  1 e 16 0 ]
+"131
+[v __db_manufacturer_g3 _db_manufacturer_g3 `C[2]S1159  1 e 16 0 ]
+"132
+[v __db_manufacturer_g4 _db_manufacturer_g4 `C[2]S1159  1 e 16 0 ]
+"133
+[v __db_standard_g1 _db_standard_g1 `C[14]S1159  1 e 112 0 ]
+"134
+[v __db_standard_g2 _db_standard_g2 `C[2]S1159  1 e 16 0 ]
+"135
+[v __db_standard_g3 _db_standard_g3 `C[2]S1159  1 e 16 0 ]
+"136
+[v __db_standard_g4 _db_standard_g4 `C[2]S1159  1 e 16 0 ]
+"59 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_NMT.c
+[v __hNMT _hNMT `uc  1 e 1 0 ]
+"59 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_NMTE.c
+[s S1530 _INT32 4 `S685 1 B0 1 0 `S685 1 B1 1 1 `S685 1 B2 1 2 `S685 1 B3 1 3 ]
+[u S1535 _UINT32 4 `ul 1 word 4 0 `S1530 1 bytes 4 0 ]
+[v __uNMTE_COBID _uNMTE_COBID `S1535  1 e 4 0 ]
+"61
+[v __uNMTETimer _uNMTETimer `m  1 e 3 0 ]
+"62
+[v __uNMTEState _uNMTEState `S685  1 e 1 0 ]
+"63
+[v __uNMTELocalState _uNMTELocalState `S685  1 e 1 0 ]
+"65
+[v __uNMTEHeartBeat _uNMTEHeartBeat `S1153  1 e 2 0 ]
+"66
+[v __uNMTEGuardTime _uNMTEGuardTime `S1153  1 e 2 0 ]
+"67
+[v __uNMTELifeFactor _uNMTELifeFactor `S685  1 e 1 0 ]
+"70
+[v __hNMTE _hNMTE `uc  1 e 1 0 ]
+"62 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_PDO.c
+[v _uRPDOComm1 uRPDOComm1 `S1535  1 e 4 0 ]
+"63
+[v _uTPDOComm1 uTPDOComm1 `S1535  1 e 4 0 ]
+[s S2194 __RPDO_BUF 3 `uc 1 len 1 0 `*.39uc 1 buf 2 1 ]
+"64
+[s S2197 __TPDO_BUF 3 `uc 1 len 1 0 `*.39uc 1 buf 2 1 ]
+[s S2200 __PDO_BUFFERS 6 `S2194 1 RPDO 3 0 `S2197 1 TPDO 3 3 ]
+[v __uPDO1 _uPDO1 `S2200  1 e 6 0 ]
+"65
+[v __uPDOHandles1 _uPDOHandles1 `uc  1 e 1 0 ]
+"105 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SDO1.c
+[v __uSDO1_CS_COBID _uSDO1_CS_COBID `S1535  1 e 4 0 ]
+"106
+[v __uSDO1_SC_COBID _uSDO1_SC_COBID `S1535  1 e 4 0 ]
+"108
+[v __hSDO1 _hSDO1 `uc  1 e 1 0 ]
+[s S2342 _SDO_STATE_BITS 1 `uc 1 . 1 0 :3:0 
+`uc 1 ntime 1 0 :1:3 
+`uc 1 tog 1 0 :1:4 
+`uc 1 start 1 0 :1:5 
+`uc 1 dnld 1 0 :1:6 
+`uc 1 abrt 1 0 :1:7 
+]
+"110
+[u S2349 _SDO_STATE 1 `uc 1 byte 1 0 `S2342 1 bits 1 0 ]
+[v __uSDO1State _uSDO1State `S2349  1 e 1 0 ]
+"111
+[v __uSDO1ACode _uSDO1ACode `E235  1 e 1 0 ]
+[s S2379 _SDO_INITIATE_CTL 1 `uc 1 s 1 0 :1:0 
+`uc 1 e 1 0 :1:1 
+`uc 1 n 1 0 :2:2 
+`uc 1 x 1 0 :1:4 
+`uc 1 cmd 1 0 :3:5 
+]
+"112
+[s S2385 _SDO_REGULAR_CTL 1 `uc 1 c 1 0 :1:0 
+`uc 1 n 1 0 :3:1 
+`uc 1 t 1 0 :1:4 
+`uc 1 cmd 1 0 :3:5 
+]
+[s S2390 _SDO_RESPONSE 1 `uc 1 x 1 0 :4:0 
+`uc 1 t 1 0 :1:4 
+`uc 1 cmd 1 0 :3:5 
+]
+[u S2394 _SDO_CTL 1 `uc 1 byte 1 0 `S2379 1 ictl 1 0 `S2385 1 rctl 1 0 `S2390 1 rsp 1 0 ]
+[v __uSDO1Ctl _uSDO1Ctl `S2394  1 e 1 0 ]
+"113
+[v __uSDO1Dict _uSDO1Dict `S1121  1 e 15 0 ]
+"114
+[v __uSDO1Timer _uSDO1Timer `ui  1 e 2 0 ]
+"115
+[v __uSDO1BytesLeft _uSDO1BytesLeft `S1153  1 e 2 0 ]
+"118
+[v __uSDO1RxBuf _uSDO1RxBuf `[20]uc  1 e 20 0 ]
+"119
+[v __uSDO1TxBuf _uSDO1TxBuf `[8]uc  1 e 8 0 ]
+"63 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SYNC.c
+[v __uSYNC_COBID _uSYNC_COBID `S1535  1 e 4 0 ]
+"66
+[v __hSYNC _hSYNC `uc  1 e 1 0 ]
+"145 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_TOOLS.c
+[v __uCOB_ID_in _uCOB_ID_in `S1535  1 e 4 0 ]
+"146
+[v __uCOB_ID_out _uCOB_ID_out `S1535  1 e 4 0 ]
+"61 C:\Users\Fedor\MPLABXProjects\Test.X\main.c
+[v _uIOinFilter uIOinFilter `uc  1 e 1 0 ]
+"62
+[v _uIOinPolarity uIOinPolarity `uc  1 e 1 0 ]
+"63
+[v _uIOinIntChange uIOinIntChange `uc  1 e 1 0 ]
+"64
+[v _uIOinIntRise uIOinIntRise `uc  1 e 1 0 ]
+"65
+[v _uIOinIntFall uIOinIntFall `uc  1 e 1 0 ]
+"66
+[v _uIOinIntEnable uIOinIntEnable `uc  1 e 1 0 ]
+"68
+[v _uIOinDigiInOld uIOinDigiInOld `uc  1 e 1 0 ]
+"76
+[v _uLocalXmtBuffer uLocalXmtBuffer `[8]uc  1 e 8 0 ]
+"77
+[v _uLocalRcvBuffer uLocalRcvBuffer `[8]uc  1 e 8 0 ]
+"79
+[v _uDemoState uDemoState `S685  1 e 1 0 ]
+"80
+[v _uDemoSyncCount uDemoSyncCount `uc  1 e 1 0 ]
+"81
+[v _uDemoSyncSet uDemoSyncSet `uc  1 e 1 0 ]
+"54 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/ecan.c
+[v _WakeUpInterruptHandler WakeUpInterruptHandler `*.37(v  1 s 2 WakeUpInterruptHandler ]
+"159 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/i2c1_master.c
+[v _i2c1_fsmStateTable i2c1_fsmStateTable `C[19]*.37(E22964  1 e 38 0 ]
+[s S4587 . 36 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.39v 1 callbackPayload 12 12 `us 1 time_out 2 24 `us 1 time_out_value 2 26 `uc 1 address 1 28 `*.39uc 1 data_ptr 2 29 `ui 1 data_length 2 31 `E22964 1 state 1 33 `E355 1 error 1 34 `uc 1 addressNackCheck 1 35 :2:0 
+`uc 1 busy 1 35 :1:2 
+`uc 1 inUse 1 35 :1:3 
+`uc 1 bufferFree 1 35 :1:4 
+]
+"181
+[v _I2C1_Status I2C1_Status `S4587  1 e 36 0 ]
+"59 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/tmr0.c
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+[s S3683 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"53 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/uart1.c
+[u S3688 . 1 `S3683 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart1RxLastError uart1RxLastError `VES3688  1 s 1 uart1RxLastError ]
+"58
+[v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
+"555 C:\Users\Fedor\MPLABXProjects\Test.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"602
+} 0
+"87 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/tmr0.c
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+{
+"91
+} 0
+"50 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"60
+} 0
+"66 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+{
+"124
+} 0
+"194
+[v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 12 ]
+"196
+} 0
+"190
+[v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 12 ]
+"192
+} 0
+"198
+[v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 12 ]
+"200
+} 0
+"61 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"134
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 12 ]
+"136
+} 0
+"80 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"98
+} 0
+"55 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"123
+} 0
+"62 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"52 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"183 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"202
+} 0
+"100 C:\Users\Fedor\MPLABXProjects\Test.X\main.c
+[v _DemoInit DemoInit `(v  1 e 1 0 ]
+{
+"144
+} 0
+"72 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_MAIN.c
+[v _CO_ProcessAllEvents CO_ProcessAllEvents `(v  1 e 1 0 ]
+{
+"85
+} 0
+"322 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_COMM.c
+[v __CO_COMMTXRdyEventManager _CO_COMMTXRdyEventManager `(v  1 e 1 0 ]
+{
+"455
+} 0
+"320 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SDO1.c
+[v __CO_COMM_SDO1_TXEvent _CO_COMM_SDO1_TXEvent `(v  1 e 1 0 ]
+{
+"448
+} 0
+"109 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_PDO.c
+[v __CO_COMM_PDO1_TXEvent _CO_COMM_PDO1_TXEvent `(v  1 e 1 0 ]
+{
+"117
+} 0
+"474 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_COMM.c
+[v __CO_COMMTXFinEventManager _CO_COMMTXFinEventManager `(v  1 e 1 0 ]
+{
+"578
+} 0
+"505 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_CANDRV.c
+[v __CANIsPutFin _CANIsPutFin `(v  1 e 1 0 ]
+{
+"518
+} 0
+"500 C:\Users\Fedor\MPLABXProjects\Test.X\main.c
+[v _CO_PDO1TXFinEvent CO_PDO1TXFinEvent `(v  1 e 1 0 ]
+{
+"503
+} 0
+"186 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_COMM.c
+[v __CO_COMMRXEventManager _CO_COMMRXEventManager `(v  1 e 1 0 ]
+{
+"302
+} 0
+"134 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SYNC.c
+[v __CO_COMM_SYNC_RXEvent _CO_COMM_SYNC_RXEvent `(v  1 e 1 0 ]
+{
+"142
+} 0
+"162 C:\Users\Fedor\MPLABXProjects\Test.X\main.c
+[v _CO_COMMSyncEvent CO_COMMSyncEvent `(v  1 e 1 0 ]
+{
+"187
+} 0
+"468 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SDO1.c
+[v __CO_COMM_SDO1_RXEvent _CO_COMM_SDO1_RXEvent `(v  1 e 1 0 ]
+{
+"858
+} 0
+"220 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_DICT.c
+[v __CO_DictObjectWrite _CO_DictObjectWrite `(v  1 e 1 0 ]
+{
+"256
+} 0
+"158
+[v __CO_DictObjectRead _CO_DictObjectRead `(v  1 e 1 0 ]
+{
+"200
+} 0
+"91 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_MEMIO.c
+[v _CO_MEMIO_CopySram CO_MEMIO_CopySram `(v  1 e 1 0 ]
+{
+[v CO_MEMIO_CopySram@pIn pIn `*.39uc  1 p 2 0 ]
+[v CO_MEMIO_CopySram@pOut pOut `*.39uc  1 p 2 2 ]
+[v CO_MEMIO_CopySram@len len `ui  1 p 2 4 ]
+"130
+} 0
+"153
+[v _CO_MEMIO_CopyRomToRam CO_MEMIO_CopyRomToRam `(v  1 e 1 0 ]
+{
+[v CO_MEMIO_CopyRomToRam@pIn pIn `*.39Cuc  1 p 2 0 ]
+[v CO_MEMIO_CopyRomToRam@pOut pOut `*.39uc  1 p 2 2 ]
+[v CO_MEMIO_CopyRomToRam@len len `ui  1 p 2 4 ]
+"243
+} 0
+"281 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_DICT.c
+[v __CO_DictObjectDecode _CO_DictObjectDecode `(v  1 e 1 0 ]
+{
+"570
+} 0
+"103 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_PDO.c
+[v __CO_COMM_PDO1_RXEvent _CO_COMM_PDO1_RXEvent `(v  1 e 1 0 ]
+{
+"107
+} 0
+"132 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_NMT.c
+[v __CO_COMM_NMT_RXEvent _CO_COMM_NMT_RXEvent `(v  1 e 1 0 ]
+{
+"178
+} 0
+"120 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_COMM.c
+[v __CO_COMMResetEventManager _CO_COMMResetEventManager `(v  1 e 1 0 ]
+{
+"166
+} 0
+"85 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SYNC.c
+[v __CO_COMM_SYNC_Open _CO_COMM_SYNC_Open `(v  1 e 1 0 ]
+{
+"92
+} 0
+"211 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SDO1.c
+[v __CO_COMM_SDO1_Open _CO_COMM_SDO1_Open `(v  1 e 1 0 ]
+{
+"229
+} 0
+"89 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_PDO.c
+[v __CO_COMM_PDO1_Open _CO_COMM_PDO1_Open `(v  1 e 1 0 ]
+{
+"94
+} 0
+"79 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_NMT.c
+[v __CO_COMM_NMT_Open _CO_COMM_NMT_Open `(v  1 e 1 0 ]
+{
+"86
+} 0
+"371 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_NMTE.c
+[v __CO_COMM_NMTE_TXEvent _CO_COMM_NMTE_TXEvent `(v  1 e 1 0 ]
+{
+"405
+} 0
+"253
+[v __CO_COMM_NMTE_Open _CO_COMM_NMTE_Open `(v  1 e 1 0 ]
+{
+"288
+} 0
+"180 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_TOOLS.c
+[v __CO_COB_CANopen2MCHP _CO_COB_CANopen2MCHP `(v  1 e 1 0 ]
+{
+"215
+} 0
+"555 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_CANDRV.c
+[v __CANOpenMessage _CANOpenMessage `(v  1 e 1 0 ]
+{
+"557
+[v __CANOpenMessage@i i `uc  1 a 1 12 ]
+"578
+} 0
+"230
+[v __CANReset _CANReset `(v  1 e 1 0 ]
+{
+"339
+} 0
+"467
+[v __CANIsPutReady _CANIsPutReady `(v  1 e 1 0 ]
+{
+"480
+} 0
+"107
+[v __CANEventManager _CANEventManager `(v  1 e 1 0 ]
+{
+"210
+} 0
+"366
+[v __CANSetBitRate _CANSetBitRate `(v  1 e 1 0 ]
+{
+"437
+} 0
+"47 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/exttst.c
+[v _CO_NMTStateChangeEvent CO_NMTStateChangeEvent `(v  1 e 1 0 ]
+{
+"49
+} 0
+"51
+[v _CO_NMTResetEvent CO_NMTResetEvent `(v  1 e 1 0 ]
+{
+"54
+} 0
+"56
+[v _CO_NMTAppResetRequest CO_NMTAppResetRequest `(v  1 e 1 0 ]
+{
+"58
+} 0
+"333 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_NMTE.c
+[v __CO_COMM_NMTE_RXEvent _CO_COMM_NMTE_RXEvent `(v  1 e 1 0 ]
+{
+"350
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 12 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"651 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_CANDRV.c
+[v __CANIsGetReady _CANIsGetReady `(v  1 e 1 0 ]
+{
+"692
+} 0
+"58 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"73
+} 0
+"121 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"131
+} 0
+"508 C:\Users\Fedor\MPLABXProjects\Test.X\main.c
+[v _TMR0_Blink TMR0_Blink `(v  1 e 1 0 ]
+{
+"543
+} 0
+"138 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/tmr0.c
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"142
+} 0
+"598 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_COMM.c
+[v __CO_COMMLSTimeEventManager _CO_COMMLSTimeEventManager `(v  1 e 1 0 ]
+{
+"641
+} 0
+"281 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_SDO1.c
+[v __CO_COMM_SDO1_LSTimerEvent _CO_COMM_SDO1_LSTimerEvent `(v  1 e 1 0 ]
+{
+"300
+} 0
+"424 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/CO_NMTE.c
+[v __CO_COMM_NMTE_LSTimerEvent _CO_COMM_NMTE_LSTimerEvent `(v  1 e 1 0 ]
+{
+"457
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul16.c
+[v i2___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v i2___wmul@product product `ui  1 a 2 4 ]
+"15
+[v i2___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i2___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"65 C:\Users\Fedor\MPLABXProjects\Test.X\CANopen/exttst.c
+[v _CO_NMTENodeGuardErrEvent CO_NMTENodeGuardErrEvent `(v  1 e 1 0 ]
+{
+"68
+} 0
+"478 C:\Users\Fedor\MPLABXProjects\Test.X\main.c
+[v _CO_PDO1LSTimerEvent CO_PDO1LSTimerEvent `(v  1 e 1 0 ]
+{
+"481
+} 0
+"444 C:\Users\Fedor\MPLABXProjects\Test.X\mcc_generated_files/ecan.c
+[v _ECAN_WAKI_ISR ECAN_WAKI_ISR `(v  1 e 1 0 ]
+{
+"448
+} 0
+"63
+[v _WakeUpDefaultInterruptHandler WakeUpDefaultInterruptHandler `(v  1 s 1 WakeUpDefaultInterruptHandler ]
+{
+} 0

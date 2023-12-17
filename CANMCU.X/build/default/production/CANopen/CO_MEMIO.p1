@@ -1,0 +1,247 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"64 CANopen/CO_MEMIO.c
+[; ;CANopen/CO_MEMIO.c: 64: {
+[s S3 `uc -> 4 `i ]
+[n S3 _DATA_BLOCK_4 bytes ]
+"59
+[; ;CANopen/CO_MEMIO.c: 59: {
+[s S2 `uc -> 8 `i ]
+[n S2 _DATA_BLOCK_8 bytes ]
+"54
+[; ;CANopen/CO_MEMIO.c: 54: {
+[s S1 `uc -> 16 `i ]
+[n S1 _DATA_BLOCK_16 bytes ]
+"91 CANopen/CO_MEMIO.c
+[; ;CANopen/CO_MEMIO.c: 91: void CO_MEMIO_CopySram(unsigned char *pIn, unsigned char *pOut, unsigned int len)
+[v _CO_MEMIO_CopySram `(v ~T0 @X0 1 ef3`*uc`*uc`ui ]
+"92
+[; ;CANopen/CO_MEMIO.c: 92: {
+{
+[e :U _CO_MEMIO_CopySram ]
+"91
+[; ;CANopen/CO_MEMIO.c: 91: void CO_MEMIO_CopySram(unsigned char *pIn, unsigned char *pOut, unsigned int len)
+[v _pIn `*uc ~T0 @X0 1 r1 ]
+[v _pOut `*uc ~T0 @X0 1 r2 ]
+[v _len `ui ~T0 @X0 1 r3 ]
+"92
+[; ;CANopen/CO_MEMIO.c: 92: {
+[f ]
+"93
+[; ;CANopen/CO_MEMIO.c: 93:  while (len)
+[e $U 5  ]
+[e :U 6 ]
+"94
+[; ;CANopen/CO_MEMIO.c: 94:  {
+{
+"95
+[; ;CANopen/CO_MEMIO.c: 95:   if (len < 4)
+[e $ ! < _len -> -> 4 `i `ui 8  ]
+"96
+[; ;CANopen/CO_MEMIO.c: 96:   {
+{
+"97
+[; ;CANopen/CO_MEMIO.c: 97:    *pOut = *pIn;
+[e = *U _pOut *U _pIn ]
+"99
+[; ;CANopen/CO_MEMIO.c: 99:    pOut++;
+[e ++ _pOut * -> -> 1 `i `x -> -> # *U _pOut `i `x ]
+"100
+[; ;CANopen/CO_MEMIO.c: 100:    pIn++;
+[e ++ _pIn * -> -> 1 `i `x -> -> # *U _pIn `i `x ]
+"101
+[; ;CANopen/CO_MEMIO.c: 101:    len--;
+[e -- _len -> -> 1 `i `ui ]
+"102
+[; ;CANopen/CO_MEMIO.c: 102:   }
+}
+[e $U 9  ]
+"103
+[; ;CANopen/CO_MEMIO.c: 103:   else
+[e :U 8 ]
+"104
+[; ;CANopen/CO_MEMIO.c: 104:   if (len < 8)
+[e $ ! < _len -> -> 8 `i `ui 10  ]
+"105
+[; ;CANopen/CO_MEMIO.c: 105:   {
+{
+"106
+[; ;CANopen/CO_MEMIO.c: 106:    *((_DATA4 *)pOut) = *((_DATA4 *)(pIn));
+[e = *U -> _pOut `*S3 *U -> _pIn `*S3 ]
+"108
+[; ;CANopen/CO_MEMIO.c: 108:    pOut += 4;
+[e =+ _pOut * -> -> 4 `i `x -> -> # *U _pOut `i `x ]
+"109
+[; ;CANopen/CO_MEMIO.c: 109:    pIn += 4;
+[e =+ _pIn * -> -> 4 `i `x -> -> # *U _pIn `i `x ]
+"110
+[; ;CANopen/CO_MEMIO.c: 110:    len -= 4;
+[e =- _len -> -> 4 `i `ui ]
+"111
+[; ;CANopen/CO_MEMIO.c: 111:   }
+}
+[e $U 11  ]
+"112
+[; ;CANopen/CO_MEMIO.c: 112:   else
+[e :U 10 ]
+"113
+[; ;CANopen/CO_MEMIO.c: 113:   if (len < 16)
+[e $ ! < _len -> -> 16 `i `ui 12  ]
+"114
+[; ;CANopen/CO_MEMIO.c: 114:   {
+{
+"115
+[; ;CANopen/CO_MEMIO.c: 115:    *((_DATA8 *)pOut) = *((_DATA8 *)(pIn));
+[e = *U -> _pOut `*S2 *U -> _pIn `*S2 ]
+"117
+[; ;CANopen/CO_MEMIO.c: 117:    pOut += 8;
+[e =+ _pOut * -> -> 8 `i `x -> -> # *U _pOut `i `x ]
+"118
+[; ;CANopen/CO_MEMIO.c: 118:    pIn += 8;
+[e =+ _pIn * -> -> 8 `i `x -> -> # *U _pIn `i `x ]
+"119
+[; ;CANopen/CO_MEMIO.c: 119:    len -= 8;
+[e =- _len -> -> 8 `i `ui ]
+"120
+[; ;CANopen/CO_MEMIO.c: 120:   }
+}
+[e $U 13  ]
+"121
+[; ;CANopen/CO_MEMIO.c: 121:   else
+[e :U 12 ]
+"122
+[; ;CANopen/CO_MEMIO.c: 122:   {
+{
+"123
+[; ;CANopen/CO_MEMIO.c: 123:    *((_DATA16 *)pOut) = *((_DATA16 *)(pIn));
+[e = *U -> _pOut `*S1 *U -> _pIn `*S1 ]
+"125
+[; ;CANopen/CO_MEMIO.c: 125:    pOut += 16;
+[e =+ _pOut * -> -> 16 `i `x -> -> # *U _pOut `i `x ]
+"126
+[; ;CANopen/CO_MEMIO.c: 126:    pIn += 16;
+[e =+ _pIn * -> -> 16 `i `x -> -> # *U _pIn `i `x ]
+"127
+[; ;CANopen/CO_MEMIO.c: 127:    len -= 16;
+[e =- _len -> -> 16 `i `ui ]
+"128
+[; ;CANopen/CO_MEMIO.c: 128:   }
+}
+[e :U 13 ]
+[e :U 11 ]
+[e :U 9 ]
+"129
+[; ;CANopen/CO_MEMIO.c: 129:  }
+}
+[e :U 5 ]
+"93
+[; ;CANopen/CO_MEMIO.c: 93:  while (len)
+[e $ != _len -> -> 0 `i `ui 6  ]
+[e :U 7 ]
+"130
+[; ;CANopen/CO_MEMIO.c: 130: }
+[e :UE 4 ]
+}
+"153
+[; ;CANopen/CO_MEMIO.c: 153: void CO_MEMIO_CopyRomToRam(const unsigned char *pIn, unsigned char *pOut, unsigned int len)
+[v _CO_MEMIO_CopyRomToRam `(v ~T0 @X0 1 ef3`*Cuc`*uc`ui ]
+"154
+[; ;CANopen/CO_MEMIO.c: 154: {
+{
+[e :U _CO_MEMIO_CopyRomToRam ]
+"153
+[; ;CANopen/CO_MEMIO.c: 153: void CO_MEMIO_CopyRomToRam(const unsigned char *pIn, unsigned char *pOut, unsigned int len)
+[v _pIn `*Cuc ~T0 @X0 1 r1 ]
+[v _pOut `*uc ~T0 @X0 1 r2 ]
+[v _len `ui ~T0 @X0 1 r3 ]
+"154
+[; ;CANopen/CO_MEMIO.c: 154: {
+[f ]
+"214
+[; ;CANopen/CO_MEMIO.c: 214:  while (len)
+[e $U 15  ]
+[e :U 16 ]
+"215
+[; ;CANopen/CO_MEMIO.c: 215:  {
+{
+"216
+[; ;CANopen/CO_MEMIO.c: 216:   if (len < 4)
+[e $ ! < _len -> -> 4 `i `ui 18  ]
+"217
+[; ;CANopen/CO_MEMIO.c: 217:   {
+{
+"218
+[; ;CANopen/CO_MEMIO.c: 218:    *pOut = *pIn;
+[e = *U _pOut *U _pIn ]
+"220
+[; ;CANopen/CO_MEMIO.c: 220:    pOut++;
+[e ++ _pOut * -> -> 1 `i `x -> -> # *U _pOut `i `x ]
+"221
+[; ;CANopen/CO_MEMIO.c: 221:    pIn++;
+[e ++ _pIn * -> -> 1 `i `x -> -> # *U _pIn `i `x ]
+"222
+[; ;CANopen/CO_MEMIO.c: 222:    len--;
+[e -- _len -> -> 1 `i `ui ]
+"223
+[; ;CANopen/CO_MEMIO.c: 223:   }
+}
+[e $U 19  ]
+"224
+[; ;CANopen/CO_MEMIO.c: 224:   else
+[e :U 18 ]
+"225
+[; ;CANopen/CO_MEMIO.c: 225:   if (len < 8)
+[e $ ! < _len -> -> 8 `i `ui 20  ]
+"226
+[; ;CANopen/CO_MEMIO.c: 226:   {
+{
+"227
+[; ;CANopen/CO_MEMIO.c: 227:    *((_DATA4 *)(pOut)) = *((const _DATA4 *)pIn);
+[e = *U -> _pOut `*S3 *U -> _pIn `*CS3 ]
+"229
+[; ;CANopen/CO_MEMIO.c: 229:    pOut += 4;
+[e =+ _pOut * -> -> 4 `i `x -> -> # *U _pOut `i `x ]
+"230
+[; ;CANopen/CO_MEMIO.c: 230:    pIn += 4;
+[e =+ _pIn * -> -> 4 `i `x -> -> # *U _pIn `i `x ]
+"231
+[; ;CANopen/CO_MEMIO.c: 231:    len -= 4;
+[e =- _len -> -> 4 `i `ui ]
+"232
+[; ;CANopen/CO_MEMIO.c: 232:   }
+}
+[e $U 21  ]
+"233
+[; ;CANopen/CO_MEMIO.c: 233:   else
+[e :U 20 ]
+"234
+[; ;CANopen/CO_MEMIO.c: 234:   {
+{
+"235
+[; ;CANopen/CO_MEMIO.c: 235:    *((_DATA8 *)(pOut)) = *((const _DATA8 *)pIn);
+[e = *U -> _pOut `*S2 *U -> _pIn `*CS2 ]
+"237
+[; ;CANopen/CO_MEMIO.c: 237:    pOut += 8;
+[e =+ _pOut * -> -> 8 `i `x -> -> # *U _pOut `i `x ]
+"238
+[; ;CANopen/CO_MEMIO.c: 238:    pIn += 8;
+[e =+ _pIn * -> -> 8 `i `x -> -> # *U _pIn `i `x ]
+"239
+[; ;CANopen/CO_MEMIO.c: 239:    len -= 8;
+[e =- _len -> -> 8 `i `ui ]
+"240
+[; ;CANopen/CO_MEMIO.c: 240:   }
+}
+[e :U 21 ]
+[e :U 19 ]
+"241
+[; ;CANopen/CO_MEMIO.c: 241:  }
+}
+[e :U 15 ]
+"214
+[; ;CANopen/CO_MEMIO.c: 214:  while (len)
+[e $ != _len -> -> 0 `i `ui 16  ]
+[e :U 17 ]
+"243
+[; ;CANopen/CO_MEMIO.c: 243: }
+[e :UE 14 ]
+}

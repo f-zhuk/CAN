@@ -1,0 +1,99 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"49 CANopen/CO_DEV.c
+[; ;CANopen/CO_DEV.c: 49: const unsigned long rCO_DevType = 0x8934AL;
+[v _rCO_DevType `Cul ~T0 @X0 1 e ]
+[i _rCO_DevType
+-> -> 561994 `l `ul
+]
+"52
+[; ;CANopen/CO_DEV.c: 52: const unsigned char rCO_DevName[] = "Microchip CANopen Device";
+[v _rCO_DevName `Cuc ~T0 @X0 -> 25 `i e ]
+[i _rCO_DevName
+:U ..
+-> 77 `c
+-> 105 `c
+-> 99 `c
+-> 114 `c
+-> 111 `c
+-> 99 `c
+-> 104 `c
+-> 105 `c
+-> 112 `c
+-> 32 `c
+-> 67 `c
+-> 65 `c
+-> 78 `c
+-> 111 `c
+-> 112 `c
+-> 101 `c
+-> 110 `c
+-> 32 `c
+-> 68 `c
+-> 101 `c
+-> 118 `c
+-> 105 `c
+-> 99 `c
+-> 101 `c
+-> 0 `c
+..
+]
+"55
+[; ;CANopen/CO_DEV.c: 55: const unsigned char rCO_DevHardwareVer[] = "V1.0";
+[v _rCO_DevHardwareVer `Cuc ~T0 @X0 -> 5 `i e ]
+[i _rCO_DevHardwareVer
+:U ..
+-> 86 `c
+-> 49 `c
+-> 46 `c
+-> 48 `c
+-> 0 `c
+..
+]
+"58
+[; ;CANopen/CO_DEV.c: 58: const unsigned char rCO_DevSoftwareVer[] = "V1.0";
+[v _rCO_DevSoftwareVer `Cuc ~T0 @X0 -> 5 `i e ]
+[i _rCO_DevSoftwareVer
+:U ..
+-> 86 `c
+-> 49 `c
+-> 46 `c
+-> 48 `c
+-> 0 `c
+..
+]
+"61
+[; ;CANopen/CO_DEV.c: 61: const unsigned char rCO_DevIdentityIndx = 0x4;
+[v _rCO_DevIdentityIndx `Cuc ~T0 @X0 1 e ]
+[i _rCO_DevIdentityIndx
+-> -> 4 `i `uc
+]
+"62
+[; ;CANopen/CO_DEV.c: 62: const unsigned long rCO_DevVendorID = 0x12345678L;
+[v _rCO_DevVendorID `Cul ~T0 @X0 1 e ]
+[i _rCO_DevVendorID
+-> -> 305419896 `l `ul
+]
+"63
+[; ;CANopen/CO_DEV.c: 63: const unsigned long rCO_DevProductCode = 0x87654321L;
+[v _rCO_DevProductCode `Cul ~T0 @X0 1 e ]
+[i _rCO_DevProductCode
+-> 2271560481 `ul
+]
+"64
+[; ;CANopen/CO_DEV.c: 64: const unsigned long rCO_DevRevNo = 0x12345678L;
+[v _rCO_DevRevNo `Cul ~T0 @X0 1 e ]
+[i _rCO_DevRevNo
+-> -> 305419896 `l `ul
+]
+"65
+[; ;CANopen/CO_DEV.c: 65: const unsigned long rCO_DevSerialNo = 0x87654321L;
+[v _rCO_DevSerialNo `Cul ~T0 @X0 1 e ]
+[i _rCO_DevSerialNo
+-> 2271560481 `ul
+]
+"68
+[; ;CANopen/CO_DEV.c: 68: unsigned char uCO_DevErrReg;
+[v _uCO_DevErrReg `uc ~T0 @X0 1 e ]
+"71
+[; ;CANopen/CO_DEV.c: 71: unsigned long uCO_DevManufacturerStatReg;
+[v _uCO_DevManufacturerStatReg `ul ~T0 @X0 1 e ]
