@@ -58,7 +58,7 @@ class Adapter:
         self.__port_papam_label = tk.Label(self.__adapter_frame, bg="white", text="Port", anchor=tk.W, padx=20) #font=("Arial Rounded MT Bold", 14))
         self.__port_text = tk.StringVar(self.__adapter_frame, "None")
         self.__port_label = tk.Label(self.__adapter_frame, bg="white", textvariable=self.__port_text, anchor=tk.W, padx=10)
-        self.__send_button = tk.Button(self.__adapter_frame, text="Send", anchor=tk.W, padx=10)
+        self.__send_button = tk.Button(self.__adapter_frame, text="Send", command = self.send, anchor=tk.W, padx=10)
         self.__send_message = tk.Entry(self.__adapter_frame)
 
 
@@ -136,6 +136,11 @@ class Adapter:
                 self.__last_frame = CANFrame(self.__temp_frame_ID,self.__temp_frame_DLC,self.__temp_frame_DATA)
                 return self.__last_frame
         return None           
+    
+    def send(self):
+        self.ser.write(b'hello')
+        #msg=tk.messagebox.showinfo("Hello", "Hello")
+        #return None
 
     def show_frame(self):
         self.__adapter_frame.pack(fill=tk.X)
