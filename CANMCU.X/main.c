@@ -54,8 +54,8 @@
 
 // These are mapping constants for TPDO1 
 // starting at 0x1A00 in the dictionary
-const unsigned long uTPDO1Map = 0x60000108;
-const unsigned long uRPDO1Map = 0x62000108;
+const unsigned long uTPDO1Map = 0x60000108; // 0x1A00 subindex 1 in CO_PDO.def 
+const unsigned long uRPDO1Map = 0x62000108; // 0x1600 subindex 1 in CO_PDO.def 
 const unsigned long uPDO1Dummy = 0x00000008;
 
 unsigned char uIOinFilter;					// 0x6003 filter

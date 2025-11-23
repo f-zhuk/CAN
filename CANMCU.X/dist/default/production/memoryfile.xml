@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\Test.X.production.hex">
+  <executable name="dist/default/production/CANMCU.X.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>65536</length>
-      <used>10160</used>
-      <free>55376</free>
+      <used>12612</used>
+      <free>52924</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>4096</length>
-      <used>286</used>
-      <free>3810</free>
+      <used>275</used>
+      <free>3821</free>
     </memory>
   </executable>
 </project>

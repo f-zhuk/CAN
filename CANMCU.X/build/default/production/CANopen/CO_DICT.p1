@@ -290,7 +290,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 -> . `E308 4 `uc
 -> -> 1 `i `ui
--> &U _uCO_DevErrReg `*Cuc
+&U _uCO_DevErrReg
 ..
 :U ..
 -> -> 4098 `i `ui
@@ -696,7 +696,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 -> . `E308 4 `uc
 -> -> 1 `i `ui
--> &U *U + &U _uLocalXmtBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _uLocalXmtBuffer `ui `ux `*Cuc
+&U *U + &U _uLocalXmtBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _uLocalXmtBuffer `ui `ux
 ..
 :U ..
 -> -> 24578 `i `ui
@@ -710,7 +710,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 1 `i `uc
 -> . `E308 3 `uc
 -> -> 1 `i `ui
--> &U _uIOinPolarity `*Cuc
+&U _uIOinPolarity
 ..
 :U ..
 -> -> 24579 `i `ui
@@ -724,7 +724,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 1 `i `uc
 -> . `E308 3 `uc
 -> -> 1 `i `ui
--> &U _uIOinFilter `*Cuc
+&U _uIOinFilter
 ..
 :U ..
 -> -> 24581 `i `ui
@@ -738,7 +738,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 1 `i `uc
 -> . `E308 3 `uc
 -> -> 1 `i `ui
--> &U _uIOinIntEnable `*Cuc
+&U _uIOinIntEnable
 ..
 :U ..
 -> -> 24582 `i `ui
@@ -752,7 +752,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 1 `i `uc
 -> . `E308 3 `uc
 -> -> 1 `i `ui
--> &U _uIOinIntChange `*Cuc
+&U _uIOinIntChange
 ..
 :U ..
 -> -> 24583 `i `ui
@@ -766,7 +766,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 1 `i `uc
 -> . `E308 3 `uc
 -> -> 1 `i `ui
--> &U _uIOinIntRise `*Cuc
+&U _uIOinIntRise
 ..
 :U ..
 -> -> 24584 `i `ui
@@ -780,14 +780,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 1 `i `uc
 -> . `E308 3 `uc
 -> -> 1 `i `ui
--> &U _uIOinIntFall `*Cuc
+&U _uIOinIntFall
 ..
 :U ..
 -> -> 25088 `i `ui
 -> -> 0 `i `uc
 -> . `E308 3 `uc
 -> -> 1 `i `ui
--> &U *U + &U _uLocalRcvBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _uLocalRcvBuffer `ui `ux `*Cuc
+&U *U + &U _uLocalRcvBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _uLocalRcvBuffer `ui `ux
 ..
 ..
 ]

@@ -58,12 +58,17 @@ class Adapter:
         self.__port_papam_label = tk.Label(self.__adapter_frame, bg="white", text="Port", anchor=tk.W, padx=20) #font=("Arial Rounded MT Bold", 14))
         self.__port_text = tk.StringVar(self.__adapter_frame, "None")
         self.__port_label = tk.Label(self.__adapter_frame, bg="white", textvariable=self.__port_text, anchor=tk.W, padx=10)
+        self.__send_button = tk.Button(self.__adapter_frame, text="Send", anchor=tk.W, padx=10)
+        self.__send_message = tk.Entry(self.__adapter_frame)
+
 
         self.__adapter_frame.columnconfigure(0, minsize=150, weight=1)
         self.__adapter_frame.columnconfigure(1, minsize=150, weight=1)
         self.__adapter_label.grid(column=0, row=0, sticky=tk.EW, padx=5, pady=5) 
         self.__port_papam_label.grid(column=0, row=1, sticky=tk.EW, padx=5, pady=5)       
         self.__port_label.grid(column=1, row=1, sticky=tk.EW, padx=5, pady=5)
+        self.__send_button.grid(column=0, row=2, sticky=tk.EW, padx=5, pady=5)
+        self.__send_message.grid(column=1, row=2, sticky=tk.EW, padx=5, pady=5)
         
     def is_plugged(self):
         if self.__port == '':
@@ -74,7 +79,7 @@ class Adapter:
                         #self.__port_name = port.name
                 window.update()
                 time.sleep(0.1)
-            self.ser = serial.Serial(self.__port.name, 230400, timeout=0, )
+            self.ser = serial.Serial(self.__port.device, 230400, timeout=0, )
             self.ser.close()
             self.ser.open()
 
@@ -180,7 +185,7 @@ class Device:
             self.__param_value_texts[frame.get_TYPE()] = tk.StringVar(self.__device_frame, "Value")
         if self.__param_value_labels.get(frame.get_TYPE()) is None:
             self.__param_value_labels[frame.get_TYPE()] = tk.Label(self.__device_frame, bg="white", textvariable=self.__param_value_texts[frame.get_TYPE()], anchor=tk.W, padx=10)       
-            self.__param_value_labels[frame.get_TYPE()].grid(column=1, row=frame.get_TYPE()+1, sticky=tk.EW, padx=5, pady=5)
+            self.__param_value_labels[frame.get_TYPE()].grid(column=10, row=frame.get_TYPE()+1, sticky=tk.EW, padx=5, pady=5)
             
 
         match frame.get_TYPE():

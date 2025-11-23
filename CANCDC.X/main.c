@@ -45,6 +45,15 @@
 #define CAN_MSG_LEN 14
 #define SERIAL_BUF_LEN CAN_MSG_LEN*100
 
+enum TX_State {
+  SIGNATURE1,
+  SIGNATURE2,
+  IDH,
+  IDL,
+  DLC,
+  DATA,
+  CONTROL
+};
 
 uint8_t circular_buffer[SERIAL_BUF_LEN];
 uint16_t top_pointer = 0;

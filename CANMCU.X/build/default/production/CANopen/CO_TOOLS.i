@@ -1,10 +1,10 @@
 # 1 "CANopen/CO_TOOLS.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 288 "<built-in>" 3
+# 295 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\language_support.h" 1 3
+# 1 "/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "CANopen/CO_TOOLS.c" 2
 # 48 "CANopen/CO_TOOLS.c"
@@ -383,7 +383,7 @@ typedef struct __DATA8
 {
  unsigned char myDat[8];
 }_DATA8;
-# 48 "CANopen/CO_TOOLS.c" 2
+# 49 "CANopen/CO_TOOLS.c" 2
 # 113 "CANopen/CO_TOOLS.c"
 typedef struct _CO_CID
 {

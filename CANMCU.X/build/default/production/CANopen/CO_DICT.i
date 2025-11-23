@@ -1,16 +1,15 @@
 # 1 "CANopen/CO_DICT.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 288 "<built-in>" 3
+# 295 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\\pic\\include\\language_support.h" 1 3
+# 1 "/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "CANopen/CO_DICT.c" 2
 # 46 "CANopen/CO_DICT.c"
 # 1 "CANopen/CO_DEFS.def" 1
-# 46 "CANopen/CO_DICT.c" 2
-
+# 47 "CANopen/CO_DICT.c" 2
 # 1 "CANopen/CO_TYPES.h" 1
 # 46 "CANopen/CO_TYPES.h"
 typedef struct _SID
@@ -386,8 +385,7 @@ typedef struct __DATA8
 {
  unsigned char myDat[8];
 }_DATA8;
-# 47 "CANopen/CO_DICT.c" 2
-
+# 48 "CANopen/CO_DICT.c" 2
 # 1 "CANopen/CO_ABERR.h" 1
 # 47 "CANopen/CO_ABERR.h"
 typedef enum _SDO_REQ_STATUS
@@ -419,8 +417,7 @@ typedef enum _SDO_REQ_STATUS
  E_LOCAL_CONTROL,
  E_DEV_STATE
 }REQ_STAT;
-# 48 "CANopen/CO_DICT.c" 2
-
+# 49 "CANopen/CO_DICT.c" 2
 # 1 "CANopen/CO_DICT.h" 1
 # 50 "CANopen/CO_DICT.h"
 # 1 "CANopen/CO_DEV.h" 1
@@ -439,8 +436,7 @@ extern const unsigned long rCO_DevSerialNo;
 extern unsigned char uCO_DevErrReg;
 extern unsigned long uCO_DevManufacturerStatReg;
 extern unsigned long uCO_DevPredefinedErrField;
-# 50 "CANopen/CO_DICT.h" 2
-
+# 51 "CANopen/CO_DICT.h" 2
 # 1 "CANopen/CO_SYNC.h" 1
 # 54 "CANopen/CO_SYNC.h"
 extern UNSIGNED32 _uSYNC_COBID;
@@ -452,8 +448,7 @@ void _CO_COMM_SYNC_Close(void);
 void _CO_COMM_SYNC_RXEvent(void);
 # 129 "CANopen/CO_SYNC.h"
 void _CO_COMM_SYNC_COBIDAccessEvent(void);
-# 51 "CANopen/CO_DICT.h" 2
-
+# 52 "CANopen/CO_DICT.h" 2
 # 1 "CANopen/CO_NMTE.h" 1
 # 73 "CANopen/CO_NMTE.h"
 void _CO_COMM_NMTE_HeartBeatAccessEvent(void);
@@ -477,8 +472,7 @@ extern UNSIGNED8 _uNMTELocalState;
 extern UNSIGNED16 _uNMTEHeartBeat;
 extern UNSIGNED16 _uNMTEGuardTime;
 extern UNSIGNED8 _uNMTELifeFactor;
-# 52 "CANopen/CO_DICT.h" 2
-
+# 53 "CANopen/CO_DICT.h" 2
 # 1 "CANopen/CO_SDO1.h" 1
 # 51 "CANopen/CO_SDO1.h"
 extern const unsigned char _uSDO1COMMIndx;
@@ -496,8 +490,7 @@ void _CO_COMM_SDO1_LSTimerEvent(void);
 void _CO_COMM_SDO1_TXEvent(void);
 # 184 "CANopen/CO_SDO1.h"
 void _CO_COMM_SDO1_RXEvent(void);
-# 53 "CANopen/CO_DICT.h" 2
-
+# 54 "CANopen/CO_DICT.h" 2
 
 
 typedef struct _DICTIONARY_OBJECT_TEMPLATE
@@ -618,15 +611,13 @@ void _CO_DictObjectWrite(void);
 void _CO_DictObjectDecode(void);
 void _CO_DictTest(void);
 void _CO_TestObjectAccessEvent(void);
-# 49 "CANopen/CO_DICT.c" 2
-
+# 50 "CANopen/CO_DICT.c" 2
 # 1 "CANopen/CO_MEMIO.h" 1
 # 75 "CANopen/CO_MEMIO.h"
 void CO_MEMIO_CopySram(unsigned char *pIn, unsigned char *pOut, unsigned int len);
 # 98 "CANopen/CO_MEMIO.h"
 void CO_MEMIO_CopyRomToRam(const unsigned char *pIn, unsigned char *pOut, unsigned int len);
-# 50 "CANopen/CO_DICT.c" 2
-
+# 51 "CANopen/CO_DICT.c" 2
 # 1 "CANopen/CO_DICT.def" 1
 
 
@@ -650,12 +641,10 @@ extern const unsigned long rCO_DevSerialNo;
 extern unsigned char uCO_DevErrReg;
 extern unsigned long uCO_DevManufacturerStatReg;
 extern unsigned long uCO_DevPredefinedErrField;
-# 7 "CANopen/CO_DICT.def" 2
-# 51 "CANopen/CO_DICT.c" 2
-
-# 1 "CANopen/CO_MFTR.def" 1
+# 8 "CANopen/CO_DICT.def" 2
 # 52 "CANopen/CO_DICT.c" 2
-
+# 1 "CANopen/CO_MFTR.def" 1
+# 53 "CANopen/CO_DICT.c" 2
 # 1 "CANopen/CO_PDO.def" 1
 
 
@@ -688,9 +677,8 @@ void DemoInit(void);
 void CO_COMM_TPDO1_COBIDAccessEvent(void);
 void CO_COMM_RPDO1_COBIDAccessEvent(void);
 void CO_COMM_TPDO1_TypeAccessEvent(void);
-# 3 "CANopen/CO_PDO.def" 2
-# 53 "CANopen/CO_DICT.c" 2
-
+# 4 "CANopen/CO_PDO.def" 2
+# 54 "CANopen/CO_DICT.c" 2
 # 1 "CANopen/CO_STD.def" 1
 
 
@@ -727,9 +715,8 @@ void DemoInit(void);
 void CO_COMM_TPDO1_COBIDAccessEvent(void);
 void CO_COMM_RPDO1_COBIDAccessEvent(void);
 void CO_COMM_TPDO1_TypeAccessEvent(void);
-# 7 "CANopen/CO_STD.def" 2
-# 54 "CANopen/CO_DICT.c" 2
-
+# 8 "CANopen/CO_STD.def" 2
+# 55 "CANopen/CO_DICT.c" 2
 
 
 

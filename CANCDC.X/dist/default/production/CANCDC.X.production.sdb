@@ -3,39 +3,75 @@
 [d edition pro ]
 [d chip 18F26K83 ]
 [d frameptr 16353 ]
-"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"9 /opt/microchip/xc8/v3.10/pic/sources/c99/common/aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 /opt/microchip/xc8/v3.10/pic/sources/c99/common/aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v3.10/pic/sources/c99/common/fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+"62 /opt/microchip/xc8/v3.10/pic/sources/c99/common/float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+"86 /opt/microchip/xc8/v3.10/pic/sources/c99/common/ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+"54 /opt/microchip/xc8/v3.10/pic/sources/c99/common/ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+"62 /opt/microchip/xc8/v3.10/pic/sources/c99/common/ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+"19 /opt/microchip/xc8/v3.10/pic/sources/c99/common/ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"9 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 /opt/microchip/xc8/v3.10/pic/sources/c99/common/sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+"11 /opt/microchip/xc8/v3.10/pic/sources/c99/common/sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+"8 /opt/microchip/xc8/v3.10/pic/sources/c99/common/sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+"15 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+"91 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"59 C:\Users\Fedor\MPLABXProjects\CANCDC.X\main.c
+"59 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
 [v _serial_buffer_add serial_buffer_add `(v  1 e 1 0 ]
 "89
-[v _RXB0InterruptHandler@main$F1185 RXB0InterruptHandler `(v  1 s 1 RXB0InterruptHandler ]
+[v _RXB0InterruptHandler@main$F1274 RXB0InterruptHandler `(v  1 s 1 RXB0InterruptHandler ]
 "137
 [v _ECAN_Initialize_user ECAN_Initialize_user `(v  1 e 1 0 ]
 "225
 [v _main main `(v  1 e 1 0 ]
-"63 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/ecan.c
+"63 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/ecan.c
 [v _RXB0DefaultInterruptHandler RXB0DefaultInterruptHandler `(v  1 s 1 RXB0DefaultInterruptHandler ]
 "368
 [v _convertReg2ExtendedCANid convertReg2ExtendedCANid `(ul  1 s 4 convertReg2ExtendedCANid ]
@@ -47,37 +83,51 @@
 [v _ECAN_SetRXB0InterruptHandler ECAN_SetRXB0InterruptHandler `(v  1 e 1 0 ]
 "444
 [v _ECAN_RXB0I_ISR ECAN_RXB0I_ISR `(v  1 e 1 0 ]
-"52 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/interrupt_manager.c
+"52 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "58
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
-"50 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/mcc.c
+"50 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "60
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "78
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/pin_manager.c
+"55 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"66 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/uart1.c
+"86 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
-"131
+"165
 [v _UART1_is_tx_ready UART1_is_tx_ready `(a  1 e 1 0 ]
-"170
+"201
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
-"183
+"228
+[v _UART1_Transmit_ISR UART1_Transmit_ISR `(v  1 e 1 0 ]
+"248
+[v _UART1_Receive_ISR UART1_Receive_ISR `(v  1 e 1 0 ]
+"272
+[v _UART1_RxDataHandler UART1_RxDataHandler `(v  1 e 1 0 ]
+"282
 [v _UART1_DefaultFramingErrorHandler UART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
-"185
+"284
 [v _UART1_DefaultOverrunErrorHandler UART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
-"187
+"286
 [v _UART1_DefaultErrorHandler UART1_DefaultErrorHandler `(v  1 e 1 0 ]
-"190
+"290
 [v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
-"194
+"294
 [v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
-"198
+"298
 [v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
-"271 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-K_DFP/1.5.114/xc8\pic\include\proc\pic18f26k83.h
+"304
+[v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
+"308
+[v _UART1_SetTxInterruptHandler UART1_SetTxInterruptHandler `(v  1 e 1 0 ]
+"517 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/uart1.h
+[v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.37(v  1 e 2 0 ]
+"535
+[v _UART1_TxInterruptHandler UART1_TxInterruptHandler `*.37(v  1 e 2 0 ]
+"271 /home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h
 [v _CIOCON CIOCON `VEuc  1 e 1 @14080 ]
 "438
 [v _BRGCON1 BRGCON1 `VEuc  1 e 1 @14083 ]
@@ -85,59 +135,10 @@
 [v _BRGCON2 BRGCON2 `VEuc  1 e 1 @14084 ]
 "590
 [v _BRGCON3 BRGCON3 `VEuc  1 e 1 @14085 ]
-"4163
-[v _LATA LATA `VEuc  1 e 1 @16314 ]
-"4275
-[v _LATB LATB `VEuc  1 e 1 @16315 ]
-[s S997 . 1 `uc 1 LATB0 1 0 :1:0 
-`uc 1 LATB1 1 0 :1:1 
-`uc 1 LATB2 1 0 :1:2 
-`uc 1 LATB3 1 0 :1:3 
-`uc 1 LATB4 1 0 :1:4 
-`uc 1 LATB5 1 0 :1:5 
-`uc 1 LATB6 1 0 :1:6 
-`uc 1 LATB7 1 0 :1:7 
-]
-"4302
-[s S1006 . 1 `uc 1 LB0 1 0 :1:0 
-`uc 1 LB1 1 0 :1:1 
-`uc 1 LB2 1 0 :1:2 
-`uc 1 LB3 1 0 :1:3 
-`uc 1 LB4 1 0 :1:4 
-`uc 1 LB5 1 0 :1:5 
-`uc 1 LB6 1 0 :1:6 
-`uc 1 LB7 1 0 :1:7 
-]
-[u S1015 . 1 `S997 1 . 1 0 `S1006 1 . 1 0 ]
-[v _LATBbits LATBbits `VES1015  1 e 1 @16315 ]
-"4387
-[v _LATC LATC `VEuc  1 e 1 @16316 ]
-"4499
-[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
-"4561
-[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
-"4623
-[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
-[s S326 . 1 `uc 1 INT0EDG 1 0 :1:0 
-`uc 1 INT1EDG 1 0 :1:1 
-`uc 1 INT2EDG 1 0 :1:2 
-`uc 1 . 1 0 :2:3 
-`uc 1 IPEN 1 0 :1:5 
-`uc 1 GIEL 1 0 :1:6 
-`uc 1 GIE 1 0 :1:7 
-]
-"4985
-[s S334 . 1 `uc 1 . 1 0 :7:0 
-`uc 1 GIEH 1 0 :1:7 
-]
-[u S337 . 1 `S326 1 . 1 0 `S334 1 . 1 0 ]
-[v _INTCON0bits INTCON0bits `VES337  1 e 1 @16338 ]
 "13961
 [v _RXF0SIDH RXF0SIDH `VEuc  1 e 1 @14240 ]
 "14081
 [v _RXF0SIDL RXF0SIDL `VEuc  1 e 1 @14241 ]
-"14144
-[v _PLLR PLLR `VEb  1 e 0 @118496 ]
 "14169
 [v _RXF0EIDH RXF0EIDH `VEuc  1 e 1 @14242 ]
 "14239
@@ -198,7 +199,7 @@
 [v _RXM1EIDH RXM1EIDH `VEuc  1 e 1 @14270 ]
 "16675
 [v _RXM1EIDL RXM1EIDL `VEuc  1 e 1 @14271 ]
-[s S562 . 1 `uc 1 TXPRI 1 0 :2:0 
+[s S647 . 1 `uc 1 TXPRI 1 0 :2:0 
 `uc 1 . 1 0 :1:2 
 `uc 1 TXREQ 1 0 :1:3 
 `uc 1 TXERR 1 0 :1:4 
@@ -207,11 +208,11 @@
 `uc 1 TXBIF 1 0 :1:7 
 ]
 "16765
-[s S570 . 1 `uc 1 TXPRI0 1 0 :1:0 
+[s S655 . 1 `uc 1 TXPRI0 1 0 :1:0 
 `uc 1 TXPRI1 1 0 :1:1 
 ]
-[u S573 . 1 `S562 1 . 1 0 `S570 1 . 1 0 ]
-[v _TXB2CONbits TXB2CONbits `VES573  1 e 1 @14272 ]
+[u S658 . 1 `S647 1 . 1 0 `S655 1 . 1 0 ]
+[v _TXB2CONbits TXB2CONbits `VES658  1 e 1 @14272 ]
 "16810
 [v _TXB2SIDH TXB2SIDH `VEuc  1 e 1 @14273 ]
 "16930
@@ -239,7 +240,7 @@
 "17701
 [v _TXB2D7 TXB2D7 `VEuc  1 e 1 @14285 ]
 "18047
-[v _TXB1CONbits TXB1CONbits `VES573  1 e 1 @14288 ]
+[v _TXB1CONbits TXB1CONbits `VES658  1 e 1 @14288 ]
 "18092
 [v _TXB1SIDH TXB1SIDH `VEuc  1 e 1 @14289 ]
 "18212
@@ -267,7 +268,7 @@
 "18983
 [v _TXB1D7 TXB1D7 `VEuc  1 e 1 @14301 ]
 "19312
-[v _TXB0CONbits TXB0CONbits `VES573  1 e 1 @14304 ]
+[v _TXB0CONbits TXB0CONbits `VES658  1 e 1 @14304 ]
 "19357
 [v _TXB0SIDH TXB0SIDH `VEuc  1 e 1 @14305 ]
 "19477
@@ -294,7 +295,7 @@
 [v _TXB0D6 TXB0D6 `VEuc  1 e 1 @14316 ]
 "20248
 [v _TXB0D7 TXB0D7 `VEuc  1 e 1 @14317 ]
-[s S770 . 1 `uc 1 FILHIT0 1 0 :1:0 
+[s S855 . 1 `uc 1 FILHIT0 1 0 :1:0 
 `uc 1 FILHIT1 1 0 :1:1 
 `uc 1 FILHIT2 1 0 :1:2 
 `uc 1 RXRTRRO_FILHIT3 1 0 :1:3 
@@ -304,18 +305,18 @@
 `uc 1 RXFUL 1 0 :1:7 
 ]
 "20603
-[s S779 . 1 `uc 1 . 1 0 :3:0 
+[s S864 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 RXRTRRO 1 0 :1:3 
 `uc 1 . 1 0 :1:4 
 `uc 1 RXM0 1 0 :1:5 
 ]
-[s S784 . 1 `uc 1 . 1 0 :3:0 
+[s S869 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 FILHIT3 1 0 :1:3 
 `uc 1 . 1 0 :1:4 
 `uc 1 RTRRO 1 0 :1:5 
 ]
-[u S789 . 1 `S770 1 . 1 0 `S779 1 . 1 0 `S784 1 . 1 0 ]
-[v _RXB1CONbits RXB1CONbits `VES789  1 e 1 @14320 ]
+[u S874 . 1 `S855 1 . 1 0 `S864 1 . 1 0 `S869 1 . 1 0 ]
+[v _RXB1CONbits RXB1CONbits `VES874  1 e 1 @14320 ]
 "20668
 [v _RXB1SIDH RXB1SIDH `VEuc  1 e 1 @14321 ]
 "20788
@@ -342,7 +343,30 @@
 [v _RXB1D6 RXB1D6 `VEuc  1 e 1 @14332 ]
 "21581
 [v _RXB1D7 RXB1D7 `VEuc  1 e 1 @14333 ]
-[s S352 . 1 `uc 1 RXB0IE 1 0 :1:0 
+[s S105 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+`uc 1 I2C1IE 1 0 :1:1 
+`uc 1 I2C1EIE 1 0 :1:2 
+`uc 1 U1RXIE 1 0 :1:3 
+`uc 1 U1TXIE 1 0 :1:4 
+`uc 1 U1EIE 1 0 :1:5 
+`uc 1 U1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"25405
+[s S114 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S120 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S125 . 1 `S105 1 . 1 0 `S114 1 . 1 0 `S120 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES125  1 e 1 @14739 ]
+[s S368 . 1 `uc 1 RXB0IE 1 0 :1:0 
 `uc 1 RXB1IE 1 0 :1:1 
 `uc 1 TXB0IE 1 0 :1:2 
 `uc 1 TXB1IE 1 0 :1:3 
@@ -352,16 +376,16 @@
 `uc 1 IRXIE 1 0 :1:7 
 ]
 "25573
-[s S361 . 1 `uc 1 FIFOFIE 1 0 :1:0 
+[s S377 . 1 `uc 1 FIFOFIE 1 0 :1:0 
 `uc 1 RXBnIE 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TXBnIE 1 0 :1:4 
 ]
-[s S366 . 1 `uc 1 FIFOWMIE 1 0 :1:0 
+[s S382 . 1 `uc 1 FIFOWMIE 1 0 :1:0 
 ]
-[u S368 . 1 `S352 1 . 1 0 `S361 1 . 1 0 `S366 1 . 1 0 ]
-[v _PIE5bits PIE5bits `VES368  1 e 1 @14741 ]
-[s S144 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+[u S384 . 1 `S368 1 . 1 0 `S377 1 . 1 0 `S382 1 . 1 0 ]
+[v _PIE5bits PIE5bits `VES384  1 e 1 @14741 ]
+[s S471 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
 `uc 1 I2C1IF 1 0 :1:1 
 `uc 1 I2C1EIF 1 0 :1:2 
 `uc 1 U1RXIF 1 0 :1:3 
@@ -371,14 +395,14 @@
 `uc 1 TMR0IF 1 0 :1:7 
 ]
 "26129
-[s S153 . 1 `uc 1 . 1 0 :1:0 
+[s S480 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXBNIF 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TXBNIF 1 0 :1:4 
 ]
-[u S158 . 1 `S144 1 . 1 0 `S153 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES158  1 e 1 @14755 ]
-[s S389 . 1 `uc 1 RXB0IF 1 0 :1:0 
+[u S485 . 1 `S471 1 . 1 0 `S480 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES485  1 e 1 @14755 ]
+[s S405 . 1 `uc 1 RXB0IF 1 0 :1:0 
 `uc 1 RXB1IF 1 0 :1:1 
 `uc 1 TXB0IF 1 0 :1:2 
 `uc 1 TXB1IF 1 0 :1:3 
@@ -388,15 +412,15 @@
 `uc 1 IRXIF 1 0 :1:7 
 ]
 "26272
-[s S398 . 1 `uc 1 FIFOFIF 1 0 :1:0 
+[s S414 . 1 `uc 1 FIFOFIF 1 0 :1:0 
 `uc 1 RXBnIF 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TXBnIF 1 0 :1:4 
 ]
-[s S403 . 1 `uc 1 FIFOWMIF 1 0 :1:0 
+[s S419 . 1 `uc 1 FIFOWMIF 1 0 :1:0 
 ]
-[u S405 . 1 `S389 1 . 1 0 `S398 1 . 1 0 `S403 1 . 1 0 ]
-[v _PIR5bits PIR5bits `VES405  1 e 1 @14757 ]
+[u S421 . 1 `S405 1 . 1 0 `S414 1 . 1 0 `S419 1 . 1 0 ]
+[v _PIR5bits PIR5bits `VES421  1 e 1 @14757 ]
 "26579
 [v _PMD0 PMD0 `VEuc  1 e 1 @14784 ]
 "26656
@@ -483,34 +507,6 @@
 [v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
 "47329
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
-[s S176 . 1 `uc 1 MODE0 1 0 :1:0 
-`uc 1 MODE1 1 0 :1:1 
-`uc 1 MODE2 1 0 :1:2 
-]
-"47360
-[s S180 . 1 `uc 1 U1MODE 1 0 :4:0 
-`uc 1 U1RXEN 1 0 :1:4 
-`uc 1 U1TXEN 1 0 :1:5 
-`uc 1 U1ABDEN 1 0 :1:6 
-`uc 1 U1BRGS 1 0 :1:7 
-]
-"47360
-[s S186 . 1 `uc 1 U1MODE0 1 0 :1:0 
-`uc 1 U1MODE1 1 0 :1:1 
-`uc 1 U1MODE2 1 0 :1:2 
-]
-"47360
-[s S190 . 1 `uc 1 MODE 1 0 :4:0 
-`uc 1 RXEN 1 0 :1:4 
-`uc 1 TXEN 1 0 :1:5 
-`uc 1 ABDEN 1 0 :1:6 
-`uc 1 BRGS 1 0 :1:7 
-]
-"47360
-[u S196 . 1 `S176 1 . 1 0 `S180 1 . 1 0 `S186 1 . 1 0 `S190 1 . 1 0 ]
-"47360
-"47360
-[v _U1CON0bits U1CON0bits `VES196  1 e 1 @15858 ]
 "47445
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
 "47525
@@ -525,7 +521,7 @@
 [v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
 "47900
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
-[s S222 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S215 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -535,7 +531,7 @@
 `uc 1 TXMTIF 1 0 :1:7 
 ]
 "47927
-[s S231 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+[s S224 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -545,13 +541,13 @@
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
 "47927
-[u S240 . 1 `S222 1 . 1 0 `S231 1 . 1 0 ]
+[u S233 . 1 `S215 1 . 1 0 `S224 1 . 1 0 ]
 "47927
 "47927
-[v _U1ERRIRbits U1ERRIRbits `VES240  1 e 1 @15865 ]
+[v _U1ERRIRbits U1ERRIRbits `VES233  1 e 1 @15865 ]
 "48012
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
-[s S689 . 1 `uc 1 FILHIT0 1 0 :1:0 
+[s S774 . 1 `uc 1 FILHIT0 1 0 :1:0 
 `uc 1 JTOFF_FILHIT1 1 0 :1:1 
 `uc 1 RB0DBEN_FILHIT2 1 0 :1:2 
 `uc 1 RXRTRRO_FILHIT3 1 0 :1:3 
@@ -561,11 +557,11 @@
 `uc 1 RXFUL 1 0 :1:7 
 ]
 "63094
-[s S698 . 1 `uc 1 FILHIT 1 0 :5:0 
+[s S783 . 1 `uc 1 FILHIT 1 0 :5:0 
 `uc 1 RTRRO 1 0 :1:5 
 ]
 "63094
-[s S701 . 1 `uc 1 . 1 0 :1:0 
+[s S786 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 FILHIT1 1 0 :1:1 
 `uc 1 FILHIT2 1 0 :1:2 
 `uc 1 FILHIT3 1 0 :1:3 
@@ -573,16 +569,16 @@
 `uc 1 RXM0 1 0 :1:5 
 ]
 "63094
-[s S708 . 1 `uc 1 . 1 0 :1:0 
+[s S793 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 JTOFF 1 0 :1:1 
 `uc 1 RB0DBEN 1 0 :1:2 
 `uc 1 RXRTRRO 1 0 :1:3 
 ]
 "63094
-[u S713 . 1 `S689 1 . 1 0 `S698 1 . 1 0 `S701 1 . 1 0 `S708 1 . 1 0 ]
+[u S798 . 1 `S774 1 . 1 0 `S783 1 . 1 0 `S786 1 . 1 0 `S793 1 . 1 0 ]
 "63094
 "63094
-[v _RXB0CONbits RXB0CONbits `VES713  1 e 1 @16256 ]
+[v _RXB0CONbits RXB0CONbits `VES798  1 e 1 @16256 ]
 "63184
 [v _RXB0SIDH RXB0SIDH `VEuc  1 e 1 @16257 ]
 "63304
@@ -615,7 +611,7 @@
 [v _CANCON CANCON `VEuc  1 e 1 @16271 ]
 "64467
 [v _COMSTAT COMSTAT `VEuc  1 e 1 @16272 ]
-[s S826 . 1 `uc 1 EWARN 1 0 :1:0 
+[s S911 . 1 `uc 1 EWARN 1 0 :1:0 
 `uc 1 RXWARN 1 0 :1:1 
 `uc 1 TXWARN 1 0 :1:2 
 `uc 1 RXBP 1 0 :1:3 
@@ -625,26 +621,81 @@
 `uc 1 RXB0OVFL 1 0 :1:7 
 ]
 "64497
-[s S835 . 1 `uc 1 . 1 0 :7:0 
+[s S920 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_FIFOEMPTY 1 0 :1:7 
 ]
 "64497
-[s S838 . 1 `uc 1 . 1 0 :7:0 
+[s S923 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 nFIFOEMPTY 1 0 :1:7 
 ]
 "64497
-[s S841 . 1 `uc 1 . 1 0 :6:0 
+[s S926 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RXBNOVFL 1 0 :1:6 
 `uc 1 FIFOEMPTY 1 0 :1:7 
 ]
 "64497
-[u S845 . 1 `S826 1 . 1 0 `S835 1 . 1 0 `S838 1 . 1 0 `S841 1 . 1 0 ]
+[u S930 . 1 `S911 1 . 1 0 `S920 1 . 1 0 `S923 1 . 1 0 `S926 1 . 1 0 ]
 "64497
 "64497
-[v _COMSTATbits COMSTATbits `VES845  1 e 1 @16272 ]
+[v _COMSTATbits COMSTATbits `VES930  1 e 1 @16272 ]
 "64562
 [v _ECANCON ECANCON `VEuc  1 e 1 @16273 ]
-"49 C:\Users\Fedor\MPLABXProjects\CANCDC.X\main.c
+"69699
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+"69811
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+[s S1084 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"69838
+[s S1093 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+"69838
+[u S1102 . 1 `S1084 1 . 1 0 `S1093 1 . 1 0 ]
+"69838
+"69838
+[v _LATBbits LATBbits `VES1102  1 e 1 @16315 ]
+"69923
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+"70035
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+"70097
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"70159
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+[s S342 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"70521
+[s S350 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"70521
+[u S353 . 1 `S342 1 . 1 0 `S350 1 . 1 0 ]
+"70521
+"70521
+[v _INTCON0bits INTCON0bits `VES353  1 e 1 @16338 ]
+"79680
+[v _PLLR PLLR `VEb  1 e 0 @118496 ]
+"49 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
 [v _circular_buffer circular_buffer `[1400]uc  1 e 1400 0 ]
 "50
 [v _top_pointer top_pointer `us  1 e 2 0 ]
@@ -654,105 +705,163 @@
 [v _buf_length buf_length `us  1 e 2 0 ]
 "54
 [v _status status `uc  1 e 1 0 ]
-"54 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/ecan.c
+"54 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/ecan.c
 [v _RXB0InterruptHandler RXB0InterruptHandler `*.37(v  1 s 2 RXB0InterruptHandler ]
-[s S88 . 1 `uc 1 perr 1 0 :1:0 
+"63 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/uart1.c
+[v _uart1TxHead uart1TxHead `VEuc  1 s 1 uart1TxHead ]
+"64
+[v _uart1TxTail uart1TxTail `VEuc  1 s 1 uart1TxTail ]
+"65
+[v _uart1TxBuffer uart1TxBuffer `VE[8]uc  1 s 8 uart1TxBuffer ]
+"66
+[v _uart1TxBufferRemaining uart1TxBufferRemaining `VEuc  1 e 1 0 ]
+"68
+[v _uart1RxHead uart1RxHead `VEuc  1 s 1 uart1RxHead ]
+"69
+[v _uart1RxTail uart1RxTail `VEuc  1 s 1 uart1RxTail ]
+"70
+[v _uart1RxBuffer uart1RxBuffer `VE[8]uc  1 s 8 uart1RxBuffer ]
+[s S94 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"53 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/uart1.c
-[u S93 . 1 `S88 1 . 1 0 `uc 1 status 1 0 ]
-[v _uart1RxLastError uart1RxLastError `VES93  1 s 1 uart1RxLastError ]
-"58
+"71
+[u S99 . 1 `S94 1 . 1 0 `uc 1 status 1 0 ]
+[v _uart1RxStatusBuffer uart1RxStatusBuffer `VE[8]S99  1 s 8 uart1RxStatusBuffer ]
+"72
+[v _uart1RxCount uart1RxCount `VEuc  1 e 1 0 ]
+"73
+[v _uart1RxLastError uart1RxLastError `VES99  1 s 1 uart1RxLastError ]
+"78
 [v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
-"59
+"79
 [v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
-"60
+"80
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"225 C:\Users\Fedor\MPLABXProjects\CANCDC.X\main.c
+"225 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "257
 } 0
-"131 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/uart1.c
+"165 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/uart1.c
 [v _UART1_is_tx_ready UART1_is_tx_ready `(a  1 e 1 0 ]
 {
-"134
+"168
 } 0
-"170
+"201
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
 {
-[v UART1_Write@txData txData `uc  1 a 1 wreg ]
-[v UART1_Write@txData txData `uc  1 a 1 wreg ]
-[v UART1_Write@txData txData `uc  1 a 1 0 ]
-"177
-} 0
-"50 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/mcc.c
+[v UART1_Write@txData txData `uc  1 p 1 wreg ]
+[v UART1_Write@txData txData `uc  1 p 1 wreg ]
+[v UART1_Write@txData txData `uc  1 p 1 0 ]
+"222
+} 1
+"50 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "58
 } 0
-"66 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/uart1.c
+"86 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 {
-"124
+"158
 } 0
-"194
+"308
+[v _UART1_SetTxInterruptHandler UART1_SetTxInterruptHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetTxInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"310
+} 0
+"304
+[v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v UART1_SetRxInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"306
+} 0
+"294
 [v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 {
 [v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
-"196
+"296
 } 0
-"190
+"290
 [v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
 {
 [v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
-"192
+"292
 } 0
-"198
+"298
 [v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
 {
 [v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
-"200
+"300
 } 0
-"78 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/mcc.c
+"78 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "96
 } 0
-"55 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/pin_manager.c
+"55 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "119
 } 0
-"60 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/mcc.c
+"60 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "76
 } 0
-"52 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/interrupt_manager.c
+"52 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "56
 } 0
-"137 C:\Users\Fedor\MPLABXProjects\CANCDC.X\main.c
+"137 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
 [v _ECAN_Initialize_user ECAN_Initialize_user `(v  1 e 1 0 ]
 {
 "223
 } 0
-"439 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/ecan.c
+"439 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/ecan.c
 [v _ECAN_SetRXB0InterruptHandler ECAN_SetRXB0InterruptHandler `(v  1 e 1 0 ]
 {
 [v ECAN_SetRXB0InterruptHandler@handler handler `*.37(v  1 p 2 0 ]
 "442
 } 0
-"58 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/interrupt_manager.c
+"58 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
-"69
+"77
 } 0
-"444 C:\Users\Fedor\MPLABXProjects\CANCDC.X\mcc_generated_files/ecan.c
+"228 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/uart1.c
+[v _UART1_Transmit_ISR UART1_Transmit_ISR `(v  1 e 1 0 ]
+{
+"246
+} 0
+"248
+[v _UART1_Receive_ISR UART1_Receive_ISR `(v  1 e 1 0 ]
+{
+"270
+} 0
+"284
+[v _UART1_DefaultOverrunErrorHandler UART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"282
+[v _UART1_DefaultFramingErrorHandler UART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"286
+[v _UART1_DefaultErrorHandler UART1_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"288
+} 0
+"272
+[v _UART1_RxDataHandler UART1_RxDataHandler `(v  1 e 1 0 ]
+{
+"280
+} 0
+"444 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/ecan.c
 [v _ECAN_RXB0I_ISR ECAN_RXB0I_ISR `(v  1 e 1 0 ]
 {
 "448
@@ -761,28 +870,28 @@
 [v _RXB0DefaultInterruptHandler RXB0DefaultInterruptHandler `(v  1 s 1 RXB0DefaultInterruptHandler ]
 {
 } 0
-"89 C:\Users\Fedor\MPLABXProjects\CANCDC.X\main.c
-[v _RXB0InterruptHandler@main$F1185 RXB0InterruptHandler `(v  1 s 1 RXB0InterruptHandler ]
+"89 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
+[v _RXB0InterruptHandler@main$F1274 RXB0InterruptHandler `(v  1 s 1 RXB0InterruptHandler ]
 {
 "95
-[v RXB0InterruptHandler@main$F1185@data data `[8]*.39VEuc  1 a 16 10 ]
+[v RXB0InterruptHandler@main$F1274@data data `[8]*.39VEuc  1 a 16 9 ]
 "94
-[v RXB0InterruptHandler@main$F1185@buffer buffer `[14]uc  1 a 14 26 ]
+[v RXB0InterruptHandler@main$F1274@buffer buffer `[14]uc  1 a 14 25 ]
 "92
-[v RXB0InterruptHandler@main$F1185@identificator identificator `us  1 a 2 40 ]
+[v RXB0InterruptHandler@main$F1274@identificator identificator `us  1 a 2 39 ]
 "91
-[v RXB0InterruptHandler@main$F1185@counter counter `uc  1 a 1 42 ]
+[v RXB0InterruptHandler@main$F1274@counter counter `uc  1 a 1 41 ]
 "94
-[v RXB0InterruptHandler@main$F1185@F22971 F22971 `[8]*.39VEuc  1 s 16 F22971 ]
+[v RXB0InterruptHandler@main$F1274@F23001 F23001 `[8]*.39VEuc  1 s 16 F23001 ]
 "135
 } 0
 "59
 [v _serial_buffer_add serial_buffer_add `(v  1 e 1 0 ]
 {
 "64
-[v serial_buffer_add@counter counter `uc  1 a 1 5 ]
+[v serial_buffer_add@counter counter `uc  1 a 1 4 ]
 "59
-[v serial_buffer_add@buffer_ptr buffer_ptr `*.39uc  1 p 2 0 ]
-[v serial_buffer_add@length length `uc  1 p 1 2 ]
+[v serial_buffer_add@buffer_ptr buffer_ptr `*.30uc  1 p 1 0 ]
+[v serial_buffer_add@length length `uc  1 p 1 1 ]
 "72
 } 0

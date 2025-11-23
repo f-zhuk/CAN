@@ -55,8 +55,8 @@ extern unsigned char uDOUT_MASK;                // 0x6208 Filter mask output 8-b
 
 extern unsigned char uIOinDigiInOld;			// 
 
-extern unsigned char uLocalXmtBuffer[8];			// Local buffer for TPDO1
-extern unsigned char uLocalRcvBuffer[8];			// local buffer fot RPDO1
+extern unsigned char uLocalXmtBuffer[8];		// Local buffer for TPDO1
+extern unsigned char uLocalRcvBuffer[8];		// local buffer fot RPDO1
 
 extern const unsigned char uDemoTPDO1Len;
 extern const unsigned char rMaxIndex1;
