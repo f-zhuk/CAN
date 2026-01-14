@@ -59,7 +59,8 @@ class Adapter:
         self.__port_text = tk.StringVar(self.__adapter_frame, "None")
         self.__port_label = tk.Label(self.__adapter_frame, bg="white", textvariable=self.__port_text, anchor=tk.W, padx=10)
         self.__send_button = tk.Button(self.__adapter_frame, text="Send", command = self.send, anchor=tk.W, padx=10)
-        self.__send_message = tk.Entry(self.__adapter_frame)
+        self.__send_message = tk.StringVar(self.__adapter_frame, "None")
+        self.__send_entry = tk.Entry(self.__adapter_frame, textvariable=self.__send_message)
 
 
         self.__adapter_frame.columnconfigure(0, minsize=150, weight=1)
@@ -68,7 +69,7 @@ class Adapter:
         self.__port_papam_label.grid(column=0, row=1, sticky=tk.EW, padx=5, pady=5)       
         self.__port_label.grid(column=1, row=1, sticky=tk.EW, padx=5, pady=5)
         self.__send_button.grid(column=0, row=2, sticky=tk.EW, padx=5, pady=5)
-        self.__send_message.grid(column=1, row=2, sticky=tk.EW, padx=5, pady=5)
+        self.__send_entry.grid(column=1, row=2, sticky=tk.EW, padx=5, pady=5)
         
     def is_plugged(self):
         if self.__port == '':
@@ -138,7 +139,15 @@ class Adapter:
         return None           
     
     def send(self):
-        self.ser.write(b'hello')
+        string = [0x55, 0xAA]
+        try:
+            string+=bytearray.fromhex(self.__send_entry.get())
+        except:
+            tk.messagebox.showinfo("Error", "Incorrect format")
+        else:
+            #tk.messagebox.showinfo("Example", string)
+            self.ser.write(string) #b'hello')
+            self.__send_entry.delete(0, 'end')
         #msg=tk.messagebox.showinfo("Hello", "Hello")
         #return None
 
