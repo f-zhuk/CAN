@@ -42,6 +42,7 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+#define UART_MSG_LEN 11
 #define CAN_MSG_LEN 14
 #define SERIAL_BUF_LEN CAN_MSG_LEN*100
 
@@ -95,8 +96,39 @@ void serial_buffer_add(uint8_t *buffer_ptr)
         status |= 0x01;
 }*/
 
+void ECAN_buffer_add()
+{
+    static uint8_t buffer[UART_MSG_LEN];
+    static uint8_t frame_state = 0;
+    static uint8_t counter = 0;
+    
+    if (frame_state == 0)
+    {
+        for (counter = 0; counter < UART_MSG_LEN; counter++)
+            buffer[counter]=0;
+        
+        counter = 0;
+        frame_state = 1;
+    }
+    if ((frame_state == 1) && UART1_is_rx_ready())
+    {
+        if (UART1_Read() == 0x55)
+            frame_state = 2;
+    }       
+    if ((frame_state == 2) && UART1_is_rx_ready())
+    {
+        if (UART1_Read() == 0xAA)
+            frame_state = 3;  
+    } 
+    if ((frame_state == 3) && UART1_is_rx_ready())
+    {
+        frame_state = 0;  
+    } 
+}
+
 static void RXB0InterruptHandler(void) 
 {
+    // CAN interrupt handler
     uint8_t counter = 0;
     uint16_t identificator = RXB0SIDH;
     identificator = (identificator<<3) | (RXB0SIDL>>5);
@@ -122,18 +154,10 @@ static void RXB0InterruptHandler(void)
     buffer[3] = identificator&0xFF;
     buffer[4] = RXB0DLC;
     
-    for (counter = 0; counter < buffer[4]; counter++)
+    for (counter = 0; counter < (buffer[4] & 0x0F); counter++)
     {
         buffer[5+counter] = *data[counter];
     }
-    //buffer[5] = RXB0D0;
-    //buffer[6] = RXB0D1;
-    //buffer[7] = RXB0D2;
-    //buffer[8] = RXB0D3; 
-    //buffer[9] = RXB0D4;
-    //buffer[10] = RXB0D5;  
-    //buffer[11] = RXB0D6;  
-    //buffer[12] = RXB0D7;  
     buffer[5+counter] = COMSTAT;
     
     COMSTAT = 0;
@@ -142,6 +166,7 @@ static void RXB0InterruptHandler(void)
     
     serial_buffer_add(buffer, (6+counter));
 }
+
 
 void ECAN_Initialize_user(void)
 {
@@ -230,6 +255,7 @@ void ECAN_Initialize_user(void)
     CANCON = 0x60; //Request listen only mode
     while (0x60 != (CANSTAT & 0xE0)); // wait until ECAN is in Normal mode    
 }
+
 
 void main(void)
 {

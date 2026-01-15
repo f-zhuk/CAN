@@ -123,7 +123,7 @@ class Adapter:
                 self.__frame_state = 2
         if self.__frame_state == 2 :
             if len(self.__buffer) > 0 :
-                self.__temp_frame_DLC = self.__buffer.pop(0)
+                self.__temp_frame_DLC = (self.__buffer.pop(0) & 0x0F)
                 self.__frame_state = 3
         if self.__frame_state == 3 :
             if len(self.__buffer) >= self.__temp_frame_DLC :
