@@ -36693,6 +36693,16 @@ void PMD_Initialize(void);
 
 
 
+enum Frame_state {
+  RESET,
+  SIGNATURE1,
+  SIGNATURE2,
+  IDH,
+  IDL,
+  DLC,
+  DATA,
+  CONTROL
+};
 
 uint8_t circular_buffer[14*100];
 uint16_t top_pointer = 0;
@@ -36718,9 +36728,68 @@ void serial_buffer_add(uint8_t *buffer_ptr, uint8_t length)
     else
         status |= 0x01;
 }
-# 89 "main.c"
+# 99 "main.c"
+void ECAN_buffer_add()
+{
+    static uCAN_MSG message;
+    static uint8_t frame_state = RESET;
+    static uint8_t counter = 0;
+
+    if (frame_state == RESET)
+    {
+        for (counter = 0; counter < 14; counter++)
+            message.array[counter] = 0;
+
+        message.frame.idType = 1;
+        counter = 0;
+        frame_state = SIGNATURE1;
+    }
+    if ((frame_state == SIGNATURE1) && UART1_is_rx_ready())
+    {
+        if (UART1_Read() == 0x55)
+            frame_state = SIGNATURE2;
+    }
+    if ((frame_state == SIGNATURE2) && UART1_is_rx_ready())
+    {
+        if (UART1_Read() == 0xAA)
+            frame_state = IDH;
+        else
+            frame_state = SIGNATURE1;
+    }
+    if ((frame_state == IDH) && UART1_is_rx_ready())
+    {
+        message.frame.id = (uint32_t)UART1_Read()<<8;
+        frame_state = IDL;
+
+    }
+    if ((frame_state == IDL) && UART1_is_rx_ready())
+    {
+        message.frame.id |= UART1_Read();
+        frame_state = DLC;
+    }
+    if ((frame_state == DLC) && UART1_is_rx_ready())
+    {
+        message.frame.dlc = UART1_Read();
+        frame_state = DATA;
+    }
+    while ((frame_state == DATA) && UART1_is_rx_ready() && (counter<(message.frame.dlc&0x07)))
+    {
+        message.array[6+counter] = UART1_Read();
+        counter++;
+        frame_state = CONTROL;
+    }
+    if ((frame_state == CONTROL) && UART1_is_rx_ready())
+    {
+        UART1_Read();
+        CAN_transmit(&message);
+        do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0);
+        frame_state = RESET;
+    }
+}
+
 static void RXB0InterruptHandler(void)
 {
+
     uint8_t counter = 0;
     uint16_t identificator = RXB0SIDH;
     identificator = (identificator<<3) | (RXB0SIDL>>5);
@@ -36737,7 +36806,7 @@ static void RXB0InterruptHandler(void)
         &RXB0D7
     };
 
-    do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0);
+
 
     buffer[0] = 0x55;
     buffer[1] = 0xAA;
@@ -36746,11 +36815,10 @@ static void RXB0InterruptHandler(void)
     buffer[3] = identificator&0xFF;
     buffer[4] = RXB0DLC;
 
-    for (counter = 0; counter < buffer[4]; counter++)
+    for (counter = 0; counter < (buffer[4] & 0x07); counter++)
     {
         buffer[5+counter] = *data[counter];
     }
-# 128 "main.c"
     buffer[5+counter] = COMSTAT;
 
     COMSTAT = 0;
@@ -36759,6 +36827,7 @@ static void RXB0InterruptHandler(void)
 
     serial_buffer_add(buffer, (6+counter));
 }
+
 
 void ECAN_Initialize_user(void)
 {
@@ -36774,7 +36843,7 @@ void ECAN_Initialize_user(void)
 
 
     CIOCON = 0x00;
-# 163 "main.c"
+# 225 "main.c"
     RXM0EIDH = 0x00;
     RXM0EIDL = 0x00;
     RXM0SIDH = 0x00;
@@ -36811,7 +36880,7 @@ void ECAN_Initialize_user(void)
     RXF5EIDL = 0x00;
     RXF5SIDH = 0x00;
     RXF5SIDL = 0x00;
-# 213 "main.c"
+# 275 "main.c"
     BRGCON1 = 0x27;
     BRGCON2 = 0x98;
     BRGCON3 = 0x81;
@@ -36823,6 +36892,7 @@ void ECAN_Initialize_user(void)
     CANCON = 0x60;
     while (0x60 != (CANSTAT & 0xE0));
 }
+
 
 void main(void)
 {
@@ -36846,6 +36916,8 @@ void main(void)
 
 
         _delay((unsigned long)((50)*(64000000/4000.0)));
+        ECAN_buffer_add();
+
         while(!UART1_is_tx_ready()) {}
 
         while(buf_length>0)

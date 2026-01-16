@@ -1,7 +1,43 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [v F22943 `(v ~T0 @X0 0 tf ]
 [v F22945 `(v ~T0 @X0 0 tf ]
-"63184 /home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h
+"64 ./mcc_generated_files/ecan.h
+[; ;./mcc_generated_files/ecan.h: 64:     struct {
+[s S3206 `uc 1 `ul 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S3206 . idType id dlc data0 data1 data2 data3 data4 data5 data6 data7 ]
+"62
+[; ;./mcc_generated_files/ecan.h: 62: typedef union {
+[u S3205 `S3206 1 `uc -> 14 `i ]
+[n S3205 . frame array ]
+"102 main.c
+[; ;main.c: 102:     static uint8_t frame_state = RESET;
+[c E22988 0 1 2 3 4 5 6 7 .. ]
+[n E22988 Frame_state RESET SIGNATURE1 SIGNATURE2 IDH IDL DLC DATA CONTROL  ]
+"163 ./mcc_generated_files/uart1.h
+[; ;./mcc_generated_files/uart1.h: 163: _Bool UART1_is_rx_ready(void);
+[v _UART1_is_rx_ready `(a ~T0 @X0 0 ef ]
+"355
+[; ;./mcc_generated_files/uart1.h: 355: uint8_t UART1_Read(void);
+[v _UART1_Read `(uc ~T0 @X0 0 ef ]
+"158 ./mcc_generated_files/ecan.h
+[; ;./mcc_generated_files/ecan.h: 158: uint8_t CAN_transmit(uCAN_MSG *tempCanMsg);
+[v _CAN_transmit `(uc ~T0 @X0 0 ef1`*S3205 ]
+"69817 /home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h
+[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69817:     struct {
+[s S3068 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3068 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"69827
+[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69827:     struct {
+[s S3069 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3069 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
+"69816
+[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69816: typedef union {
+[u S3067 `S3068 1 `S3069 1 ]
+[n S3067 . . . ]
+"69838
+[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69838: extern volatile LATBbits_t LATBbits __attribute__((address(0x3FBB)));
+[v _LATBbits `VS3067 ~T0 @X0 0 e@16315 ]
+"63184
 [; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 63184: extern volatile unsigned char RXB0SIDH __attribute__((address(0x3F81)));
 [v _RXB0SIDH `Vuc ~T0 @X0 0 e@16257 ]
 "63304
@@ -31,21 +67,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "64141
 [; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 64141: extern volatile unsigned char RXB0D7 __attribute__((address(0x3F8D)));
 [v _RXB0D7 `Vuc ~T0 @X0 0 e@16269 ]
-"69817
-[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69817:     struct {
-[s S3068 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3068 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"69827
-[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69827:     struct {
-[s S3069 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3069 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
-"69816
-[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69816: typedef union {
-[u S3067 `S3068 1 `S3069 1 ]
-[n S3067 . . . ]
-"69838
-[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69838: extern volatile LATBbits_t LATBbits __attribute__((address(0x3FBB)));
-[v _LATBbits `VS3067 ~T0 @X0 0 e@16315 ]
 "63537
 [; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 63537: extern volatile unsigned char RXB0DLC __attribute__((address(0x3F85)));
 [v _RXB0DLC `Vuc ~T0 @X0 0 e@16261 ]
@@ -3293,122 +3314,321 @@ Version 4.0 HI-TECH Software Intermediate Code
 "535
 [; ;./mcc_generated_files/uart1.h: 535: void (*UART1_TxInterruptHandler)(void);
 [v _UART1_TxInterruptHandler `*F22945 ~T0 @X0 1 e ]
-"49 main.c
-[; ;main.c: 49: uint8_t circular_buffer[14*100];
+"59 main.c
+[; ;main.c: 59: uint8_t circular_buffer[14*100];
 [v _circular_buffer `uc ~T0 @X0 -> 1400 `i e ]
-"50
-[; ;main.c: 50: uint16_t top_pointer = 0;
+"60
+[; ;main.c: 60: uint16_t top_pointer = 0;
 [v _top_pointer `us ~T0 @X0 1 e ]
 [i _top_pointer
 -> -> 0 `i `us
 ]
-"51
-[; ;main.c: 51: uint16_t bot_pointer = 0;
+"61
+[; ;main.c: 61: uint16_t bot_pointer = 0;
 [v _bot_pointer `us ~T0 @X0 1 e ]
 [i _bot_pointer
 -> -> 0 `i `us
 ]
-"52
-[; ;main.c: 52: uint16_t buf_length = 0;
+"62
+[; ;main.c: 62: uint16_t buf_length = 0;
 [v _buf_length `us ~T0 @X0 1 e ]
 [i _buf_length
 -> -> 0 `i `us
 ]
-"54
-[; ;main.c: 54: uint8_t status = 0;
+"64
+[; ;main.c: 64: uint8_t status = 0;
 [v _status `uc ~T0 @X0 1 e ]
 [i _status
 -> -> 0 `i `uc
 ]
-"59
-[; ;main.c: 59: void serial_buffer_add(uint8_t *buffer_ptr, uint8_t length)
+"69
+[; ;main.c: 69: void serial_buffer_add(uint8_t *buffer_ptr, uint8_t length)
 [v _serial_buffer_add `(v ~T0 @X0 1 ef2`*uc`uc ]
-"60
-[; ;main.c: 60: {
+"70
+[; ;main.c: 70: {
 {
 [e :U _serial_buffer_add ]
-"59
-[; ;main.c: 59: void serial_buffer_add(uint8_t *buffer_ptr, uint8_t length)
+"69
+[; ;main.c: 69: void serial_buffer_add(uint8_t *buffer_ptr, uint8_t length)
 [v _buffer_ptr `*uc ~T0 @X0 1 r1 ]
 [v _length `uc ~T0 @X0 1 r2 ]
-"60
-[; ;main.c: 60: {
+"70
+[; ;main.c: 70: {
 [f ]
-"61
-[; ;main.c: 61:     if (buf_length+length <= 14*100)
+"71
+[; ;main.c: 71:     if (buf_length+length <= 14*100)
 [e $ ! <= + -> _buf_length `ui -> _length `ui -> * -> 14 `i -> 100 `i `ui 3208  ]
-"62
-[; ;main.c: 62:     {
+"72
+[; ;main.c: 72:     {
 {
-"63
-[; ;main.c: 63:         buf_length += length;
+"73
+[; ;main.c: 73:         buf_length += length;
 [e =+ _buf_length -> _length `us ]
-"64
-[; ;main.c: 64:         for(uint8_t counter = 0; counter < length; counter++)
+"74
+[; ;main.c: 74:         for(uint8_t counter = 0; counter < length; counter++)
 {
 [v _counter `uc ~T0 @X0 1 a ]
 [e = _counter -> -> 0 `i `uc ]
 [e $U 3212  ]
 [e :U 3209 ]
-"65
-[; ;main.c: 65:         {
+"75
+[; ;main.c: 75:         {
 {
-"66
-[; ;main.c: 66:             circular_buffer[top_pointer] = buffer_ptr[counter];
+"76
+[; ;main.c: 76:             circular_buffer[top_pointer] = buffer_ptr[counter];
 [e = *U + &U _circular_buffer * -> _top_pointer `ux -> -> # *U &U _circular_buffer `ui `ux *U + _buffer_ptr * -> _counter `ux -> -> # *U _buffer_ptr `ui `ux ]
-"67
-[; ;main.c: 67:             top_pointer = (top_pointer<14*100) ? top_pointer+1 : 0;
+"77
+[; ;main.c: 77:             top_pointer = (top_pointer<14*100) ? top_pointer+1 : 0;
 [e = _top_pointer -> ? < -> _top_pointer `ui -> * -> 14 `i -> 100 `i `ui : + -> _top_pointer `ui -> -> 1 `i `ui -> -> 0 `i `ui `us ]
-"68
-[; ;main.c: 68:         }
+"78
+[; ;main.c: 78:         }
 }
 [e ++ _counter -> -> 1 `i `uc ]
 [e :U 3212 ]
 [e $ < -> _counter `i -> _length `i 3209  ]
 [e :U 3210 ]
 }
-"69
-[; ;main.c: 69:     }
+"79
+[; ;main.c: 79:     }
 }
 [e $U 3213  ]
-"70
-[; ;main.c: 70:     else
+"80
+[; ;main.c: 80:     else
 [e :U 3208 ]
-"71
-[; ;main.c: 71:         status |= 0x01;
+"81
+[; ;main.c: 81:         status |= 0x01;
 [e =| _status -> -> 1 `i `uc ]
 [e :U 3213 ]
-"72
-[; ;main.c: 72: }
+"82
+[; ;main.c: 82: }
 [e :UE 3207 ]
 }
-"89
-[; ;main.c: 89: static void RXB0InterruptHandler(void)
+"99
+[; ;main.c: 99: void ECAN_buffer_add()
+[v _ECAN_buffer_add `(v ~T0 @X0 1 ef ]
+"100
+[; ;main.c: 100: {
+{
+[e :U _ECAN_buffer_add ]
+[f ]
+"101
+[; ;main.c: 101:     static uCAN_MSG message;
+[v F23007 `S3205 ~T0 @X0 1 s message ]
+"102
+[; ;main.c: 102:     static uint8_t frame_state = RESET;
+[v F23008 `uc ~T0 @X0 1 s frame_state ]
+[i F23008
+-> . `E22988 0 `uc
+]
+"103
+[; ;main.c: 103:     static uint8_t counter = 0;
+[v F23009 `uc ~T0 @X0 1 s counter ]
+[i F23009
+-> -> 0 `i `uc
+]
+"105
+[; ;main.c: 105:     if (frame_state == RESET)
+[e $ ! == -> F23008 `i -> . `E22988 0 `i 3215  ]
+"106
+[; ;main.c: 106:     {
+{
+"107
+[; ;main.c: 107:         for (counter = 0; counter < 14; counter++)
+{
+[e = F23009 -> -> 0 `i `uc ]
+[e $ < -> F23009 `i -> 14 `i 3216  ]
+[e $U 3217  ]
+[e :U 3216 ]
+"108
+[; ;main.c: 108:             message.array[counter] = 0;
+[e = *U + &U . F23007 1 * -> F23009 `ux -> -> # *U &U . F23007 1 `ui `ux -> -> 0 `i `uc ]
+[e ++ F23009 -> -> 1 `i `uc ]
+[e $ < -> F23009 `i -> 14 `i 3216  ]
+[e :U 3217 ]
+}
+"110
+[; ;main.c: 110:         message.frame.idType = 1;
+[e = . . F23007 0 0 -> -> 1 `i `uc ]
+"111
+[; ;main.c: 111:         counter = 0;
+[e = F23009 -> -> 0 `i `uc ]
+"112
+[; ;main.c: 112:         frame_state = SIGNATURE1;
+[e = F23008 -> . `E22988 1 `uc ]
+"113
+[; ;main.c: 113:     }
+}
+[e :U 3215 ]
+"114
+[; ;main.c: 114:     if ((frame_state == SIGNATURE1) && UART1_is_rx_ready())
+[e $ ! && == -> F23008 `i -> . `E22988 1 `i != -> ( _UART1_is_rx_ready ..  `i -> 0 `i 3219  ]
+"115
+[; ;main.c: 115:     {
+{
+"116
+[; ;main.c: 116:         if (UART1_Read() == 0x55)
+[e $ ! == -> ( _UART1_Read ..  `i -> 85 `i 3220  ]
+"117
+[; ;main.c: 117:             frame_state = SIGNATURE2;
+[e = F23008 -> . `E22988 2 `uc ]
+[e :U 3220 ]
+"118
+[; ;main.c: 118:     }
+}
+[e :U 3219 ]
+"119
+[; ;main.c: 119:     if ((frame_state == SIGNATURE2) && UART1_is_rx_ready())
+[e $ ! && == -> F23008 `i -> . `E22988 2 `i != -> ( _UART1_is_rx_ready ..  `i -> 0 `i 3221  ]
+"120
+[; ;main.c: 120:     {
+{
+"121
+[; ;main.c: 121:         if (UART1_Read() == 0xAA)
+[e $ ! == -> ( _UART1_Read ..  `i -> 170 `i 3222  ]
+"122
+[; ;main.c: 122:             frame_state = IDH;
+[e = F23008 -> . `E22988 3 `uc ]
+[e $U 3223  ]
+"123
+[; ;main.c: 123:         else
+[e :U 3222 ]
+"124
+[; ;main.c: 124:             frame_state = SIGNATURE1;
+[e = F23008 -> . `E22988 1 `uc ]
+[e :U 3223 ]
+"125
+[; ;main.c: 125:     }
+}
+[e :U 3221 ]
+"126
+[; ;main.c: 126:     if ((frame_state == IDH) && UART1_is_rx_ready())
+[e $ ! && == -> F23008 `i -> . `E22988 3 `i != -> ( _UART1_is_rx_ready ..  `i -> 0 `i 3224  ]
+"127
+[; ;main.c: 127:     {
+{
+"128
+[; ;main.c: 128:         message.frame.id = (uint32_t)UART1_Read()<<8;
+[e = . . F23007 0 1 << -> ( _UART1_Read ..  `ul -> 8 `i ]
+"129
+[; ;main.c: 129:         frame_state = IDL;
+[e = F23008 -> . `E22988 4 `uc ]
+"131
+[; ;main.c: 131:     }
+}
+[e :U 3224 ]
+"132
+[; ;main.c: 132:     if ((frame_state == IDL) && UART1_is_rx_ready())
+[e $ ! && == -> F23008 `i -> . `E22988 4 `i != -> ( _UART1_is_rx_ready ..  `i -> 0 `i 3225  ]
+"133
+[; ;main.c: 133:     {
+{
+"134
+[; ;main.c: 134:         message.frame.id |= UART1_Read();
+[e =| . . F23007 0 1 -> ( _UART1_Read ..  `ul ]
+"135
+[; ;main.c: 135:         frame_state = DLC;
+[e = F23008 -> . `E22988 5 `uc ]
+"136
+[; ;main.c: 136:     }
+}
+[e :U 3225 ]
+"137
+[; ;main.c: 137:     if ((frame_state == DLC) && UART1_is_rx_ready())
+[e $ ! && == -> F23008 `i -> . `E22988 5 `i != -> ( _UART1_is_rx_ready ..  `i -> 0 `i 3226  ]
+"138
+[; ;main.c: 138:     {
+{
+"139
+[; ;main.c: 139:         message.frame.dlc = UART1_Read();
+[e = . . F23007 0 2 ( _UART1_Read ..  ]
+"140
+[; ;main.c: 140:         frame_state = DATA;
+[e = F23008 -> . `E22988 6 `uc ]
+"141
+[; ;main.c: 141:     }
+}
+[e :U 3226 ]
+"142
+[; ;main.c: 142:     while ((frame_state == DATA) && UART1_is_rx_ready() && (counter<(message.frame.dlc&0x07)))
+[e $U 3227  ]
+[e :U 3228 ]
+"143
+[; ;main.c: 143:     {
+{
+"144
+[; ;main.c: 144:         message.array[6+counter] = UART1_Read();
+[e = *U + &U . F23007 1 * -> -> + -> 6 `i -> F23009 `i `ui `ux -> -> # *U &U . F23007 1 `ui `ux ( _UART1_Read ..  ]
+"145
+[; ;main.c: 145:         counter++;
+[e ++ F23009 -> -> 1 `i `uc ]
+"146
+[; ;main.c: 146:         frame_state = CONTROL;
+[e = F23008 -> . `E22988 7 `uc ]
+"147
+[; ;main.c: 147:     }
+}
+[e :U 3227 ]
+"142
+[; ;main.c: 142:     while ((frame_state == DATA) && UART1_is_rx_ready() && (counter<(message.frame.dlc&0x07)))
+[e $ && && == -> F23008 `i -> . `E22988 6 `i != -> ( _UART1_is_rx_ready ..  `i -> 0 `i < -> F23009 `i & -> . . F23007 0 2 `i -> 7 `i 3228  ]
+[e :U 3229 ]
+"148
+[; ;main.c: 148:     if ((frame_state == CONTROL) && UART1_is_rx_ready())
+[e $ ! && == -> F23008 `i -> . `E22988 7 `i != -> ( _UART1_is_rx_ready ..  `i -> 0 `i 3230  ]
+"149
+[; ;main.c: 149:     {
+{
+"150
+[; ;main.c: 150:         UART1_Read();
+[e ( _UART1_Read ..  ]
+"151
+[; ;main.c: 151:         CAN_transmit(&message);
+[e ( _CAN_transmit (1 &U F23007 ]
+"152
+[; ;main.c: 152:         do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0);
+[e :U 3233 ]
+{
+[e = . . _LATBbits 0 4 -> ~ -> . . _LATBbits 0 4 `i `uc ]
+}
+[e :U 3232 ]
+"153
+[; ;main.c: 153:         frame_state = RESET;
+[e = F23008 -> . `E22988 0 `uc ]
+"154
+[; ;main.c: 154:     }
+}
+[e :U 3230 ]
+"155
+[; ;main.c: 155: }
+[e :UE 3214 ]
+}
+"157
+[; ;main.c: 157: static void RXB0InterruptHandler(void)
 [v _RXB0InterruptHandler `(v ~T0 @X0 1 sf ]
-"90
-[; ;main.c: 90: {
+"158
+[; ;main.c: 158: {
 {
 [e :U _RXB0InterruptHandler ]
 [f ]
-"91
-[; ;main.c: 91:     uint8_t counter = 0;
+"160
+[; ;main.c: 160:     uint8_t counter = 0;
 [v _counter `uc ~T0 @X0 1 a ]
 [e = _counter -> -> 0 `i `uc ]
-"92
-[; ;main.c: 92:     uint16_t identificator = RXB0SIDH;
+"161
+[; ;main.c: 161:     uint16_t identificator = RXB0SIDH;
 [v _identificator `us ~T0 @X0 1 a ]
 [e = _identificator -> _RXB0SIDH `us ]
-"93
-[; ;main.c: 93:     identificator = (identificator<<3) | (RXB0SIDL>>5);
+"162
+[; ;main.c: 162:     identificator = (identificator<<3) | (RXB0SIDL>>5);
 [e = _identificator -> | << -> _identificator `ui -> 3 `i -> >> -> _RXB0SIDL `i -> 5 `i `ui `us ]
-"94
-[; ;main.c: 94:     uint8_t buffer[14];
+"163
+[; ;main.c: 163:     uint8_t buffer[14];
 [v _buffer `uc ~T0 @X0 -> 14 `i a ]
-[v F23001 `*Vuc ~T0 @X0 -> 8 `i s ]
-[i F23001
+[v F23014 `*Vuc ~T0 @X0 -> 8 `i s ]
+[i F23014
 :U ..
-"95
-[; ;main.c: 95:     volatile unsigned char* data[8] =
+"164
+[; ;main.c: 164:     volatile unsigned char* data[8] =
 &U _RXB0D0
 &U _RXB0D1
 &U _RXB0D2
@@ -3420,294 +3640,290 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _data `*Vuc ~T0 @X0 -> 8 `i a ]
-[e = _data F23001 ]
-"107
-[; ;main.c: 107:     do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0);
-[e :U 3217 ]
-{
-[e = . . _LATBbits 0 4 -> ~ -> . . _LATBbits 0 4 `i `uc ]
-}
-[e :U 3216 ]
-"109
-[; ;main.c: 109:     buffer[0] = 0x55;
+[e = _data F23014 ]
+"178
+[; ;main.c: 178:     buffer[0] = 0x55;
 [e = *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> -> 85 `i `uc ]
-"110
-[; ;main.c: 110:     buffer[1] = 0xAA;
+"179
+[; ;main.c: 179:     buffer[1] = 0xAA;
 [e = *U + &U _buffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> -> 170 `i `uc ]
-"112
-[; ;main.c: 112:     buffer[2] = (identificator>>8)&0xFF;
+"181
+[; ;main.c: 181:     buffer[2] = (identificator>>8)&0xFF;
 [e = *U + &U _buffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> & >> -> _identificator `ui -> 8 `i -> -> 255 `i `ui `uc ]
-"113
-[; ;main.c: 113:     buffer[3] = identificator&0xFF;
+"182
+[; ;main.c: 182:     buffer[3] = identificator&0xFF;
 [e = *U + &U _buffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> & -> _identificator `ui -> -> 255 `i `ui `uc ]
-"114
-[; ;main.c: 114:     buffer[4] = RXB0DLC;
+"183
+[; ;main.c: 183:     buffer[4] = RXB0DLC;
 [e = *U + &U _buffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _buffer `ui `ux _RXB0DLC ]
-"116
-[; ;main.c: 116:     for (counter = 0; counter < buffer[4]; counter++)
+"185
+[; ;main.c: 185:     for (counter = 0; counter < (buffer[4] & 0x07); counter++)
 {
 [e = _counter -> -> 0 `i `uc ]
-[e $U 3221  ]
-[e :U 3218 ]
-"117
-[; ;main.c: 117:     {
+[e $U 3238  ]
+[e :U 3235 ]
+"186
+[; ;main.c: 186:     {
 {
-"118
-[; ;main.c: 118:         buffer[5+counter] = *data[counter];
+"187
+[; ;main.c: 187:         buffer[5+counter] = *data[counter];
 [e = *U + &U _buffer * -> -> + -> 5 `i -> _counter `i `ui `ux -> -> # *U &U _buffer `ui `ux *U *U + &U _data * -> _counter `ux -> -> # *U &U _data `ui `ux ]
-"119
-[; ;main.c: 119:     }
+"188
+[; ;main.c: 188:     }
 }
 [e ++ _counter -> -> 1 `i `uc ]
-[e :U 3221 ]
-[e $ < -> _counter `i -> *U + &U _buffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i 3218  ]
-[e :U 3219 ]
+[e :U 3238 ]
+[e $ < -> _counter `i & -> *U + &U _buffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _buffer `ui `ux `i -> 7 `i 3235  ]
+[e :U 3236 ]
 }
-"128
-[; ;main.c: 128:     buffer[5+counter] = COMSTAT;
+"189
+[; ;main.c: 189:     buffer[5+counter] = COMSTAT;
 [e = *U + &U _buffer * -> -> + -> 5 `i -> _counter `i `ui `ux -> -> # *U &U _buffer `ui `ux _COMSTAT ]
-"130
-[; ;main.c: 130:     COMSTAT = 0;
+"191
+[; ;main.c: 191:     COMSTAT = 0;
 [e = _COMSTAT -> -> 0 `i `uc ]
-"131
-[; ;main.c: 131:     RXB0CONbits.RXFUL = 0;
+"192
+[; ;main.c: 192:     RXB0CONbits.RXFUL = 0;
 [e = . . _RXB0CONbits 0 7 -> -> 0 `i `uc ]
-"132
-[; ;main.c: 132:     PIR5bits.RXB0IF = 0;
+"193
+[; ;main.c: 193:     PIR5bits.RXB0IF = 0;
 [e = . . _PIR5bits 0 0 -> -> 0 `i `uc ]
-"134
-[; ;main.c: 134:     serial_buffer_add(buffer, (6+counter));
+"195
+[; ;main.c: 195:     serial_buffer_add(buffer, (6+counter));
 [e ( _serial_buffer_add (2 , &U _buffer -> + -> 6 `i -> _counter `i `uc ]
-"135
-[; ;main.c: 135: }
-[e :UE 3214 ]
+"196
+[; ;main.c: 196: }
+[e :UE 3234 ]
 }
-"137
-[; ;main.c: 137: void ECAN_Initialize_user(void)
+"199
+[; ;main.c: 199: void ECAN_Initialize_user(void)
 [v _ECAN_Initialize_user `(v ~T0 @X0 1 ef ]
-"138
-[; ;main.c: 138: {
+"200
+[; ;main.c: 200: {
 {
 [e :U _ECAN_Initialize_user ]
 [f ]
-"139
-[; ;main.c: 139:     CANCON = 0x80;
+"201
+[; ;main.c: 201:     CANCON = 0x80;
 [e = _CANCON -> -> 128 `i `uc ]
-"140
-[; ;main.c: 140:     while (0x80 != (CANSTAT & 0xE0));
-[e $U 3223  ]
-[e :U 3224 ]
-[e :U 3223 ]
-[e $ != -> 128 `i & -> _CANSTAT `i -> 224 `i 3224  ]
-[e :U 3225 ]
-"145
-[; ;main.c: 145:     ECANCON = 0x00;
+"202
+[; ;main.c: 202:     while (0x80 != (CANSTAT & 0xE0));
+[e $U 3240  ]
+[e :U 3241 ]
+[e :U 3240 ]
+[e $ != -> 128 `i & -> _CANSTAT `i -> 224 `i 3241  ]
+[e :U 3242 ]
+"207
+[; ;main.c: 207:     ECANCON = 0x00;
 [e = _ECANCON -> -> 0 `i `uc ]
-"150
-[; ;main.c: 150:     CIOCON = 0x00;
+"212
+[; ;main.c: 212:     CIOCON = 0x00;
 [e = _CIOCON -> -> 0 `i `uc ]
-"163
-[; ;main.c: 163:     RXM0EIDH = 0x00;
+"225
+[; ;main.c: 225:     RXM0EIDH = 0x00;
 [e = _RXM0EIDH -> -> 0 `i `uc ]
-"164
-[; ;main.c: 164:     RXM0EIDL = 0x00;
+"226
+[; ;main.c: 226:     RXM0EIDL = 0x00;
 [e = _RXM0EIDL -> -> 0 `i `uc ]
-"165
-[; ;main.c: 165:     RXM0SIDH = 0x00;
+"227
+[; ;main.c: 227:     RXM0SIDH = 0x00;
 [e = _RXM0SIDH -> -> 0 `i `uc ]
-"166
-[; ;main.c: 166:     RXM0SIDL = 0x00;
+"228
+[; ;main.c: 228:     RXM0SIDL = 0x00;
 [e = _RXM0SIDL -> -> 0 `i `uc ]
-"167
-[; ;main.c: 167:     RXM1EIDH = 0x00;
+"229
+[; ;main.c: 229:     RXM1EIDH = 0x00;
 [e = _RXM1EIDH -> -> 0 `i `uc ]
-"168
-[; ;main.c: 168:     RXM1EIDL = 0x00;
+"230
+[; ;main.c: 230:     RXM1EIDL = 0x00;
 [e = _RXM1EIDL -> -> 0 `i `uc ]
-"169
-[; ;main.c: 169:     RXM1SIDH = 0x00;
+"231
+[; ;main.c: 231:     RXM1SIDH = 0x00;
 [e = _RXM1SIDH -> -> 0 `i `uc ]
-"170
-[; ;main.c: 170:     RXM1SIDL = 0x00;
+"232
+[; ;main.c: 232:     RXM1SIDL = 0x00;
 [e = _RXM1SIDL -> -> 0 `i `uc ]
-"175
-[; ;main.c: 175:     RXF0EIDH = 0x00;
+"237
+[; ;main.c: 237:     RXF0EIDH = 0x00;
 [e = _RXF0EIDH -> -> 0 `i `uc ]
-"176
-[; ;main.c: 176:     RXF0EIDL = 0x00;
+"238
+[; ;main.c: 238:     RXF0EIDL = 0x00;
 [e = _RXF0EIDL -> -> 0 `i `uc ]
-"177
-[; ;main.c: 177:     RXF0SIDH = 0x00;
+"239
+[; ;main.c: 239:     RXF0SIDH = 0x00;
 [e = _RXF0SIDH -> -> 0 `i `uc ]
-"178
-[; ;main.c: 178:     RXF0SIDL = 0x00;
+"240
+[; ;main.c: 240:     RXF0SIDL = 0x00;
 [e = _RXF0SIDL -> -> 0 `i `uc ]
-"179
-[; ;main.c: 179:     RXF1EIDH = 0x00;
+"241
+[; ;main.c: 241:     RXF1EIDH = 0x00;
 [e = _RXF1EIDH -> -> 0 `i `uc ]
-"180
-[; ;main.c: 180:     RXF1EIDL = 0x00;
+"242
+[; ;main.c: 242:     RXF1EIDL = 0x00;
 [e = _RXF1EIDL -> -> 0 `i `uc ]
-"181
-[; ;main.c: 181:     RXF1SIDH = 0x00;
+"243
+[; ;main.c: 243:     RXF1SIDH = 0x00;
 [e = _RXF1SIDH -> -> 0 `i `uc ]
-"182
-[; ;main.c: 182:     RXF1SIDL = 0x00;
+"244
+[; ;main.c: 244:     RXF1SIDL = 0x00;
 [e = _RXF1SIDL -> -> 0 `i `uc ]
-"183
-[; ;main.c: 183:     RXF2EIDH = 0x00;
+"245
+[; ;main.c: 245:     RXF2EIDH = 0x00;
 [e = _RXF2EIDH -> -> 0 `i `uc ]
-"184
-[; ;main.c: 184:     RXF2EIDL = 0x00;
+"246
+[; ;main.c: 246:     RXF2EIDL = 0x00;
 [e = _RXF2EIDL -> -> 0 `i `uc ]
-"185
-[; ;main.c: 185:     RXF2SIDH = 0x00;
+"247
+[; ;main.c: 247:     RXF2SIDH = 0x00;
 [e = _RXF2SIDH -> -> 0 `i `uc ]
-"186
-[; ;main.c: 186:     RXF2SIDL = 0x00;
+"248
+[; ;main.c: 248:     RXF2SIDL = 0x00;
 [e = _RXF2SIDL -> -> 0 `i `uc ]
-"187
-[; ;main.c: 187:     RXF3EIDH = 0x00;
+"249
+[; ;main.c: 249:     RXF3EIDH = 0x00;
 [e = _RXF3EIDH -> -> 0 `i `uc ]
-"188
-[; ;main.c: 188:     RXF3EIDL = 0x00;
+"250
+[; ;main.c: 250:     RXF3EIDL = 0x00;
 [e = _RXF3EIDL -> -> 0 `i `uc ]
-"189
-[; ;main.c: 189:     RXF3SIDH = 0x00;
+"251
+[; ;main.c: 251:     RXF3SIDH = 0x00;
 [e = _RXF3SIDH -> -> 0 `i `uc ]
-"190
-[; ;main.c: 190:     RXF3SIDL = 0x00;
+"252
+[; ;main.c: 252:     RXF3SIDL = 0x00;
 [e = _RXF3SIDL -> -> 0 `i `uc ]
-"191
-[; ;main.c: 191:     RXF4EIDH = 0x00;
+"253
+[; ;main.c: 253:     RXF4EIDH = 0x00;
 [e = _RXF4EIDH -> -> 0 `i `uc ]
-"192
-[; ;main.c: 192:     RXF4EIDL = 0x00;
+"254
+[; ;main.c: 254:     RXF4EIDL = 0x00;
 [e = _RXF4EIDL -> -> 0 `i `uc ]
-"193
-[; ;main.c: 193:     RXF4SIDH = 0x00;
+"255
+[; ;main.c: 255:     RXF4SIDH = 0x00;
 [e = _RXF4SIDH -> -> 0 `i `uc ]
-"194
-[; ;main.c: 194:     RXF4SIDL = 0x00;
+"256
+[; ;main.c: 256:     RXF4SIDL = 0x00;
 [e = _RXF4SIDL -> -> 0 `i `uc ]
-"195
-[; ;main.c: 195:     RXF5EIDH = 0x00;
+"257
+[; ;main.c: 257:     RXF5EIDH = 0x00;
 [e = _RXF5EIDH -> -> 0 `i `uc ]
-"196
-[; ;main.c: 196:     RXF5EIDL = 0x00;
+"258
+[; ;main.c: 258:     RXF5EIDL = 0x00;
 [e = _RXF5EIDL -> -> 0 `i `uc ]
-"197
-[; ;main.c: 197:     RXF5SIDH = 0x00;
+"259
+[; ;main.c: 259:     RXF5SIDH = 0x00;
 [e = _RXF5SIDH -> -> 0 `i `uc ]
-"198
-[; ;main.c: 198:     RXF5SIDL = 0x00;
+"260
+[; ;main.c: 260:     RXF5SIDL = 0x00;
 [e = _RXF5SIDL -> -> 0 `i `uc ]
-"213
-[; ;main.c: 213:     BRGCON1 = 0x27;
+"275
+[; ;main.c: 275:     BRGCON1 = 0x27;
 [e = _BRGCON1 -> -> 39 `i `uc ]
-"214
-[; ;main.c: 214:     BRGCON2 = 0x98;
+"276
+[; ;main.c: 276:     BRGCON2 = 0x98;
 [e = _BRGCON2 -> -> 152 `i `uc ]
-"215
-[; ;main.c: 215:     BRGCON3 = 0x81;
+"277
+[; ;main.c: 277:     BRGCON3 = 0x81;
 [e = _BRGCON3 -> -> 129 `i `uc ]
-"217
-[; ;main.c: 217:     ECAN_SetRXB0InterruptHandler(RXB0InterruptHandler);
+"279
+[; ;main.c: 279:     ECAN_SetRXB0InterruptHandler(RXB0InterruptHandler);
 [e ( _ECAN_SetRXB0InterruptHandler (1 &U _RXB0InterruptHandler ]
-"218
-[; ;main.c: 218:     PIR5bits.RXB0IF = 0;
+"280
+[; ;main.c: 280:     PIR5bits.RXB0IF = 0;
 [e = . . _PIR5bits 0 0 -> -> 0 `i `uc ]
-"219
-[; ;main.c: 219:     PIE5bits.RXB0IE = 1;
+"281
+[; ;main.c: 281:     PIE5bits.RXB0IE = 1;
 [e = . . _PIE5bits 0 0 -> -> 1 `i `uc ]
-"221
-[; ;main.c: 221:     CANCON = 0x60;
+"283
+[; ;main.c: 283:     CANCON = 0x60;
 [e = _CANCON -> -> 96 `i `uc ]
-"222
-[; ;main.c: 222:     while (0x60 != (CANSTAT & 0xE0));
-[e $U 3226  ]
-[e :U 3227 ]
-[e :U 3226 ]
-[e $ != -> 96 `i & -> _CANSTAT `i -> 224 `i 3227  ]
-[e :U 3228 ]
-"223
-[; ;main.c: 223: }
-[e :UE 3222 ]
+"284
+[; ;main.c: 284:     while (0x60 != (CANSTAT & 0xE0));
+[e $U 3243  ]
+[e :U 3244 ]
+[e :U 3243 ]
+[e $ != -> 96 `i & -> _CANSTAT `i -> 224 `i 3244  ]
+[e :U 3245 ]
+"285
+[; ;main.c: 285: }
+[e :UE 3239 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"225
-[; ;main.c: 225: void main(void)
+"288
+[; ;main.c: 288: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"226
-[; ;main.c: 226: {
+"289
+[; ;main.c: 289: {
 {
 [e :U _main ]
 [f ]
-"228
-[; ;main.c: 228:     SYSTEM_Initialize();
+"291
+[; ;main.c: 291:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"229
-[; ;main.c: 229:     ECAN_Initialize_user();
+"292
+[; ;main.c: 292:     ECAN_Initialize_user();
 [e ( _ECAN_Initialize_user ..  ]
-"237
-[; ;main.c: 237:     (INTCON0bits.GIE = 1);
+"300
+[; ;main.c: 300:     (INTCON0bits.GIE = 1);
 [e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"242
-[; ;main.c: 242:     while (1)
-[e :U 3231 ]
-"243
-[; ;main.c: 243:     {
+"305
+[; ;main.c: 305:     while (1)
+[e :U 3248 ]
+"306
+[; ;main.c: 306:     {
 {
-"246
-[; ;main.c: 246:         _delay((unsigned long)((50)*(64000000/4000.0)));
+"309
+[; ;main.c: 309:         _delay((unsigned long)((50)*(64000000/4000.0)));
 [e ( __delay (1 -> * -> -> 50 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"247
-[; ;main.c: 247:         while(!UART1_is_tx_ready()) {}
-[e $U 3233  ]
-[e :U 3234 ]
+"310
+[; ;main.c: 310:         ECAN_buffer_add();
+[e ( _ECAN_buffer_add ..  ]
+"312
+[; ;main.c: 312:         while(!UART1_is_tx_ready()) {}
+[e $U 3250  ]
+[e :U 3251 ]
 {
 }
-[e :U 3233 ]
-[e $ ! != -> ( _UART1_is_tx_ready ..  `i -> 0 `i 3234  ]
-[e :U 3235 ]
-"249
-[; ;main.c: 249:         while(buf_length>0)
-[e $U 3236  ]
-[e :U 3237 ]
-"250
-[; ;main.c: 250:         {
+[e :U 3250 ]
+[e $ ! != -> ( _UART1_is_tx_ready ..  `i -> 0 `i 3251  ]
+[e :U 3252 ]
+"314
+[; ;main.c: 314:         while(buf_length>0)
+[e $U 3253  ]
+[e :U 3254 ]
+"315
+[; ;main.c: 315:         {
 {
-"251
-[; ;main.c: 251:             while(!UART1_is_tx_ready());
-[e $U 3239  ]
-[e :U 3240 ]
-[e :U 3239 ]
-[e $ ! != -> ( _UART1_is_tx_ready ..  `i -> 0 `i 3240  ]
-[e :U 3241 ]
-"252
-[; ;main.c: 252:             UART1_Write(circular_buffer[bot_pointer]);
+"316
+[; ;main.c: 316:             while(!UART1_is_tx_ready());
+[e $U 3256  ]
+[e :U 3257 ]
+[e :U 3256 ]
+[e $ ! != -> ( _UART1_is_tx_ready ..  `i -> 0 `i 3257  ]
+[e :U 3258 ]
+"317
+[; ;main.c: 317:             UART1_Write(circular_buffer[bot_pointer]);
 [e ( _UART1_Write (1 *U + &U _circular_buffer * -> _bot_pointer `ux -> -> # *U &U _circular_buffer `ui `ux ]
-"253
-[; ;main.c: 253:             buf_length--;
+"318
+[; ;main.c: 318:             buf_length--;
 [e -- _buf_length -> -> 1 `i `us ]
-"254
-[; ;main.c: 254:             bot_pointer = (bot_pointer<14*100) ? bot_pointer+1 : 0;
+"319
+[; ;main.c: 319:             bot_pointer = (bot_pointer<14*100) ? bot_pointer+1 : 0;
 [e = _bot_pointer -> ? < -> _bot_pointer `ui -> * -> 14 `i -> 100 `i `ui : + -> _bot_pointer `ui -> -> 1 `i `ui -> -> 0 `i `ui `us ]
-"255
-[; ;main.c: 255:         }
+"320
+[; ;main.c: 320:         }
 }
-[e :U 3236 ]
-"249
-[; ;main.c: 249:         while(buf_length>0)
-[e $ > -> _buf_length `ui -> -> 0 `i `ui 3237  ]
-[e :U 3238 ]
-"256
-[; ;main.c: 256:     }
+[e :U 3253 ]
+"314
+[; ;main.c: 314:         while(buf_length>0)
+[e $ > -> _buf_length `ui -> -> 0 `i `ui 3254  ]
+[e :U 3255 ]
+"321
+[; ;main.c: 321:     }
 }
-[e :U 3230 ]
-[e $U 3231  ]
-[e :U 3232 ]
-"257
-[; ;main.c: 257: }
-[e :UE 3229 ]
+[e :U 3247 ]
+[e $U 3248  ]
+[e :U 3249 ]
+"322
+[; ;main.c: 322: }
+[e :UE 3246 ]
 }

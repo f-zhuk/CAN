@@ -42,11 +42,11 @@
 */
 
 #include "mcc_generated_files/mcc.h"
-#define UART_MSG_LEN 11
 #define CAN_MSG_LEN 14
 #define SERIAL_BUF_LEN CAN_MSG_LEN*100
 
-enum TX_State {
+enum Frame_state {
+  RESET,
   SIGNATURE1,
   SIGNATURE2,
   IDH,
@@ -98,31 +98,59 @@ void serial_buffer_add(uint8_t *buffer_ptr)
 
 void ECAN_buffer_add()
 {
-    static uint8_t buffer[UART_MSG_LEN];
-    static uint8_t frame_state = 0;
+    static uCAN_MSG message;
+    static uint8_t frame_state = RESET;
     static uint8_t counter = 0;
     
-    if (frame_state == 0)
+    if (frame_state == RESET)
     {
-        for (counter = 0; counter < UART_MSG_LEN; counter++)
-            buffer[counter]=0;
+        for (counter = 0; counter < 14; counter++)
+            message.array[counter] = 0;
         
+        message.frame.idType = dSTANDARD_CAN_MSG_ID_2_0B;
         counter = 0;
-        frame_state = 1;
+        frame_state = SIGNATURE1;
     }
-    if ((frame_state == 1) && UART1_is_rx_ready())
+    if ((frame_state == SIGNATURE1) && UART1_is_rx_ready())
     {
         if (UART1_Read() == 0x55)
-            frame_state = 2;
+            frame_state = SIGNATURE2;
     }       
-    if ((frame_state == 2) && UART1_is_rx_ready())
+    if ((frame_state == SIGNATURE2) && UART1_is_rx_ready())
     {
         if (UART1_Read() == 0xAA)
-            frame_state = 3;  
+            frame_state = IDH;  
+        else 
+            frame_state = SIGNATURE1;
     } 
-    if ((frame_state == 3) && UART1_is_rx_ready())
+    if ((frame_state == IDH) && UART1_is_rx_ready())
     {
-        frame_state = 0;  
+        message.frame.id = (uint32_t)UART1_Read()<<8;
+        frame_state = IDL;
+        
+    } 
+    if ((frame_state == IDL) && UART1_is_rx_ready())
+    {
+        message.frame.id |= UART1_Read();
+        frame_state = DLC;
+    } 
+    if ((frame_state == DLC) && UART1_is_rx_ready())
+    {
+        message.frame.dlc = UART1_Read();
+        frame_state = DATA;
+    } 
+    while ((frame_state == DATA) && UART1_is_rx_ready() && (counter<(message.frame.dlc&0x07)))
+    {
+        message.array[6+counter] = UART1_Read();
+        counter++;
+        frame_state = CONTROL;
+    }
+    if ((frame_state == CONTROL) && UART1_is_rx_ready())
+    {
+        UART1_Read();
+        CAN_transmit(&message);
+        IO_RB4_Toggle();
+        frame_state = RESET;
     } 
 }
 
@@ -145,7 +173,7 @@ static void RXB0InterruptHandler(void)
         &RXB0D7
     };
     
-    IO_RB4_Toggle();
+    //IO_RB4_Toggle();
     
     buffer[0] = 0x55;
     buffer[1] = 0xAA;
@@ -154,7 +182,7 @@ static void RXB0InterruptHandler(void)
     buffer[3] = identificator&0xFF;
     buffer[4] = RXB0DLC;
     
-    for (counter = 0; counter < (buffer[4] & 0x0F); counter++)
+    for (counter = 0; counter < (buffer[4] & 0x07); counter++)
     {
         buffer[5+counter] = *data[counter];
     }
@@ -279,6 +307,8 @@ void main(void)
         // Add your application code
         //IO_RB4_Toggle();
         __delay_ms(50);
+        ECAN_buffer_add();
+                
         while(!UART1_is_tx_ready()) {}
         //UART1_Write('A');
         while(buf_length>0)

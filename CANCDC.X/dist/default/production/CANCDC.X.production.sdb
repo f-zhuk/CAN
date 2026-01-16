@@ -3,6 +3,17 @@
 [d edition pro ]
 [d chip 18F26K83 ]
 [d frameptr 16353 ]
+"102 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
+[e E22988 Frame_state `uc
+RESET 0
+SIGNATURE1 1
+SIGNATURE2 2
+IDH 3
+IDL 4
+DLC 5
+DATA 6
+CONTROL 7
+]
 "7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/__lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 "7 /opt/microchip/xc8/v3.10/pic/sources/c99/common/aldiv.c
@@ -63,16 +74,20 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"59 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
+"69 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
 [v _serial_buffer_add serial_buffer_add `(v  1 e 1 0 ]
-"89
-[v _RXB0InterruptHandler@main$F1274 RXB0InterruptHandler `(v  1 s 1 RXB0InterruptHandler ]
-"137
+"99
+[v _ECAN_buffer_add ECAN_buffer_add `(v  1 e 1 0 ]
+"157
+[v _RXB0InterruptHandler@main$F1340 RXB0InterruptHandler `(v  1 s 1 RXB0InterruptHandler ]
+"199
 [v _ECAN_Initialize_user ECAN_Initialize_user `(v  1 e 1 0 ]
-"225
+"288
 [v _main main `(v  1 e 1 0 ]
 "63 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/ecan.c
 [v _RXB0DefaultInterruptHandler RXB0DefaultInterruptHandler `(v  1 s 1 RXB0DefaultInterruptHandler ]
+"165
+[v _CAN_transmit CAN_transmit `(uc  1 e 1 0 ]
 "368
 [v _convertReg2ExtendedCANid convertReg2ExtendedCANid `(ul  1 s 4 convertReg2ExtendedCANid ]
 "389
@@ -97,8 +112,12 @@
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "86 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+"160
+[v _UART1_is_rx_ready UART1_is_rx_ready `(a  1 e 1 0 ]
 "165
 [v _UART1_is_tx_ready UART1_is_tx_ready `(a  1 e 1 0 ]
+"179
+[v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
 "201
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
 "228
@@ -644,7 +663,7 @@
 [v _LATA LATA `VEuc  1 e 1 @16314 ]
 "69811
 [v _LATB LATB `VEuc  1 e 1 @16315 ]
-[s S1084 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S1101 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -654,7 +673,7 @@
 `uc 1 LATB7 1 0 :1:7 
 ]
 "69838
-[s S1093 . 1 `uc 1 LB0 1 0 :1:0 
+[s S1110 . 1 `uc 1 LB0 1 0 :1:0 
 `uc 1 LB1 1 0 :1:1 
 `uc 1 LB2 1 0 :1:2 
 `uc 1 LB3 1 0 :1:3 
@@ -664,10 +683,10 @@
 `uc 1 LB7 1 0 :1:7 
 ]
 "69838
-[u S1102 . 1 `S1084 1 . 1 0 `S1093 1 . 1 0 ]
+[u S1119 . 1 `S1101 1 . 1 0 `S1110 1 . 1 0 ]
 "69838
 "69838
-[v _LATBbits LATBbits `VES1102  1 e 1 @16315 ]
+[v _LATBbits LATBbits `VES1119  1 e 1 @16315 ]
 "69923
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
 "70035
@@ -695,15 +714,15 @@
 [v _INTCON0bits INTCON0bits `VES353  1 e 1 @16338 ]
 "79680
 [v _PLLR PLLR `VEb  1 e 0 @118496 ]
-"49 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
+"59 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
 [v _circular_buffer circular_buffer `[1400]uc  1 e 1400 0 ]
-"50
+"60
 [v _top_pointer top_pointer `us  1 e 2 0 ]
-"51
+"61
 [v _bot_pointer bot_pointer `us  1 e 2 0 ]
-"52
+"62
 [v _buf_length buf_length `us  1 e 2 0 ]
-"54
+"64
 [v _status status `uc  1 e 1 0 ]
 "54 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/ecan.c
 [v _RXB0InterruptHandler RXB0InterruptHandler `*.37(v  1 s 2 RXB0InterruptHandler ]
@@ -739,10 +758,10 @@
 [v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "80
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"225 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
+"288 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"257
+"322
 } 0
 "165 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/uart1.c
 [v _UART1_is_tx_ready UART1_is_tx_ready `(a  1 e 1 0 ]
@@ -817,10 +836,66 @@
 {
 "56
 } 0
-"137 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
+"99 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
+[v _ECAN_buffer_add ECAN_buffer_add `(v  1 e 1 0 ]
+{
+[s S632 . 14 `uc 1 idType 1 0 `ul 1 id 4 1 `uc 1 dlc 1 5 `uc 1 data0 1 6 `uc 1 data1 1 7 `uc 1 data2 1 8 `uc 1 data3 1 9 `uc 1 data4 1 10 `uc 1 data5 1 11 `uc 1 data6 1 12 `uc 1 data7 1 13 ]
+"101
+[u S644 . 14 `S632 1 frame 14 0 `[14]uc 1 array 14 0 ]
+[v ECAN_buffer_add@message message `S644  1 s 14 message ]
+"102
+[v ECAN_buffer_add@frame_state frame_state `uc  1 s 1 frame_state ]
+"103
+[v ECAN_buffer_add@counter counter `uc  1 s 1 counter ]
+"155
+} 0
+"160 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/uart1.c
+[v _UART1_is_rx_ready UART1_is_rx_ready `(a  1 e 1 0 ]
+{
+"163
+} 0
+"179
+[v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
+{
+"181
+[v UART1_Read@readValue readValue `uc  1 a 1 0 ]
+"199
+} 0
+"165 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/ecan.c
+[v _CAN_transmit CAN_transmit `(uc  1 e 1 0 ]
+{
+"169
+[v CAN_transmit@tempSIDL tempSIDL `uc  1 a 1 18 ]
+"168
+[v CAN_transmit@tempSIDH tempSIDH `uc  1 a 1 17 ]
+"167
+[v CAN_transmit@tempEIDL tempEIDL `uc  1 a 1 16 ]
+"166
+[v CAN_transmit@tempEIDH tempEIDH `uc  1 a 1 15 ]
+[s S632 . 14 `uc 1 idType 1 0 `ul 1 id 4 1 `uc 1 dlc 1 5 `uc 1 data0 1 6 `uc 1 data1 1 7 `uc 1 data2 1 8 `uc 1 data3 1 9 `uc 1 data4 1 10 `uc 1 data5 1 11 `uc 1 data6 1 12 `uc 1 data7 1 13 ]
+"165
+[u S644 . 14 `S632 1 frame 14 0 `[14]uc 1 array 14 0 ]
+[v CAN_transmit@tempCanMsg tempCanMsg `*.30S644  1 p 1 14 ]
+"241
+} 0
+"402
+[v _convertCANid2Reg convertCANid2Reg `(v  1 s 1 convertCANid2Reg ]
+{
+"404
+[v convertCANid2Reg@wipSIDL wipSIDL `uc  1 a 1 13 ]
+"402
+[v convertCANid2Reg@tempPassedInID tempPassedInID `ul  1 p 4 0 ]
+[v convertCANid2Reg@canIdType canIdType `uc  1 p 1 4 ]
+[v convertCANid2Reg@passedInEIDH passedInEIDH `*.30uc  1 p 1 5 ]
+[v convertCANid2Reg@passedInEIDL passedInEIDL `*.30uc  1 p 1 6 ]
+[v convertCANid2Reg@passedInSIDH passedInSIDH `*.30uc  1 p 1 7 ]
+[v convertCANid2Reg@passedInSIDL passedInSIDL `*.30uc  1 p 1 8 ]
+"437
+} 0
+"199 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
 [v _ECAN_Initialize_user ECAN_Initialize_user `(v  1 e 1 0 ]
 {
-"223
+"285
 } 0
 "439 /home/fedor/Documents/GitHub/CAN/CANCDC.X/mcc_generated_files/ecan.c
 [v _ECAN_SetRXB0InterruptHandler ECAN_SetRXB0InterruptHandler `(v  1 e 1 0 ]
@@ -870,28 +945,28 @@
 [v _RXB0DefaultInterruptHandler RXB0DefaultInterruptHandler `(v  1 s 1 RXB0DefaultInterruptHandler ]
 {
 } 0
-"89 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
-[v _RXB0InterruptHandler@main$F1274 RXB0InterruptHandler `(v  1 s 1 RXB0InterruptHandler ]
+"157 /home/fedor/Documents/GitHub/CAN/CANCDC.X/main.c
+[v _RXB0InterruptHandler@main$F1340 RXB0InterruptHandler `(v  1 s 1 RXB0InterruptHandler ]
 {
-"95
-[v RXB0InterruptHandler@main$F1274@data data `[8]*.39VEuc  1 a 16 9 ]
-"94
-[v RXB0InterruptHandler@main$F1274@buffer buffer `[14]uc  1 a 14 25 ]
-"92
-[v RXB0InterruptHandler@main$F1274@identificator identificator `us  1 a 2 39 ]
-"91
-[v RXB0InterruptHandler@main$F1274@counter counter `uc  1 a 1 41 ]
-"94
-[v RXB0InterruptHandler@main$F1274@F23001 F23001 `[8]*.39VEuc  1 s 16 F23001 ]
-"135
+"164
+[v RXB0InterruptHandler@main$F1340@data data `[8]*.39VEuc  1 a 16 9 ]
+"163
+[v RXB0InterruptHandler@main$F1340@buffer buffer `[14]uc  1 a 14 25 ]
+"161
+[v RXB0InterruptHandler@main$F1340@identificator identificator `us  1 a 2 39 ]
+"160
+[v RXB0InterruptHandler@main$F1340@counter counter `uc  1 a 1 41 ]
+"163
+[v RXB0InterruptHandler@main$F1340@F23014 F23014 `[8]*.39VEuc  1 s 16 F23014 ]
+"196
 } 0
-"59
+"69
 [v _serial_buffer_add serial_buffer_add `(v  1 e 1 0 ]
 {
-"64
+"74
 [v serial_buffer_add@counter counter `uc  1 a 1 4 ]
-"59
+"69
 [v serial_buffer_add@buffer_ptr buffer_ptr `*.30uc  1 p 1 0 ]
 [v serial_buffer_add@length length `uc  1 p 1 1 ]
-"72
+"82
 } 0
