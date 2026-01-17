@@ -3940,11 +3940,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 574:     _uSYNC_COBID.word = 0x12;;
 [e = . __uSYNC_COBID 0 -> -> -> 18 `i `l `ul ]
 "575
-[; ;main.c: 575:     _uCO_nodeID.byte = 0x02;
-[e = . __uCO_nodeID 0 -> -> 2 `i `uc ]
+[; ;main.c: 575:     _uCO_nodeID.byte = 0x01;
+[e = . __uCO_nodeID 0 -> -> 1 `i `uc ]
 "576
-[; ;main.c: 576:     _uCO_baud.byte = 0x00;
-[e = . __uCO_baud 0 -> -> 0 `i `uc ]
+[; ;main.c: 576:     _uCO_baud.byte = 0x05;
+[e = . __uCO_baud 0 -> -> 5 `i `uc ]
 "577
 [; ;main.c: 577:     _uNMTEHeartBeat.word = 0x10;;
 [e = . __uNMTEHeartBeat 0 -> -> 16 `i `ui ]

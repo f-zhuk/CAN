@@ -36526,7 +36526,7 @@ void ECAN_Initialize(void)
     RXF5SIDH = 0x00;
     RXF5SIDL = 0x00;
 # 141 "mcc_generated_files/ecan.c"
-    BRGCON1 = 0x27;
+    BRGCON1 = 0x1F;
     BRGCON2 = 0x98;
     BRGCON3 = 0x81;
 
@@ -36534,8 +36534,8 @@ void ECAN_Initialize(void)
     PIR5bits.RXB0IF = 0;
     PIE5bits.RXB0IE = 1;
 
-    CANCON = 0x60;
-    while (0x60 != (CANSTAT & 0xE0));
+    CANCON = 0x00;
+    while (0x00 != (CANSTAT & 0xE0));
 
 }
 

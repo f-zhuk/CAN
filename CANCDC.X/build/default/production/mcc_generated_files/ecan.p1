@@ -3639,8 +3639,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/ecan.c: 126:     RXF5SIDL = 0x00;
 [e = _RXF5SIDL -> -> 0 `i `uc ]
 "141
-[; ;mcc_generated_files/ecan.c: 141:     BRGCON1 = 0x27;
-[e = _BRGCON1 -> -> 39 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 141:     BRGCON1 = 0x1F;
+[e = _BRGCON1 -> -> 31 `i `uc ]
 "142
 [; ;mcc_generated_files/ecan.c: 142:     BRGCON2 = 0x98;
 [e = _BRGCON2 -> -> 152 `i `uc ]
@@ -3657,14 +3657,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/ecan.c: 147:     PIE5bits.RXB0IE = 1;
 [e = . . _PIE5bits 0 0 -> -> 1 `i `uc ]
 "149
-[; ;mcc_generated_files/ecan.c: 149:     CANCON = 0x60;
-[e = _CANCON -> -> 96 `i `uc ]
+[; ;mcc_generated_files/ecan.c: 149:     CANCON = 0x00;
+[e = _CANCON -> -> 0 `i `uc ]
 "150
-[; ;mcc_generated_files/ecan.c: 150:     while (0x60 != (CANSTAT & 0xE0));
+[; ;mcc_generated_files/ecan.c: 150:     while (0x00 != (CANSTAT & 0xE0));
 [e $U 3208  ]
 [e :U 3209 ]
 [e :U 3208 ]
-[e $ != -> 96 `i & -> _CANSTAT `i -> 224 `i 3209  ]
+[e $ != -> 0 `i & -> _CANSTAT `i -> 224 `i 3209  ]
 [e :U 3210 ]
 "152
 [; ;mcc_generated_files/ecan.c: 152: }

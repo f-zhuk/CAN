@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V3.10 build 20250813170317 
-                                                                                               Sat Jan 17 18:04:21 2026
+                                                                                               Sat Jan 17 19:13:52 2026
 
 Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1 
      1                           	processor	18F26K83
@@ -8037,8 +8037,8 @@ Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1
   7942   001984  6BB5               	clrf	181,b	;volatile
   7943   001986                     
   7944                           ; BSR set to: 55
-  7945                           ;main.c: 285:     BRGCON1 = 0x27;
-  7946   001986  0E27               	movlw	39
+  7945                           ;main.c: 285:     BRGCON1 = 0x1F;
+  7946   001986  0E1F               	movlw	31
   7947   001988  6F03               	movwf	3,b	;volatile
   7948                           
   7949                           ;main.c: 286:     BRGCON2 = 0x98;
@@ -10884,7 +10884,7 @@ DATA                 0      0    1531      0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V3.10 build 20250813170317 
-Symbol Table                                                                                   Sat Jan 17 18:04:21 2026
+Symbol Table                                                                                   Sat Jan 17 19:13:52 2026
 
                                           l57 1BE2                                            u80 1C66  
                                           u81 1C62                                           l111 1C66  

@@ -36891,7 +36891,7 @@ void ECAN_Initialize_user(void)
     RXF5SIDH = 0x00;
     RXF5SIDL = 0x00;
 # 285 "main.c"
-    BRGCON1 = 0x27;
+    BRGCON1 = 0x1F;
     BRGCON2 = 0x98;
     BRGCON3 = 0x81;
 

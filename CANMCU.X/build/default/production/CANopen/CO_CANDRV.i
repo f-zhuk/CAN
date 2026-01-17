@@ -37020,7 +37020,7 @@ void _CANSetBitRate(void)
  switch(_uCAN_Bitrate)
  {
   case 0:
-   BRGCON1 = 0x27;
+   BRGCON1 = 0x1F;
    BRGCON2 = 0x98;
    BRGCON3 = 0x81;
    break;
@@ -37054,9 +37054,9 @@ void _CANSetBitRate(void)
 
 
   case 5:
-   BRGCON1 = 0x41;
-   BRGCON2 = 0xBA;
-   BRGCON3 = 0x07;
+   BRGCON1 = 0x1F;
+   BRGCON2 = 0x98;
+   BRGCON3 = 0x81;
    break;
 
 
@@ -37081,7 +37081,7 @@ void _CANSetBitRate(void)
    break;
 
   default:
-   BRGCON1 = 0x27;
+   BRGCON1 = 0x1F;
    BRGCON2 = 0x98;
    BRGCON3 = 0x81;
    break;

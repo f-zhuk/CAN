@@ -3845,8 +3845,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 270:     RXF5SIDL = 0x00;
 [e = _RXF5SIDL -> -> 0 `i `uc ]
 "285
-[; ;main.c: 285:     BRGCON1 = 0x27;
-[e = _BRGCON1 -> -> 39 `i `uc ]
+[; ;main.c: 285:     BRGCON1 = 0x1F;
+[e = _BRGCON1 -> -> 31 `i `uc ]
 "286
 [; ;main.c: 286:     BRGCON2 = 0x98;
 [e = _BRGCON2 -> -> 152 `i `uc ]

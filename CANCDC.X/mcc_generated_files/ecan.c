@@ -130,7 +130,7 @@ void ECAN_Initialize(void)
     */
     
   	/**
-        Baud rate: 100kbps
+        Baud rate: 125kbps
         System frequency: 64000000
         ECAN clock frequency: 64000000
         Time quanta: 8
@@ -138,7 +138,7 @@ void ECAN_Initialize(void)
         Sample point: 75%
 	*/ 
     
-    BRGCON1 = 0x27;
+    BRGCON1 = 0x1F;
     BRGCON2 = 0x98;
     BRGCON3 = 0x81;
     
@@ -146,8 +146,8 @@ void ECAN_Initialize(void)
     PIR5bits.RXB0IF = 0;
     PIE5bits.RXB0IE = 1;
     
-    CANCON = 0x60; //Request listen only mode
-    while (0x60 != (CANSTAT & 0xE0)); // wait until ECAN is in Normal mode   
+    CANCON = 0x00;
+    while (0x00 != (CANSTAT & 0xE0)); // wait until ECAN is in Normal mode   
     
 }
 /**

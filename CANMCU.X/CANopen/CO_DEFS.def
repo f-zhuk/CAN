@@ -1,6 +1,6 @@
 
   	/**
-        Baud rate: 100kbps
+        Baud rate: 125kbps
         System frequency: 64000000
         ECAN clock frequency: 64000000
         Time quanta: 8
@@ -8,9 +8,9 @@
         Sample point: 75%
 	*/ 
     
-//    BRGCON1 = 0x27;
-//    BRGCON2 = 0x98;
-//    BRGCON3 = 0x81;
+ //   BRGCON1 = 0x1F;
+ //   BRGCON2 = 0x98;
+ //   BRGCON3 = 0x81;
     
 
 //#define CAN_BITRATE0_BRGCON1	0x41
@@ -21,45 +21,50 @@
 //#define CAN_BITRATE0_BRGCON2	0xBF
 //#define CAN_BITRATE0_BRGCON3	0x17
 
-#define CAN_BITRATE0_BRGCON1	0x27
+//#define CAN_BITRATE0_BRGCON1	0x27
+//#define CAN_BITRATE0_BRGCON2	0x98
+//#define CAN_BITRATE0_BRGCON3	0x81
+
+/* 1Mbit (incorrect)*/
+#define CAN_BITRATE0_BRGCON1	0x1F
 #define CAN_BITRATE0_BRGCON2	0x98
 #define CAN_BITRATE0_BRGCON3	0x81
-
+/* 800kbits (incorrect)*/
 #define	CAN_BITRATE1			1
 #define CAN_BITRATE1_BRGCON1	0x41
 #define CAN_BITRATE1_BRGCON2	0xBA
 #define CAN_BITRATE1_BRGCON3	0x07
-
+/* 500kbits (incorrect)*/
 #define	CAN_BITRATE2			1
 #define CAN_BITRATE2_BRGCON1	0x07
 #define CAN_BITRATE2_BRGCON2	0x98
 #define CAN_BITRATE2_BRGCON3	0x01
-
+/* 500kbits (incorrect)*/
 #define	CAN_BITRATE3			1
 #define CAN_BITRATE3_BRGCON1	0x41
 #define CAN_BITRATE3_BRGCON2	0xBA
 #define CAN_BITRATE3_BRGCON3	0x07
-
+/* 250kbits (incorrect)*/
 #define	CAN_BITRATE4			1
 #define CAN_BITRATE4_BRGCON1	0x41
 #define CAN_BITRATE4_BRGCON2	0xBA
 #define CAN_BITRATE4_BRGCON3	0x07
-
+/* 125kbits */
 #define	CAN_BITRATE5			1
-#define CAN_BITRATE5_BRGCON1	0x41
-#define CAN_BITRATE5_BRGCON2	0xBA
-#define CAN_BITRATE5_BRGCON3	0x07
-
+#define CAN_BITRATE5_BRGCON1	0x1F
+#define CAN_BITRATE5_BRGCON2	0x98
+#define CAN_BITRATE5_BRGCON3	0x81
+/* 50kbits */
 #define	CAN_BITRATE6			1
 #define CAN_BITRATE6_BRGCON1	0x41
 #define CAN_BITRATE6_BRGCON2	0xBA
 #define CAN_BITRATE6_BRGCON3	0x07
-
+/* 20kbits */
 #define	CAN_BITRATE7			1
 #define CAN_BITRATE7_BRGCON1	0x41
 #define CAN_BITRATE7_BRGCON2	0xBA
 #define CAN_BITRATE7_BRGCON3	0x07
-
+/* 10kbits */
 #define	CAN_BITRATE8			1
 #define CAN_BITRATE8_BRGCON1	0x41
 #define CAN_BITRATE8_BRGCON2	0xBA

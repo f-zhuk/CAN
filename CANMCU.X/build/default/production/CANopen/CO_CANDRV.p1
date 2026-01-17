@@ -3778,8 +3778,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;CANopen/CO_CANDRV.c: 370:   case 0:
 [e :U 3283 ]
 "371
-[; ;CANopen/CO_CANDRV.c: 371:    BRGCON1 = 0x27;
-[e = _BRGCON1 -> -> 39 `i `uc ]
+[; ;CANopen/CO_CANDRV.c: 371:    BRGCON1 = 0x1F;
+[e = _BRGCON1 -> -> 31 `i `uc ]
 "372
 [; ;CANopen/CO_CANDRV.c: 372:    BRGCON2 = 0x98;
 [e = _BRGCON2 -> -> 152 `i `uc ]
@@ -3853,14 +3853,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;CANopen/CO_CANDRV.c: 404:   case 5:
 [e :U 3288 ]
 "405
-[; ;CANopen/CO_CANDRV.c: 405:    BRGCON1 = 0x41;
-[e = _BRGCON1 -> -> 65 `i `uc ]
+[; ;CANopen/CO_CANDRV.c: 405:    BRGCON1 = 0x1F;
+[e = _BRGCON1 -> -> 31 `i `uc ]
 "406
-[; ;CANopen/CO_CANDRV.c: 406:    BRGCON2 = 0xBA;
-[e = _BRGCON2 -> -> 186 `i `uc ]
+[; ;CANopen/CO_CANDRV.c: 406:    BRGCON2 = 0x98;
+[e = _BRGCON2 -> -> 152 `i `uc ]
 "407
-[; ;CANopen/CO_CANDRV.c: 407:    BRGCON3 = 0x07;
-[e = _BRGCON3 -> -> 7 `i `uc ]
+[; ;CANopen/CO_CANDRV.c: 407:    BRGCON3 = 0x81;
+[e = _BRGCON3 -> -> 129 `i `uc ]
 "408
 [; ;CANopen/CO_CANDRV.c: 408:    break;
 [e $U 3281  ]
@@ -3913,8 +3913,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;CANopen/CO_CANDRV.c: 431:   default:
 [e :U 3292 ]
 "432
-[; ;CANopen/CO_CANDRV.c: 432:    BRGCON1 = 0x27;
-[e = _BRGCON1 -> -> 39 `i `uc ]
+[; ;CANopen/CO_CANDRV.c: 432:    BRGCON1 = 0x1F;
+[e = _BRGCON1 -> -> 31 `i `uc ]
 "433
 [; ;CANopen/CO_CANDRV.c: 433:    BRGCON2 = 0x98;
 [e = _BRGCON2 -> -> 152 `i `uc ]

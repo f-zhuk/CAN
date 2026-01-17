@@ -37868,8 +37868,8 @@ void main(void)
     TMR0_SetInterruptHandler(TMR0_Blink);
     TMR0_StartTimer();
     _uSYNC_COBID.word = 0x12;;
-    _uCO_nodeID.byte = 0x02;
-    _uCO_baud.byte = 0x00;
+    _uCO_nodeID.byte = 0x01;
+    _uCO_baud.byte = 0x05;
     _uNMTEHeartBeat.word = 0x10;;
     _uNMTEGuardTime.word = 0x00;;
     _uNMTELifeFactor.byte = 0x00;;

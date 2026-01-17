@@ -274,7 +274,7 @@ void ECAN_Initialize_user(void)
     */
     
   	/**
-        Baud rate: 100kbps
+        Baud rate: 125kbps
         System frequency: 64000000
         ECAN clock frequency: 64000000
         Time quanta: 8
@@ -282,7 +282,7 @@ void ECAN_Initialize_user(void)
         Sample point: 75%
 	*/ 
     
-    BRGCON1 = 0x27;
+    BRGCON1 = 0x1F;
     BRGCON2 = 0x98;
     BRGCON3 = 0x81;
     
