@@ -96,22 +96,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "202 ./CANopen/CO_COMM.h
 [; ;./CANopen/CO_COMM.h: 202: extern UNSIGNED8 _tpdo_en;
 [v __tpdo_en `S24 ~T0 @X0 0 e ]
-"69817 /home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h
-[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69817:     struct {
-[s S3118 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3118 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"69827
-[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69827:     struct {
-[s S3119 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3119 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
-"69816
-[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69816: typedef union {
-[u S3117 `S3118 1 `S3119 1 ]
-[n S3117 . . . ]
-"69838
-[; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 69838: extern volatile LATBbits_t LATBbits __attribute__((address(0x3FBB)));
-[v _LATBbits `VS3117 ~T0 @X0 0 e@16315 ]
-"304 ./CANopen/CO_COMM.h
+"304
 [; ;./CANopen/CO_COMM.h: 304: void _CO_COMMLSTimeEventManager(void);
 [v __CO_COMMLSTimeEventManager `(v ~T0 @X0 0 ef ]
 "211 ./mcc_generated_files/uart1.h
@@ -172,16 +157,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "232 ./CANopen/CO_COMM.h
 [; ;./CANopen/CO_COMM.h: 232: void _CO_COMMResetEventManager(void);
 [v __CO_COMMResetEventManager `(v ~T0 @X0 0 ef ]
-"193
-[; ;./CANopen/CO_COMM.h: 193: extern UNSIGNED8 _uCO_state;
-[v __uCO_state `S24 ~T0 @X0 0 e ]
 "80 ./CANopen/CO_MAIN.h
 [; ;./CANopen/CO_MAIN.h: 80: void CO_ProcessAllEvents(void);
 [v _CO_ProcessAllEvents `(v ~T0 @X0 0 ef ]
-[v F435 `(v ~T0 @X0 1 tf1`ul ]
-"12 /home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/builtins.h
-[v __delay `JF435 ~T0 @X0 0 e ]
-[p i __delay ]
 "273 /home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h
 [; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 273: __asm("CIOCON equ 03700h");
 [; <" CIOCON equ 03700h ;# ">
@@ -3837,155 +3815,122 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _TMR0_Blink ]
 [f ]
-"528
-[; ;main.c: 528:  if ((!_tx_pdo_que.bits.b0))
-[e $ ! ! != -> . . __tx_pdo_que 1 0 `i -> 0 `i 3314  ]
-"529
-[; ;main.c: 529:  {
-{
-"530
-[; ;main.c: 530:         (*(UNSIGNED8 *)uLocalXmtBuffer).byte ++;
-[e ++ . *U -> &U _uLocalXmtBuffer `*S24 0 -> -> 1 `i `uc ]
-"531
-[; ;main.c: 531:         (*(UNSIGNED8 *)uLocalXmtBuffer).bits.b0 = 1;
-[e = . . *U -> &U _uLocalXmtBuffer `*S24 1 0 -> -> 1 `i `uc ]
-"533
-[; ;main.c: 533:   _tx_pdo_que.bits.b0 = 1;
-[e = . . __tx_pdo_que 1 0 -> -> 1 `i `uc ]
-"534
-[; ;main.c: 534:         do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0);
-[e :U 3317 ]
-{
-[e = . . _LATBbits 0 4 -> ~ -> . . _LATBbits 0 4 `i `uc ]
-}
-[e :U 3316 ]
-"539
-[; ;main.c: 539:  }
-}
-[e :U 3314 ]
-"542
-[; ;main.c: 542:     _CO_COMMLSTimeEventManager();
+"544
+[; ;main.c: 544:     _CO_COMMLSTimeEventManager();
 [e ( __CO_COMMLSTimeEventManager ..  ]
-"543
-[; ;main.c: 543: }
+"545
+[; ;main.c: 545: }
 [e :UE 3313 ]
 }
-"545
-[; ;main.c: 545: void UART1_Write_String(uint8_t *buffer_ptr)
+"547
+[; ;main.c: 547: void UART1_Write_String(uint8_t *buffer_ptr)
 [v _UART1_Write_String `(v ~T0 @X0 1 ef1`*uc ]
-"546
-[; ;main.c: 546: {
+"548
+[; ;main.c: 548: {
 {
 [e :U _UART1_Write_String ]
-"545
-[; ;main.c: 545: void UART1_Write_String(uint8_t *buffer_ptr)
+"547
+[; ;main.c: 547: void UART1_Write_String(uint8_t *buffer_ptr)
 [v _buffer_ptr `*uc ~T0 @X0 1 r1 ]
-"546
-[; ;main.c: 546: {
-[f ]
-"547
-[; ;main.c: 547:     while(*buffer_ptr)
-[e $U 3319  ]
-[e :U 3320 ]
 "548
-[; ;main.c: 548:     {
-{
+[; ;main.c: 548: {
+[f ]
 "549
-[; ;main.c: 549:         while(!UART1_is_tx_ready());
-[e $U 3322  ]
-[e :U 3323 ]
-[e :U 3322 ]
-[e $ ! != -> ( _UART1_is_tx_ready ..  `i -> 0 `i 3323  ]
-[e :U 3324 ]
+[; ;main.c: 549:     while(*buffer_ptr)
+[e $U 3315  ]
+[e :U 3316 ]
 "550
-[; ;main.c: 550:         UART1_Write(*buffer_ptr);
-[e ( _UART1_Write (1 *U _buffer_ptr ]
+[; ;main.c: 550:     {
+{
 "551
-[; ;main.c: 551:         buffer_ptr++;
-[e ++ _buffer_ptr * -> -> 1 `i `x -> -> # *U _buffer_ptr `i `x ]
-"552
-[; ;main.c: 552:     }
-}
+[; ;main.c: 551:         while(!UART1_is_tx_ready());
+[e $U 3318  ]
 [e :U 3319 ]
-"547
-[; ;main.c: 547:     while(*buffer_ptr)
-[e $ != -> *U _buffer_ptr `i -> 0 `i 3320  ]
-[e :U 3321 ]
+[e :U 3318 ]
+[e $ ! != -> ( _UART1_is_tx_ready ..  `i -> 0 `i 3319  ]
+[e :U 3320 ]
+"552
+[; ;main.c: 552:         UART1_Write(*buffer_ptr);
+[e ( _UART1_Write (1 *U _buffer_ptr ]
 "553
-[; ;main.c: 553: }
-[e :UE 3318 ]
+[; ;main.c: 553:         buffer_ptr++;
+[e ++ _buffer_ptr * -> -> 1 `i `x -> -> # *U _buffer_ptr `i `x ]
+"554
+[; ;main.c: 554:     }
+}
+[e :U 3315 ]
+"549
+[; ;main.c: 549:     while(*buffer_ptr)
+[e $ != -> *U _buffer_ptr `i -> 0 `i 3316  ]
+[e :U 3317 ]
+"555
+[; ;main.c: 555: }
+[e :UE 3314 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"555
-[; ;main.c: 555: void main(void)
+"557
+[; ;main.c: 557: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"556
-[; ;main.c: 556: {
+"558
+[; ;main.c: 558: {
 {
 [e :U _main ]
 [f ]
-"559
-[; ;main.c: 559:     SYSTEM_Initialize();
+"561
+[; ;main.c: 561:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"566
-[; ;main.c: 566:     (INTCON0bits.GIE = 1);
+"568
+[; ;main.c: 568:     (INTCON0bits.GIE = 1);
 [e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"572
-[; ;main.c: 572:     TMR0_SetInterruptHandler(TMR0_Blink);
-[e ( _TMR0_SetInterruptHandler (1 &U _TMR0_Blink ]
-"573
-[; ;main.c: 573:     TMR0_StartTimer();
-[e ( _TMR0_StartTimer ..  ]
 "574
-[; ;main.c: 574:     _uSYNC_COBID.word = 0x12;;
-[e = . __uSYNC_COBID 0 -> -> -> 18 `i `l `ul ]
+[; ;main.c: 574:     TMR0_SetInterruptHandler(TMR0_Blink);
+[e ( _TMR0_SetInterruptHandler (1 &U _TMR0_Blink ]
 "575
-[; ;main.c: 575:     _uCO_nodeID.byte = 0x01;
-[e = . __uCO_nodeID 0 -> -> 1 `i `uc ]
+[; ;main.c: 575:     TMR0_StartTimer();
+[e ( _TMR0_StartTimer ..  ]
 "576
-[; ;main.c: 576:     _uCO_baud.byte = 0x05;
-[e = . __uCO_baud 0 -> -> 5 `i `uc ]
+[; ;main.c: 576:     _uSYNC_COBID.word = 0x1000;;
+[e = . __uSYNC_COBID 0 -> -> -> 4096 `i `l `ul ]
 "577
-[; ;main.c: 577:     _uNMTEHeartBeat.word = 0x10;;
-[e = . __uNMTEHeartBeat 0 -> -> 16 `i `ui ]
+[; ;main.c: 577:     _uCO_nodeID.byte = 0x01;
+[e = . __uCO_nodeID 0 -> -> 1 `i `uc ]
 "578
-[; ;main.c: 578:     _uNMTEGuardTime.word = 0x00;;
-[e = . __uNMTEGuardTime 0 -> -> 0 `i `ui ]
+[; ;main.c: 578:     _uCO_baud.byte = 0x05;
+[e = . __uCO_baud 0 -> -> 5 `i `uc ]
 "579
-[; ;main.c: 579:     _uNMTELifeFactor.byte = 0x00;;
-[e = . __uNMTELifeFactor 0 -> -> 0 `i `uc ]
+[; ;main.c: 579:     _uNMTEHeartBeat.word = 1000;;
+[e = . __uNMTEHeartBeat 0 -> -> 1000 `i `ui ]
 "580
-[; ;main.c: 580:     DemoInit();
-[e ( _DemoInit ..  ]
+[; ;main.c: 580:     _uNMTEGuardTime.word = 0x00;;
+[e = . __uNMTEGuardTime 0 -> -> 0 `i `ui ]
 "581
-[; ;main.c: 581:     _CO_COMMResetEventManager();
-[e ( __CO_COMMResetEventManager ..  ]
+[; ;main.c: 581:     _uNMTELifeFactor.byte = 0x00;;
+[e = . __uNMTELifeFactor 0 -> -> 0 `i `uc ]
+"582
+[; ;main.c: 582:     DemoInit();
+[e ( _DemoInit ..  ]
 "583
-[; ;main.c: 583:     {_uCO_state.bits.b0 = 0; _uCO_state.bits.b1 = 1; _uCO_state.bits.b2 = 0;};
-{
-[e = . . __uCO_state 1 0 -> -> 0 `i `uc ]
-[e = . . __uCO_state 1 1 -> -> 1 `i `uc ]
-[e = . . __uCO_state 1 2 -> -> 0 `i `uc ]
-}
-"585
-[; ;main.c: 585:     while(1)
-[e :U 3327 ]
-"586
-[; ;main.c: 586:     {
-{
+[; ;main.c: 583:     _CO_COMMResetEventManager();
+[e ( __CO_COMMResetEventManager ..  ]
+"587
+[; ;main.c: 587:     while(1)
+[e :U 3323 ]
 "588
-[; ;main.c: 588:         CO_ProcessAllEvents();
+[; ;main.c: 588:     {
+{
+"590
+[; ;main.c: 590:         CO_ProcessAllEvents();
 [e ( _CO_ProcessAllEvents ..  ]
-"600
-[; ;main.c: 600:         _delay((unsigned long)((50)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"601
-[; ;main.c: 601:     }
+"595
+[; ;main.c: 595:   DemoProcessEvents();
+[e ( _DemoProcessEvents ..  ]
+"604
+[; ;main.c: 604:     }
 }
-[e :U 3326 ]
-[e $U 3327  ]
-[e :U 3328 ]
-"602
-[; ;main.c: 602: }
-[e :UE 3325 ]
+[e :U 3322 ]
+[e $U 3323  ]
+[e :U 3324 ]
+"605
+[; ;main.c: 605: }
+[e :UE 3321 ]
 }

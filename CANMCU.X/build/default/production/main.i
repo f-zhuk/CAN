@@ -37820,21 +37820,7 @@ void CO_PDO1TXFinEvent(void)
 
 
 void TMR0_Blink(void){
-# 528 "main.c"
- if ((!_tx_pdo_que.bits.b0))
- {
-        (*(UNSIGNED8 *)uLocalXmtBuffer).byte ++;
-        (*(UNSIGNED8 *)uLocalXmtBuffer).bits.b0 = 1;
-
-  _tx_pdo_que.bits.b0 = 1;
-        do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0);
-
-
-
-
- }
-
-
+# 544 "main.c"
     _CO_COMMLSTimeEventManager();
 }
 
@@ -37867,22 +37853,26 @@ void main(void)
 
     TMR0_SetInterruptHandler(TMR0_Blink);
     TMR0_StartTimer();
-    _uSYNC_COBID.word = 0x12;;
+    _uSYNC_COBID.word = 0x1000;;
     _uCO_nodeID.byte = 0x01;
     _uCO_baud.byte = 0x05;
-    _uNMTEHeartBeat.word = 0x10;;
+    _uNMTEHeartBeat.word = 1000;;
     _uNMTEGuardTime.word = 0x00;;
     _uNMTELifeFactor.byte = 0x00;;
     DemoInit();
     _CO_COMMResetEventManager();
 
-    {_uCO_state.bits.b0 = 0; _uCO_state.bits.b1 = 1; _uCO_state.bits.b2 = 0;};
+
 
     while(1)
     {
 
         CO_ProcessAllEvents();
-# 600 "main.c"
-        _delay((unsigned long)((50)*(64000000/4000.0)));
+
+
+
+
+  DemoProcessEvents();
+# 604 "main.c"
     }
 }

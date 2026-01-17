@@ -40,6 +40,9 @@ class CANFrame:
     def get_TYPE(self):
         return ((self.__ID >> 7) & 0x0F)
 
+    def get_DATA(self):
+        return self.__data
+
 class Adapter:
     def __init__(self):
         self.__port = ''
@@ -53,12 +56,12 @@ class Adapter:
         self.__temp_frame_COMSTAT = 0
         self.__last_frame = None
 
-        self.__adapter_frame = tk.Frame(window)#, bg="white")
+        self.__adapter_frame = tk.Frame(window, bg="white")
         self.__adapter_label = tk.Label(self.__adapter_frame, bg="white", text="Adapter", anchor=tk.W, padx=20, font=("Arial Rounded MT Bold", 14))
         self.__port_papam_label = tk.Label(self.__adapter_frame, bg="white", text="Port", anchor=tk.W, padx=20) #font=("Arial Rounded MT Bold", 14))
         self.__port_text = tk.StringVar(self.__adapter_frame, "None")
         self.__port_label = tk.Label(self.__adapter_frame, bg="white", textvariable=self.__port_text, anchor=tk.W, padx=10)
-        self.__send_button = tk.Button(self.__adapter_frame, text="Send", command = self.send, anchor=tk.W, padx=10)
+        self.__send_button = tk.Button(self.__adapter_frame, bg="white", text="Send", command = self.send, anchor=tk.W, padx=10)
         self.__send_message = tk.StringVar(self.__adapter_frame, "None")
         self.__send_entry = tk.Entry(self.__adapter_frame, textvariable=self.__send_message)
 
@@ -174,7 +177,7 @@ class Device:
         self.__param_value_texts = {}   #dict
         self.__param_value_labels = {}  #dict
 
-        self.__device_frame = tk.Frame(window)#, bg="white")
+        self.__device_frame = tk.Frame(window, bg="white")
         self.__device_label = tk.Label(self.__device_frame, bg="white", text=self.__dev_name, anchor=tk.W, padx=20, font=("Arial Rounded MT Bold", 14))
         
         #self.__port_papam_label = tk.Label(self.__device_frame, bg="white", text="Port", anchor=tk.W, padx=20) #font=("Arial Rounded MT Bold", 14))
@@ -231,6 +234,8 @@ class Device:
                 print("PDO4 Receive")
             case 0x0B:
                 print("SDO Transmit")
+                self.__param_name_texts[frame.get_TYPE()].set("SDO Transmit")
+                self.__param_value_texts[frame.get_TYPE()].set(list(map(hex, frame.get_DATA())))
             case 0x0C:
                 print("SDO Receive")
             case 0x0E:

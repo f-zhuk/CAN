@@ -525,20 +525,22 @@ void TMR0_Blink(void){
 	// If ready to send 
     //*((UNSIGNED8 *)(mTPDOGetTxPtr(1))) = 0x04;
     //*((UNSIGNED8 *)(_uPDO1.TPDO.buf)) = 0x08;
-	if (mTPDOIsPutRdy(1))// && uDemoState.bits.b0)
-	{
-        (*(UNSIGNED8 *)uLocalXmtBuffer).byte ++;
-        (*(UNSIGNED8 *)uLocalXmtBuffer).bits.b0 = 1;
+	////if (mTPDOIsPutRdy(1))// && uDemoState.bits.b0)
+	////{
+        ////(*(UNSIGNED8 *)uLocalXmtBuffer).byte ++;
+        ////(*(UNSIGNED8 *)uLocalXmtBuffer).bits.b0 = 1;
 		// Tell the stack data is loaded for transmit
-		mTPDOWritten(1);
-        IO_RB4_Toggle();
+		////mTPDOWritten(1);
+        //IO_RB4_Toggle();
 		
 		// Reset any synchronous or asynchronous flags
 		//uDemoState.bits.b0 = 0;
 		//uDemoState.bits.b1 = 0;
-	}
+	////}
     //}
     //DemoProcessEvents();
+    //IO_RB4_Toggle();
+    //do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0);
     _CO_COMMLSTimeEventManager();
 }
 
@@ -571,16 +573,16 @@ void main(void)
     //TimerInit(); // Init my timer
     TMR0_SetInterruptHandler(TMR0_Blink);
     TMR0_StartTimer();
-    mSYNC_SetCOBID(0x12); 		// Set the SYNC COB ID (MCHP format)
+    mSYNC_SetCOBID(0x1000); 		// Set the SYNC COB ID (MCHP format)
     mCO_SetNodeID(0x01); 		// Set the node_id
     mCO_SetBaud(0x05); 			// Set the baudrate 125kbit/s default
-    mNMTE_SetHeartBeat(0x10); 	// Set the initial heartbeat
+    mNMTE_SetHeartBeat(1000); 	// Set the initial heartbeat in ms
     mNMTE_SetGuardTime(0x00); 	// Set the initial guard time
     mNMTE_SetLifeFactor(0x00); 	// Set the initial life time
     DemoInit();
-    _CO_COMMResetEventManager(); // Initialize CANopen to run/**/
-    //mCO_InitAll();
-    mNMT_GotoOperState();
+    _CO_COMMResetEventManager(); // mCO_InitAll(); Initialize CANopen to run/**/
+    
+    //mNMT_GotoOperState();
     
     while(1)
     {
@@ -589,7 +591,8 @@ void main(void)
         //UART1_Write_String("Hello\r\n");
         //COMM_NETCTL_TF = 0;
         // Process application specific functions
-        // 1ms timer events
+        // 1ms timer events// Process application specific functions
+		DemoProcessEvents();
         /*if (TimerIsOverflowEvent())
         {
         // Process timer related events
@@ -597,7 +600,7 @@ void main(void)
         // Perform other time functions
         }*/
         //IO_RB4_Toggle();
-        __delay_ms(50);
+        //__delay_ms(50);
     }
 }
 /**

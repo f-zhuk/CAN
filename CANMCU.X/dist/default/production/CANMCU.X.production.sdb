@@ -527,6 +527,8 @@ E_DEV_STATE 25
 [v _DemoInit DemoInit `(v  1 e 1 0 ]
 "162
 [v _CO_COMMSyncEvent CO_COMMSyncEvent `(v  1 e 1 0 ]
+"205
+[v _DemoProcessEvents DemoProcessEvents `(v  1 e 1 0 ]
 "290
 [v _CO_COMM_RPDO1_COBIDAccessEvent CO_COMM_RPDO1_COBIDAccessEvent `(v  1 e 1 0 ]
 "361
@@ -541,7 +543,7 @@ E_DEV_STATE 25
 "508
 [v _TMR0_Blink TMR0_Blink `(v  1 e 1 0 ]
 [v i2_TMR0_Blink TMR0_Blink `(v  1 e 1 0 ]
-"555
+"557
 [v _main main `(v  1 e 1 0 ]
 "63 /home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/ecan.c
 [v _WakeUpDefaultInterruptHandler WakeUpDefaultInterruptHandler `(v  1 s 1 WakeUpDefaultInterruptHandler ]
@@ -1978,10 +1980,10 @@ E_DEV_STATE 25
 [v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "80
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"555 /home/fedor/Documents/GitHub/CAN/CANMCU.X/main.c
+"557 /home/fedor/Documents/GitHub/CAN/CANMCU.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"602
+"605
 } 0
 "87 /home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/tmr0.c
 [v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
@@ -2001,31 +2003,31 @@ E_DEV_STATE 25
 "308
 [v _UART1_SetTxInterruptHandler UART1_SetTxInterruptHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetTxInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 7 ]
+[v UART1_SetTxInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "310
 } 0
 "304
 [v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetRxInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 7 ]
+[v UART1_SetRxInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "306
 } 0
 "294
 [v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 7 ]
+[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 6 ]
 "296
 } 0
 "290
 [v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 7 ]
+[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 6 ]
 "292
 } 0
 "298
 [v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 7 ]
+[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 6 ]
 "300
 } 0
 "61 /home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/tmr0.c
@@ -2036,7 +2038,7 @@ E_DEV_STATE 25
 "134
 [v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 7 ]
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
 "136
 } 0
 "80 /home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/mcc.c
@@ -2064,7 +2066,12 @@ E_DEV_STATE 25
 {
 "202
 } 0
-"100 /home/fedor/Documents/GitHub/CAN/CANMCU.X/main.c
+"205 /home/fedor/Documents/GitHub/CAN/CANMCU.X/main.c
+[v _DemoProcessEvents DemoProcessEvents `(v  1 e 1 0 ]
+{
+"272
+} 0
+"100
 [v _DemoInit DemoInit `(v  1 e 1 0 ]
 {
 "144
@@ -2137,17 +2144,17 @@ E_DEV_STATE 25
 "91 /home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_MEMIO.c
 [v _CO_MEMIO_CopySram CO_MEMIO_CopySram `(v  1 e 1 0 ]
 {
-[v CO_MEMIO_CopySram@pIn pIn `*.39uc  1 p 2 7 ]
-[v CO_MEMIO_CopySram@pOut pOut `*.39uc  1 p 2 9 ]
-[v CO_MEMIO_CopySram@len len `ui  1 p 2 11 ]
+[v CO_MEMIO_CopySram@pIn pIn `*.39uc  1 p 2 6 ]
+[v CO_MEMIO_CopySram@pOut pOut `*.39uc  1 p 2 8 ]
+[v CO_MEMIO_CopySram@len len `ui  1 p 2 10 ]
 "130
 } 0
 "153
 [v _CO_MEMIO_CopyRomToRam CO_MEMIO_CopyRomToRam `(v  1 e 1 0 ]
 {
-[v CO_MEMIO_CopyRomToRam@pIn pIn `*.30Cuc  1 p 1 7 ]
-[v CO_MEMIO_CopyRomToRam@pOut pOut `*.39uc  1 p 2 8 ]
-[v CO_MEMIO_CopyRomToRam@len len `ui  1 p 2 10 ]
+[v CO_MEMIO_CopyRomToRam@pIn pIn `*.30Cuc  1 p 1 6 ]
+[v CO_MEMIO_CopyRomToRam@pOut pOut `*.39uc  1 p 2 7 ]
+[v CO_MEMIO_CopyRomToRam@len len `ui  1 p 2 9 ]
 "243
 } 0
 "281 /home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_DICT.c
@@ -2158,12 +2165,12 @@ E_DEV_STATE 25
 "508 /home/fedor/Documents/GitHub/CAN/CANMCU.X/main.c
 [v _TMR0_Blink TMR0_Blink `(v  1 e 1 0 ]
 {
-"543
+"545
 } 0
 "138 /home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/tmr0.c
 [v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"142
+"141
 } 0
 "63 /home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/ecan.c
 [v _WakeUpDefaultInterruptHandler WakeUpDefaultInterruptHandler `(v  1 s 1 WakeUpDefaultInterruptHandler ]
@@ -2196,7 +2203,7 @@ E_DEV_STATE 25
 [v _CO_COMM_TPDO1_TypeAccessEvent CO_COMM_TPDO1_TypeAccessEvent `(v  1 e 1 0 ]
 {
 "431
-[v CO_COMM_TPDO1_TypeAccessEvent@tempType tempType `uc  1 a 1 9 ]
+[v CO_COMM_TPDO1_TypeAccessEvent@tempType tempType `uc  1 a 1 8 ]
 "461
 } 0
 "361
@@ -2283,7 +2290,7 @@ E_DEV_STATE 25
 [v __CANCloseMessage _CANCloseMessage `(v  1 e 1 0 ]
 {
 "605
-[v __CANCloseMessage@i i `uc  1 a 1 8 ]
+[v __CANCloseMessage@i i `uc  1 a 1 7 ]
 "626
 } 0
 "252 /home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_TOOLS.c
@@ -2345,7 +2352,7 @@ E_DEV_STATE 25
 [v __CANOpenMessage _CANOpenMessage `(v  1 e 1 0 ]
 {
 "557
-[v __CANOpenMessage@i i `uc  1 a 1 7 ]
+[v __CANOpenMessage@i i `uc  1 a 1 6 ]
 "578
 } 0
 "230
@@ -2434,12 +2441,12 @@ E_DEV_STATE 25
 "508 /home/fedor/Documents/GitHub/CAN/CANMCU.X/main.c
 [v i2_TMR0_Blink TMR0_Blink `(v  1 e 1 0 ]
 {
-"543
+"545
 } 0
 "138 /home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/tmr0.c
 [v i2_TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
-"142
+"141
 } 0
 "598 /home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_COMM.c
 [v i2__CO_COMMLSTimeEventManager _CO_COMMLSTimeEventManager `(v  1 e 1 0 ]

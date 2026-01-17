@@ -36454,7 +36454,7 @@ void TMR0_Initialize(void)
     T0CON1 = 0x4E;
 
 
-    TMR0H = 0xF3;
+    TMR0H = 0x07;
 
 
     TMR0L = 0x00;
@@ -36524,7 +36524,6 @@ void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
 }
 
 void TMR0_DefaultInterruptHandler(void){
-
 
 
 }
