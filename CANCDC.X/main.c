@@ -157,8 +157,8 @@ void UART1_Receive_ISR_user()
     if (frame_state == CONTROL)
     {
         
-        CAN_transmit(&message);
-        IO_RB4_Toggle();
+        if (CAN_transmit(&message))
+            IO_RB4_Toggle();
         frame_state = RESET;
         return;
     } 
@@ -290,8 +290,10 @@ void ECAN_Initialize_user(void)
     PIR5bits.RXB0IF = 0;
     PIE5bits.RXB0IE = 1;
     
-    CANCON = 0x60; //Request listen only mode
-    while (0x60 != (CANSTAT & 0xE0)); // wait until ECAN is in Normal mode    
+    //CANCON = 0x60; //Request listen only mode
+    //while (0x60 != (CANSTAT & 0xE0)); // wait until ECAN is in listen only mode    
+    CANCON = 0x00; //Requests Normal mode
+    while (0x00 != (CANSTAT & 0xE0)); // wait until ECAN is in Normal mode  
 }
 
 

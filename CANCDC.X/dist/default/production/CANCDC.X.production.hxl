@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- /tmp/xcXjMhJLP/driver_tmp_3.o
+ /tmp/xcXoBbCiJ/driver_tmp_3.o
  -Odist/default/production/CANCDC.X.production.hex
  -logfile=dist/default/production/CANCDC.X.production.hxl
  -addressing=1
@@ -9,23 +9,23 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(/tmp/xcXjMhJLP/driver_tmp_3.o)
-  8h - Bh		(/tmp/xcXjMhJLP/driver_tmp_3.o)
-  18h - 1Dh		(/tmp/xcXjMhJLP/driver_tmp_3.o)
-  1000h - 1D05h		(/tmp/xcXjMhJLP/driver_tmp_3.o)
-  200000h - 20000Fh		(/tmp/xcXjMhJLP/driver_tmp_3.o)
-  300000h - 300009h		(/tmp/xcXjMhJLP/driver_tmp_3.o)
+  0h - 3h		(/tmp/xcXoBbCiJ/driver_tmp_3.o)
+  8h - Bh		(/tmp/xcXoBbCiJ/driver_tmp_3.o)
+  18h - 1Dh		(/tmp/xcXoBbCiJ/driver_tmp_3.o)
+  1000h - 1D21h		(/tmp/xcXoBbCiJ/driver_tmp_3.o)
+  200000h - 20000Fh		(/tmp/xcXoBbCiJ/driver_tmp_3.o)
+  300000h - 300009h		(/tmp/xcXoBbCiJ/driver_tmp_3.o)
  Unused ranges:
   4h - 7h
   Ch - 17h
   1Eh - FFFh
-  1D06h - 1FFFFFh
+  1D22h - 1FFFFFh
   200010h - 2FFFFFh
 
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (/tmp/xcXjMhJLP/driver_tmp_3.o)
+  H1 = Input file             (/tmp/xcXoBbCiJ/driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
@@ -240,7 +240,9 @@
 00001CD0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001CE0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00001CF0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-00001D00 | H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- --
+00001D00 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001D10 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00001D20 | H1 H1 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 00200000 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 ----------------------------------------------------------

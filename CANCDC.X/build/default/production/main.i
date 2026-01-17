@@ -36790,8 +36790,8 @@ void UART1_Receive_ISR_user()
     if (frame_state == CONTROL)
     {
 
-        CAN_transmit(&message);
-        do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0);
+        if (CAN_transmit(&message))
+            do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0);
         frame_state = RESET;
         return;
     }
@@ -36899,8 +36899,10 @@ void ECAN_Initialize_user(void)
     PIR5bits.RXB0IF = 0;
     PIE5bits.RXB0IE = 1;
 
-    CANCON = 0x60;
-    while (0x60 != (CANSTAT & 0xE0));
+
+
+    CANCON = 0x00;
+    while (0x00 != (CANSTAT & 0xE0));
 }
 
 
