@@ -36690,26 +36690,46 @@ typedef union {
     };
     uint8_t status;
 }uart1_status_t;
-# 110 "mcc_generated_files/uart1.h"
+
+
+
+
+extern volatile uint8_t uart1TxBufferRemaining;
+extern volatile uint8_t uart1RxCount;
+# 115 "mcc_generated_files/uart1.h"
 void UART1_Initialize(void);
-# 158 "mcc_generated_files/uart1.h"
+# 163 "mcc_generated_files/uart1.h"
 _Bool UART1_is_rx_ready(void);
-# 206 "mcc_generated_files/uart1.h"
+# 211 "mcc_generated_files/uart1.h"
 _Bool UART1_is_tx_ready(void);
-# 253 "mcc_generated_files/uart1.h"
+# 258 "mcc_generated_files/uart1.h"
 _Bool UART1_is_tx_done(void);
-# 301 "mcc_generated_files/uart1.h"
+# 306 "mcc_generated_files/uart1.h"
 uart1_status_t UART1_get_last_status(void);
-# 350 "mcc_generated_files/uart1.h"
+# 355 "mcc_generated_files/uart1.h"
 uint8_t UART1_Read(void);
-# 375 "mcc_generated_files/uart1.h"
+# 380 "mcc_generated_files/uart1.h"
 void UART1_Write(uint8_t txData);
-# 395 "mcc_generated_files/uart1.h"
+# 401 "mcc_generated_files/uart1.h"
+void UART1_Transmit_ISR(void);
+# 422 "mcc_generated_files/uart1.h"
+void UART1_Receive_ISR(void);
+# 443 "mcc_generated_files/uart1.h"
+void UART1_RxDataHandler(void);
+# 461 "mcc_generated_files/uart1.h"
 void UART1_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 413 "mcc_generated_files/uart1.h"
+# 479 "mcc_generated_files/uart1.h"
 void UART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 431 "mcc_generated_files/uart1.h"
+# 497 "mcc_generated_files/uart1.h"
 void UART1_SetErrorHandler(void (* interruptHandler)(void));
+# 517 "mcc_generated_files/uart1.h"
+void (*UART1_RxInterruptHandler)(void);
+# 535 "mcc_generated_files/uart1.h"
+void (*UART1_TxInterruptHandler)(void);
+# 555 "mcc_generated_files/uart1.h"
+void UART1_SetRxInterruptHandler(void (* InterruptHandler)(void));
+# 573 "mcc_generated_files/uart1.h"
+void UART1_SetTxInterruptHandler(void (* InterruptHandler)(void));
 # 59 "mcc_generated_files/mcc.h" 2
 # 1 "mcc_generated_files/ecan.h" 1
 # 62 "mcc_generated_files/ecan.h"
@@ -36771,6 +36791,14 @@ void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
     if(PIE5bits.WAKIE == 1 && PIR5bits.WAKIF == 1)
     {
         ECAN_WAKI_ISR();
+    }
+    else if(PIE3bits.U1TXIE == 1 && PIR3bits.U1TXIF == 1)
+    {
+        UART1_TxInterruptHandler();
+    }
+    else if(PIE3bits.U1RXIE == 1 && PIR3bits.U1RXIF == 1)
+    {
+        UART1_RxInterruptHandler();
     }
     else if(PIE3bits.TMR0IE == 1 && PIR3bits.TMR0IF == 1)
     {

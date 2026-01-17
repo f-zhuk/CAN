@@ -1,4 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
+[v F23031 `(v ~T0 @X0 0 tf ]
+[v F23033 `(v ~T0 @X0 0 tf ]
 "70507 /home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h
 [; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 70507:     struct {
 [s S3094 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -3118,6 +3120,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "71950
 [; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 71950: __asm("TOSU equ 03FFFh");
 [; <" TOSU equ 03FFFh ;# ">
+"517 mcc_generated_files/uart1.h
+[; ;mcc_generated_files/uart1.h: 517: void (*UART1_RxInterruptHandler)(void);
+[v _UART1_RxInterruptHandler `*F23031 ~T0 @X0 1 e ]
+"535
+[; ;mcc_generated_files/uart1.h: 535: void (*UART1_TxInterruptHandler)(void);
+[v _UART1_TxInterruptHandler `*F23033 ~T0 @X0 1 e ]
 "52 mcc_generated_files/interrupt_manager.c
 [; ;mcc_generated_files/interrupt_manager.c: 52: void INTERRUPT_Initialize (void)
 [v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
@@ -3156,31 +3164,61 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 3210  ]
 "65
-[; ;mcc_generated_files/interrupt_manager.c: 65:     else if(PIE3bits.TMR0IE == 1 && PIR3bits.TMR0IF == 1)
+[; ;mcc_generated_files/interrupt_manager.c: 65:     else if(PIE3bits.U1TXIE == 1 && PIR3bits.U1TXIF == 1)
 [e :U 3209 ]
-[e $ ! && == -> . . _PIE3bits 0 7 `i -> 1 `i == -> . . _PIR3bits 0 7 `i -> 1 `i 3211  ]
+[e $ ! && == -> . . _PIE3bits 0 4 `i -> 1 `i == -> . . _PIR3bits 0 4 `i -> 1 `i 3211  ]
 "66
 [; ;mcc_generated_files/interrupt_manager.c: 66:     {
 {
 "67
-[; ;mcc_generated_files/interrupt_manager.c: 67:         TMR0_ISR();
-[e ( _TMR0_ISR ..  ]
+[; ;mcc_generated_files/interrupt_manager.c: 67:         UART1_TxInterruptHandler();
+[e ( *U _UART1_TxInterruptHandler ..  ]
 "68
 [; ;mcc_generated_files/interrupt_manager.c: 68:     }
 }
 [e $U 3212  ]
 "69
-[; ;mcc_generated_files/interrupt_manager.c: 69:     else
+[; ;mcc_generated_files/interrupt_manager.c: 69:     else if(PIE3bits.U1RXIE == 1 && PIR3bits.U1RXIF == 1)
 [e :U 3211 ]
+[e $ ! && == -> . . _PIE3bits 0 3 `i -> 1 `i == -> . . _PIR3bits 0 3 `i -> 1 `i 3213  ]
 "70
 [; ;mcc_generated_files/interrupt_manager.c: 70:     {
 {
+"71
+[; ;mcc_generated_files/interrupt_manager.c: 71:         UART1_RxInterruptHandler();
+[e ( *U _UART1_RxInterruptHandler ..  ]
 "72
 [; ;mcc_generated_files/interrupt_manager.c: 72:     }
 }
+[e $U 3214  ]
+"73
+[; ;mcc_generated_files/interrupt_manager.c: 73:     else if(PIE3bits.TMR0IE == 1 && PIR3bits.TMR0IF == 1)
+[e :U 3213 ]
+[e $ ! && == -> . . _PIE3bits 0 7 `i -> 1 `i == -> . . _PIR3bits 0 7 `i -> 1 `i 3215  ]
+"74
+[; ;mcc_generated_files/interrupt_manager.c: 74:     {
+{
+"75
+[; ;mcc_generated_files/interrupt_manager.c: 75:         TMR0_ISR();
+[e ( _TMR0_ISR ..  ]
+"76
+[; ;mcc_generated_files/interrupt_manager.c: 76:     }
+}
+[e $U 3216  ]
+"77
+[; ;mcc_generated_files/interrupt_manager.c: 77:     else
+[e :U 3215 ]
+"78
+[; ;mcc_generated_files/interrupt_manager.c: 78:     {
+{
+"80
+[; ;mcc_generated_files/interrupt_manager.c: 80:     }
+}
+[e :U 3216 ]
+[e :U 3214 ]
 [e :U 3212 ]
 [e :U 3210 ]
-"73
-[; ;mcc_generated_files/interrupt_manager.c: 73: }
+"81
+[; ;mcc_generated_files/interrupt_manager.c: 81: }
 [e :UE 3208 ]
 }

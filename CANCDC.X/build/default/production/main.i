@@ -36729,8 +36729,9 @@ void serial_buffer_add(uint8_t *buffer_ptr, uint8_t length)
         status |= 0x01;
 }
 # 99 "main.c"
-void ECAN_buffer_add()
+void UART1_Receive_ISR_user()
 {
+    uint8_t byte = U1RXB;
     static uCAN_MSG message;
     static uint8_t frame_state = RESET;
     static uint8_t counter = 0;
@@ -36744,46 +36745,55 @@ void ECAN_buffer_add()
         counter = 0;
         frame_state = SIGNATURE1;
     }
-    if ((frame_state == SIGNATURE1) && UART1_is_rx_ready())
+    if (frame_state == SIGNATURE1)
     {
-        if (UART1_Read() == 0x55)
+        if (byte == 0x55)
             frame_state = SIGNATURE2;
+        return;
     }
-    if ((frame_state == SIGNATURE2) && UART1_is_rx_ready())
+    if (frame_state == SIGNATURE2)
     {
-        if (UART1_Read() == 0xAA)
+        if (byte == 0xAA)
             frame_state = IDH;
         else
             frame_state = SIGNATURE1;
+        return;
     }
-    if ((frame_state == IDH) && UART1_is_rx_ready())
+    if (frame_state == IDH)
     {
-        message.frame.id = (uint32_t)UART1_Read()<<8;
+        message.frame.id = (uint32_t)byte<<8;
         frame_state = IDL;
-
+        return;
     }
-    if ((frame_state == IDL) && UART1_is_rx_ready())
+    if (frame_state == IDL)
     {
-        message.frame.id |= UART1_Read();
+        message.frame.id |= byte;
         frame_state = DLC;
+        return;
     }
-    if ((frame_state == DLC) && UART1_is_rx_ready())
+    if (frame_state == DLC)
     {
-        message.frame.dlc = UART1_Read();
+        message.frame.dlc = byte;
         frame_state = DATA;
+        return;
     }
-    while ((frame_state == DATA) && UART1_is_rx_ready() && (counter<(message.frame.dlc&0x07)))
+    while ((frame_state == DATA) && (counter<(message.frame.dlc&0x0F)))
     {
-        message.array[6+counter] = UART1_Read();
+        message.array[6+counter] = byte;
         counter++;
-        frame_state = CONTROL;
+
+        if (counter >= (message.frame.dlc&0x0F))
+            frame_state = CONTROL;
+
+        return;
     }
-    if ((frame_state == CONTROL) && UART1_is_rx_ready())
+    if (frame_state == CONTROL)
     {
-        UART1_Read();
+
         CAN_transmit(&message);
         do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0);
         frame_state = RESET;
+        return;
     }
 }
 
@@ -36815,7 +36825,7 @@ static void RXB0InterruptHandler(void)
     buffer[3] = identificator&0xFF;
     buffer[4] = RXB0DLC;
 
-    for (counter = 0; counter < (buffer[4] & 0x07); counter++)
+    for (counter = 0; counter < (buffer[4] & 0x0F); counter++)
     {
         buffer[5+counter] = *data[counter];
     }
@@ -36843,7 +36853,7 @@ void ECAN_Initialize_user(void)
 
 
     CIOCON = 0x00;
-# 225 "main.c"
+# 235 "main.c"
     RXM0EIDH = 0x00;
     RXM0EIDL = 0x00;
     RXM0SIDH = 0x00;
@@ -36880,7 +36890,7 @@ void ECAN_Initialize_user(void)
     RXF5EIDL = 0x00;
     RXF5SIDH = 0x00;
     RXF5SIDL = 0x00;
-# 275 "main.c"
+# 285 "main.c"
     BRGCON1 = 0x27;
     BRGCON2 = 0x98;
     BRGCON3 = 0x81;
@@ -36901,6 +36911,8 @@ void main(void)
     ECAN_Initialize_user();
 
 
+    UART1_SetRxInterruptHandler(UART1_Receive_ISR_user);
+    ECAN_SetRXB0InterruptHandler(RXB0InterruptHandler);
 
 
 
@@ -36916,7 +36928,6 @@ void main(void)
 
 
         _delay((unsigned long)((50)*(64000000/4000.0)));
-        ECAN_buffer_add();
 
         while(!UART1_is_tx_ready()) {}
 

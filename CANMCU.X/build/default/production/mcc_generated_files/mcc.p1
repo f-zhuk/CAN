@@ -1,4 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
+[v F23031 `(v ~T0 @X0 0 tf ]
+[v F23033 `(v ~T0 @X0 0 tf ]
 "87 mcc_generated_files/interrupt_manager.h
 [; ;mcc_generated_files/interrupt_manager.h: 87: void INTERRUPT_Initialize (void);
 [v _INTERRUPT_Initialize `(v ~T0 @X0 0 ef ]
@@ -17,8 +19,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "100 mcc_generated_files/tmr0.h
 [; ;mcc_generated_files/tmr0.h: 100: void TMR0_Initialize(void);
 [v _TMR0_Initialize `(v ~T0 @X0 0 ef ]
-"110 mcc_generated_files/uart1.h
-[; ;mcc_generated_files/uart1.h: 110: void UART1_Initialize(void);
+"115 mcc_generated_files/uart1.h
+[; ;mcc_generated_files/uart1.h: 115: void UART1_Initialize(void);
 [v _UART1_Initialize `(v ~T0 @X0 0 ef ]
 "27113 /home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h
 [; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 27113: extern volatile unsigned char OSCCON1 __attribute__((address(0x39D9)));
@@ -3086,6 +3088,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "71950
 [; ;/home/fedor/.mchp_packs/Microchip/PIC18F-K_DFP/1.5.114/xc8/pic/include/proc/pic18f26k83.h: 71950: __asm("TOSU equ 03FFFh");
 [; <" TOSU equ 03FFFh ;# ">
+"517 mcc_generated_files/uart1.h
+[; ;mcc_generated_files/uart1.h: 517: void (*UART1_RxInterruptHandler)(void);
+[v _UART1_RxInterruptHandler `*F23031 ~T0 @X0 1 e ]
+"535
+[; ;mcc_generated_files/uart1.h: 535: void (*UART1_TxInterruptHandler)(void);
+[v _UART1_TxInterruptHandler `*F23033 ~T0 @X0 1 e ]
 "50 mcc_generated_files/mcc.c
 [; ;mcc_generated_files/mcc.c: 50: void SYSTEM_Initialize(void)
 [v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]

@@ -571,12 +571,12 @@ void main(void)
     //TimerInit(); // Init my timer
     TMR0_SetInterruptHandler(TMR0_Blink);
     TMR0_StartTimer();
-    mSYNC_SetCOBID(0x12); // Set the SYNC COB ID (MCHP format)
-    mCO_SetNodeID(0x02); // Set the node_id
-    mCO_SetBaud(0x00); // Set the baudrate 100kbit/s default
-    mNMTE_SetHeartBeat(0x10); // Set the initial heartbeat
-    mNMTE_SetGuardTime(0x00); // Set the initial guard time
-    mNMTE_SetLifeFactor(0x00); // Set the initial life time
+    mSYNC_SetCOBID(0x12); 		// Set the SYNC COB ID (MCHP format)
+    mCO_SetNodeID(0x02); 		// Set the node_id
+    mCO_SetBaud(0x00); 			// Set the baudrate 100kbit/s default
+    mNMTE_SetHeartBeat(0x10); 	// Set the initial heartbeat
+    mNMTE_SetGuardTime(0x00); 	// Set the initial guard time
+    mNMTE_SetLifeFactor(0x00); 	// Set the initial life time
     DemoInit();
     _CO_COMMResetEventManager(); // Initialize CANopen to run/**/
     //mCO_InitAll();
