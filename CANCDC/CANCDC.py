@@ -1,5 +1,6 @@
 from datetime import datetime
 from turtle import left
+import os
 import time
 import serial
 import serial.tools.list_ports
@@ -83,7 +84,7 @@ class Adapter:
                         #self.__port_name = port.name
                 window.update()
                 time.sleep(0.1)
-            self.ser = serial.Serial(self.__port.device, 230400, timeout=0, )
+            self.ser = serial.Serial(self.__port.device, 230400, timeout=0, ) #non-blocking mode, return immediately in any case, returning zero or more, up to the requested number of bytes
             self.ser.close()
             self.ser.open()
 
@@ -268,8 +269,15 @@ window.update()
 adapter = Adapter()
 devices = {}        #dict
 new_frame = None
+
+
+files = list()
+for (root,dirs,files) in os.walk('.'):
+    for name in files:
+        if name.endswith('.eds'):
+            print(str(root)+'/'+str(name))  # printing file name
+
 while True:
-    #print
     if adapter.is_plugged(): 
         greeting.pack_forget()
         adapter.show_frame()

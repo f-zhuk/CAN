@@ -3,34 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_DICT.c</file>
             <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_NMT.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_CANDRV.h</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/tmr0.c</file>
             <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/main.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/uart1.h</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/pin_manager.h</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_SDO1.c</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_SYNC.c</file>
             <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_MAIN.h</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/device_config.c</file>
             <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/main.c</file>
             <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_NMTE.c</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_SYNC.h</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_PDO.c</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_MAIN.c</file>
             <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_NMT.c</file>
             <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_CANDRV.c</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_PDO.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_TOOLS.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_COMM.c</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/device_config.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_TOOLS.c</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_ABERR.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_TYPES.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_COMM.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_SDO1.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_DEV.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_SDO1.c</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_DICT.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/ecan.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_MEMIO.h</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_MFTR.def</file>
-            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/mcc.c</file>
             <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_NMTE.h</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/mcc.c</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_COMM.c</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_DEV.c</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/mcc.h</file>
             <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_DEFS.def</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/CANopen/CO_COMM.h</file>
+            <file>file:/home/fedor/Documents/GitHub/CAN/CANMCU.X/mcc_generated_files/i2c1_master.c</file>
         </group>
     </open-files>
 </project-private>
