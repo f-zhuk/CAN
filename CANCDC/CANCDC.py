@@ -218,6 +218,7 @@ class Device:
             case 0x03:
                 print("PDO1 Transmit")
                 self.__param_name_texts[frame.get_TYPE()].set("PDO1 Transmited")
+                self.__param_value_texts[frame.get_TYPE()].set(list(map(hex, frame.get_DATA())))
             case 0x04:
                 print("PDO1 Receive")
                 self.__param_name_texts[frame.get_TYPE()].set("PDO1 Received")
@@ -298,6 +299,6 @@ while True:
         greeting.pack()
     #ser = serial.Serial('/dev/ttyUSB0')
     window.update()
-    time.sleep(0.1)
+    time.sleep(0.01)
 
 #window.mainloop() 
